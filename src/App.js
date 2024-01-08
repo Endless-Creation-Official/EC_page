@@ -45,7 +45,7 @@ function Recruiting() {
           최종 합격 발표
         </li>
         <li>
-          위크샵
+          워크샵
         </li>
       </ul>
     </div>
