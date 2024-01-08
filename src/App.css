@@ -1,0 +1,78 @@
+.ECmark{
+    width: 100px;
+}
+
+#main-header {
+    height: 9rem;
+    width: 100%;
+    padding: 0 var(--offset);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#main-header ul {
+    color: white;
+    display: flex;
+    gap: 20px;
+    font-size: 25px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.header--container {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.max-width-1200 {
+    color: white;
+    width: 75%;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.main-title {
+    margin: 150px 20%;
+    padding: 100px;
+    letter-spacing: 2px;
+}
+
+.recruiting {
+    border: 1px solid white;
+    margin: 150px 10%;
+}
+
+
+
+.recruiting ul {
+    padding: 0; /* 내부 여백 제거 */
+    text-align: center; /* 각 글자 가운데 정렬*/
+    list-style: none; /* 기본 목록 스타일 제거 */
+    display: flex;/* 가로로 정렬하기 위해 Flexbox 레이아웃 사용 */
+    justify-content: center; /* 가로 중앙 정렬 */
+}
+
+.recruiting li {
+    border: 1px solid white;
+    font-size: 20px;
+    margin: 0 50px;
+    padding: 10px 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.text-box {
+    display: inline-block;
+    border: 1px solid white; /* 박스 테두리 설정 */
+    padding: 10px; /* 텍스트와 박스 사이 여백 설정 */
+    margin: 5px 0; /* 위아래 여백 설정 */
+    border-radius: 10px; /* 가장자리를 둥글게 조절하는 속성 */
+}
