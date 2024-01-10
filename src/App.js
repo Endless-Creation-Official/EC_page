@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./Routes/Home";
-import Aboutus from "./Routes/Aboutus";
-import Members from "./Routes/Members";
-import Recruit from "./Routes/Recruit";
+import Home from "./Routes/Home/Home";
+import Aboutus from "./Routes/Aboutus/Aboutus";
+import Members from "./Routes/Members/Members";
+import Recruit from "./Routes/Recruit/Recruit";
 
 function App() {
   return (

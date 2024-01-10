@@ -1,8 +1,6 @@
-.header {
-    position: relative; /* or fixed */
-    top: 0;
-    z-index: 100;
-    /* Add other styling like background color, padding, etc. */
+.Container {
+    margin: 0;
+    background-color: black;
 }
 
 .highbar {
@@ -14,9 +12,8 @@
     right: 0;
     margin-top: 10px;
     margin-right: 30px;
-    font-weight: bold;
+    text-decoration: none;
 }
-  
 
 .ECmark img {
     width: 50px; /* Adjust the size as needed */
