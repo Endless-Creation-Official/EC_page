@@ -51,7 +51,7 @@ function AboutEC() {
       </div>
     </div>
   )
-}
+} 
 
 function Recruiting() {
   return(
