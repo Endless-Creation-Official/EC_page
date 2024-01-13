@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
-import Home from './Routes/Home/Home';
-import Aboutus from './Routes/Aboutus/Aboutus';
-import Recruit from './Routes/Recruit/Recruit';
+import Home from './components/Home/Home';
+import Aboutus from './components/Aboutus/Aboutus';
+import Recruit from './components/Recruit/Recruit';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 

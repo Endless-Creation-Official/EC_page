@@ -1,0 +1,29 @@
+.Container {
+    margin: 0;
+}
+
+.ECmark img {
+    width: 50px; /* Adjust the size as needed */
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainTitle {
+    margin: 100px 20%;
+    padding: 100px;
+    letter-spacing: 2px;
+}
+
+.textBox {
+    display: inline-block;
+    border: 1px solid white;
+    /* 박스 테두리 설정 */
+    padding: 10px;
+    /* 텍스트와 박스 사이 여백 설정 */
+    margin: 5px 0;
+    /* 위아래 여백 설정 */
+    border-radius: 10px;
+    /* 가장자리를 둥글게 조절하는 속성 */
+}

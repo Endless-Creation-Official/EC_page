@@ -7,55 +7,6 @@ h1 {
     font-size: 50px;
 }
 
-.ECmark {
-    width: 100px;
-}
-
-#main-header {
-    height: 9rem;
-    width: 100%;
-    padding: 0 var(--offset, 0);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
-
-#main-header ul {
-    display: flex;
-    gap: 20px;
-    font-size: 25px;
-    font-weight: 700;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-#main-header li:hover a {
-    color: aquamarine;
-    transition: color 0.3s ease;
-}
-
-.header--container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-
-
-.max-width-1200 {
-    width: 75%;
-    padding: 0 40px;
-    margin: auto;
-}
-
-.main-title {
-    margin: 100px 20%;
-    padding: 100px;
-    letter-spacing: 2px;
-}
-
 .container {
     display: flex;
     justify-content: center;
@@ -130,16 +81,4 @@ h1 {
 
 .center-text {
     text-align: center;
-}
-
-.text-box {
-    display: inline-block;
-    border: 1px solid white;
-    /* 박스 테두리 설정 */
-    padding: 10px;
-    /* 텍스트와 박스 사이 여백 설정 */
-    margin: 5px 0;
-    /* 위아래 여백 설정 */
-    border-radius: 10px;
-    /* 가장자리를 둥글게 조절하는 속성 */
 }

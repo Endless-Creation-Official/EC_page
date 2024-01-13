@@ -1,8 +1,0 @@
-.Container {
-    height: 9rem;
-    width: 100%;
-    padding: 0 var(--offset, 0);
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-}
