@@ -1,14 +1,9 @@
 body {
     margin: 0;
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     /* 전체 배경색을 검정색으로 설정 */
-    color: white;
+    color: rgb(255, 255, 255);
     /* 글자색을 흰색으로 설정 */
-}
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -16,9 +11,26 @@ h1 {
 }
 
 .ECmark {
-    width: 100px;
+    width: 150px;
+	    animation: rotate-scale-down 0.65s linear both;
 }
 
+
+  @keyframes rotate-scale-down {
+    0% {
+      -webkit-transform: scale(1) rotateZ(0);
+              transform: scale(1) rotateZ(0);
+    }
+    50% {
+      -webkit-transform: scale(0.5) rotateZ(180deg);
+              transform: scale(0.5) rotateZ(180deg);
+    }
+    100% {
+      -webkit-transform: scale(1) rotateZ(360deg);
+              transform: scale(1) rotateZ(360deg);
+    }
+}
+  
 #main-header {
     height: 9rem;
     width: 100%;
@@ -37,9 +49,13 @@ h1 {
     padding: 0;
     list-style: none;
 }
-
+#main-header li a {
+    text-decoration: none;
+    color:rgb(69, 182, 52)
+    
+}
 #main-header li:hover a {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 246, 86);
     transition: color 0.3s ease;
 }
 
@@ -49,6 +65,8 @@ h1 {
     justify-content: space-between;
     align-items: center;
     height: 100%;
+    border-bottom: 5px solid rgb(57, 184, 31);
+    max-width: 100%;
 }
 
 
@@ -58,6 +76,14 @@ h1 {
     padding: 0 40px;
     margin: auto;
 }
+
+nav {
+    font-size: 5px;
+    font-family: 'PT Sans', Arial, Sans-serif;
+    position: relative;
+    align-items: center;
+}
+
 
 .main-title {
     margin: 100px 20%;
