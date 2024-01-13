@@ -1,11 +1,3 @@
-body {
-    margin: 0;
-    background-color: black;
-    /* 전체 배경색을 검정색으로 설정 */
-    color: white;
-    /* 글자색을 흰색으로 설정 */
-}
-
 a {
     text-decoration: none;
     color: white;
