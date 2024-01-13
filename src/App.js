@@ -1,4 +1,3 @@
-
 import './App.css';
 
 function Header() {
@@ -15,7 +14,7 @@ function Header() {
     </div>
   </header>
   );
-}  
+}
 
 function Main() {
   return (
