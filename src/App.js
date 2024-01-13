@@ -1,11 +1,10 @@
-
 import './App.css';
 
 function Header() {
   return (
   <header id="main-header" >
     <div class="header--container max-width-1200">
-      <h1><a href="/"><img src="/ECmark.png" alt="ECmark" class="ECmark"/></a></h1>
+      <h1><a href="/"><img src="/ECmark.png" alt="ECmark" class="ECmark slide-bck-tr"/></a></h1>
       <ul>
         <li><a href="/read/1">Home</a></li>
         <li><a href="/read/2">About Us</a></li>
