@@ -8,7 +8,7 @@ body {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 h1 {
@@ -18,7 +18,6 @@ h1 {
 .ECmark {
     width: 100px;
 }
-
 
 #main-header {
     height: 9rem;
@@ -40,12 +39,13 @@ h1 {
 }
 
 #main-header li:hover a {
-    color: aquamarine;
+    color: rgb(255, 255, 255);
     transition: color 0.3s ease;
 }
 
 .header--container {
     display: flex;
+    background-color: rgb(235, 245, 233);
     justify-content: space-between;
     align-items: center;
     height: 100%;
