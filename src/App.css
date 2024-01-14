@@ -97,18 +97,19 @@ nav {
 .main-box {
     display: flex;
     align-items: center;
+    font-size:30px;
     background-image: url(../public/backgroundimage.jpg);
     background-size:cover;
     background-position:center;
-    color:rgb(126, 194, 87);
+    color:rgb(0, 0, 0);
     width: inherit;
     height:calc(var(--vh, 1vh) * 100);
 
-    letter: spacing 2rem;
+    letter-spacing: 2px;
 }
 .main-title {
-    
-    
+    position:relative;
+    left: 30%;
     
 }
 
