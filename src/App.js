@@ -1,16 +1,19 @@
 import './App.css';
-
+import logo from './ECmark.png'
 function Header() {
   return (
-  <header id="main-header" >
+  <header id="main-header">
     <div class="header--container max-width-1200">
-      <h1><a href="/"><img src="/ECmark.png" alt="ECmark" class="ECmark"/></a></h1>
-      <ul>
-        <li><a href="/read/1">Home</a></li>
-        <li><a href="/read/2">About Us</a></li>
-        <li><a href="/read/3">Members</a></li>
-        <li><a href="/read/4">Recruit</a></li>
-      </ul>
+      <i><a href="https://mainpageAeress~.com"><img src={logo} alt="ECmark" class="ECmark"/></a></i>
+      <nav>
+        <ul>
+          <li><a class="menu" href="http://www.HomepageAdress~.com">Home</a></li>
+          <li><a class="menu"href="http://www.IntroducingAdress~.com">About Us</a></li>
+          <li><a class="menu" href="http://www.MemberAdress~.com">Members</a></li>
+          <li><a class="menu" href="http://www.ProjectAdress~.com">Project</a></li>
+          <li><a class="menu" href="http://www.RecruitingPageAdress~.com">Recruit</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   );
@@ -18,10 +21,12 @@ function Header() {
 
 function Main() {
   return (
-    <div class="main-title">
-      <h1>성장하는 즐거움!</h1>
-      <div id="element"><h1>Endless Creation</h1></div>
-      <h2 class="text-box">34기 모집 예정!</h2>
+    <div class="main-box">
+      <div class="main-title">
+        <h1>성장하는 즐거움!</h1>
+        <div id="element"><h1>Endless Creation</h1></div>
+        <h2 class="text-box">34기 모집 예정!</h2>
+      </div>
     </div>
   )
 }
