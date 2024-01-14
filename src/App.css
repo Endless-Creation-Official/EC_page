@@ -34,7 +34,7 @@ h1 {
 #main-header {
     height: 9rem;
     width: 100%;
-    padding: 0 var(--offset, 0);
+    padding: 0px 2rem;
     position: fixed;
     top: 0;
     z-index: 1000;
@@ -42,28 +42,30 @@ h1 {
 
 #main-header ul {
     display: flex;
-    gap: 20px;
-    font-size: 25px;
-    font-weight: 700;
+    gap: 30px;
+    font-size: 40px;
+    font-weight: 70;
     margin: 0;
     padding: 0;
-    list-style: none;
+    list-style:none;
 }
 #main-header li a {
     text-decoration: none;
-    color:rgb(69, 182, 52)
+    color:rgb(0, 0, 0)
     
 }
 #main-header li:hover a {
-    color: rgb(0, 246, 86);
+    color: rgb(0, 233, 81);
     transition: color 0.3s ease;
 }
 
 .header--container {
     display: flex;
-    background-color: rgb(235, 245, 233);
+    background-color: rgb(255, 255, 255);
+    opacity:0.75;   /*투명하게만들기*/
     justify-content: space-between;
     align-items: center;
+    width: 10%;
     height: 100%;
     border-bottom: 5px solid rgb(57, 184, 31);
     max-width: 100%;

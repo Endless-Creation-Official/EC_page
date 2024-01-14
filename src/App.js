@@ -1,10 +1,10 @@
 import './App.css';
-
+import logo from './ECmark.png'
 function Header() {
   return (
   <header id="main-header">
     <div class="header--container max-width-1200">
-      <i><a href="https://mainpageAeress~.com"><img src="/ECmark.png" alt="ECmark" class="ECmark"/></a></i>
+      <i><a href="https://mainpageAeress~.com"><img src={logo} alt="ECmark" class="ECmark"/></a></i>
       <nav>
         <ul>
           <li><a class="menu" href="http://www.HomepageAdress~.com">Home</a></li>
