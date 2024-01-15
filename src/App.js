@@ -51,7 +51,7 @@ function AboutEC(props) {
   }, [endingNumber]); // Include endingNumber in the dependency array to react to changes
 
   return (
-    <div className="center-text">
+    <div id="" className="center-text">
       <h1>지금까지 EC는?</h1>
       <div className="container">
         <div className="box">
@@ -77,7 +77,7 @@ function AboutEC(props) {
 
 function Identity() {
   return (
-    <div className="center-text">
+    <div id="introducing-box" className="center-text">
       <h1>EC의 핵심 가치</h1>
       <div className="container">
         <div className="box-identity">
@@ -99,7 +99,7 @@ function Identity() {
 
 function Project() {
   return (
-    <div className="center-text">
+    <div id="introducing-box" className="center-text">
       <h1>Project & Study</h1>
       <div className="container">
         <div className="box-project">

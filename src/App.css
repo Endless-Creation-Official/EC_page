@@ -105,12 +105,18 @@ nav {
     background-image: url(../public/backgroundimage.jpg);
     background-size: cover;
     background-position: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     width: inherit;
     height: calc(var(--vh, 1vh) * 100);
     letter-spacing: 2px;
 }
-
+#introducing-box {
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width: inherit;
+    height: calc(var(--vh, 1vh) * 100);
+}
 .main-title {
     position: relative;
     left: 30%;
