@@ -31,24 +31,48 @@ function Main() {
     </div>
   );
 }
+
 function AboutEC(props) {
-  const [number, setNumber] = useState(0);
-  const endingNumber = 150;
+  const [memberCount, setMemberCount] = useState(0);
+  const [projectCount, setProjectCount] = useState(0);
+  const [establishmentYear, setEstablishmentYear] = useState(2024);
+  const endingMemberCount = 46;
+  const endingProjectCount = 84;
+  const startingEstablishmentYear = 1991;
+
   useEffect(() => {
     let start;
+
     const animate = (timestamp) => {
       if (!start) start = timestamp;
       const progress = timestamp - start;
-      if (progress < 1000) {
-        setNumber(Math.min(Math.floor((progress / 2000) * endingNumber), endingNumber));
-        requestAnimationFrame(animate);
+
+      const animatedMemberCount = Math.min(Math.floor((progress / 2000) * endingMemberCount), endingMemberCount);
+      const animatedProjectCount = Math.min(Math.floor((progress / 2000) * endingProjectCount), endingProjectCount);
+
+      setMemberCount(animatedMemberCount);
+      setProjectCount(animatedProjectCount);
+
+      // Calculate establishment year progress to go from 2024 to 1991
+      const establishmentYearProgress = Math.min((progress / 2000), 1);
+      const animatedEstablishmentYear = 2024 - Math.floor(establishmentYearProgress * (2024 - startingEstablishmentYear));
+      setEstablishmentYear(animatedEstablishmentYear);
+
+      if (animatedMemberCount === endingMemberCount && animatedProjectCount === endingProjectCount && animatedEstablishmentYear === startingEstablishmentYear) {
+        return; // Stop the animation when all counts reach their respective endings
       }
+
+      requestAnimationFrame(animate);
     };
 
     requestAnimationFrame(animate);
 
-    return () => setNumber(0); // Reset the number when the component unmounts
-  }, [endingNumber]); // Include endingNumber in the dependency array to react to changes
+    return () => {
+      setMemberCount(0);
+      setProjectCount(0);
+      setEstablishmentYear(2024);
+    }; // Reset the counts when the component unmounts
+  }, []); // Empty dependency array, as we don't need any dependencies here
 
   return (
     <div className="center-text">
@@ -56,24 +80,23 @@ function AboutEC(props) {
       <div className="container">
         <div className="box">
           <span>설립일</span>
-          Since 1991
+          Since {establishmentYear}
         </div>
         <div className="box">
           <span>멤버</span>
-          <div>
-            {number} 명
-          </div>
+          <div>{memberCount} 명</div>
         </div>
         <div className="box">
           <span>누적 프로젝트 수</span>
           <div>
-            {number} <b>+</b>
+            {projectCount} <b>+</b>
           </div>
         </div>
       </div>
     </div>
   );
 }
+
 
 function Identity() {
   return (
