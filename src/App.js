@@ -34,7 +34,7 @@ function Main() {
 function AboutEC() {
   return (
     <div class="center-text">
-      <h1>About EC</h1>
+      <h1>지금까지 EC는?</h1>
       <div class="container">
         <div class="box">
           <span>설립일</span>
@@ -53,6 +53,21 @@ function AboutEC() {
           </div> 
         </div>
       </div>
+      <h1>EC의 핵심 가치</h1>
+      <div class="container">
+        <div class="box-identity">
+          <img src="/Growth.png" alt="Growth"></img>
+          <p class="identityTitle">growth</p> 
+        </div>
+        <div class="box-identity">
+          <img src="/Sharing.png" alt="Sharing"></img>
+          <p class="identityTitle">Sharing</p>
+        </div>
+        <div class="box-identity">
+          <img src="/Cooperation.png" alt="Cooperation"></img>
+          <p class="identityTitle">Cooperation</p>
+        </div>
+        </div>
     </div>
   )
 }  
