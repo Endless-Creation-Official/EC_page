@@ -104,7 +104,6 @@ nav {
     color:rgb(0, 0, 0);
     width: inherit;
     height:calc(var(--vh, 1vh) * 100);
-
     letter-spacing: 2px;
 }
 .main-title {
@@ -117,7 +116,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 150px;
+    height: 180px;
     width: 80%;
     margin: 0 auto;
     /* 화면 전체 높이를 차지하도록 설정 */
@@ -144,6 +143,26 @@ nav {
 .box span {
     font-size: 25px;
     color: rgb(195, 194, 194);
+    font-weight: bold;
+}
+
+.box-identity {
+    display: flex;
+    font-size: 35px;
+    margin: 0 150px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.identityTitle {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
     font-weight: bold;
 }
 
@@ -185,8 +204,10 @@ nav {
     padding: 10px 20px;
 }
 
-.center-text {
+.center-text h1{
     text-align: center;
+    color: black;
+    font-size: 42px;
 }
 
 .text-box {
