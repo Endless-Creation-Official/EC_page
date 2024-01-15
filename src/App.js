@@ -28,7 +28,7 @@ function Main() {
         <h2 className="text-box">34기 모집 예정!</h2>
       </div>
     </div>
-  )
+  );
 }
 
 function AboutEC() {
@@ -54,7 +54,7 @@ function AboutEC() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
 function Identity() {
@@ -76,7 +76,45 @@ function Identity() {
         </div>
       </div>
     </div>
-  )
+  );
+}
+
+function Project() {
+  return (
+    <div className="center-text">
+      <h1>Project & Study</h1>
+      <div className="container">
+        <div className="box-project">
+          <img src="https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png" alt="MoyeoRun"></img>
+        </div>
+        <div className="box-project">
+          <img src="https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png" alt="Upgle"></img>
+        </div>
+        <div className="box-project">
+          <img src="https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png" alt="Gamp"></img>
+        </div>
+        <div className="box-project">
+          <img src="https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png" alt="Join"></img>
+        </div>
+      </div>
+      <label class="dropdown">
+
+        <div class="dd-button">
+          프로젝트 & 스터디 더보기
+        </div>
+
+        <input type="checkbox" class="dd-input" id="test" />
+
+        <ul class="dd-menu">
+          <li>31기</li>
+          <li>32기</li>
+          <li>33기</li>
+          <li class="divider"></li>
+        </ul>
+
+      </label>
+    </div>
+  );
 }
 
 function Recruiting() {
@@ -91,7 +129,7 @@ function Recruiting() {
         <li>워크샵</li>
       </ul>
     </div>
-  )
+  );
 }
 
 function App() {
@@ -101,6 +139,7 @@ function App() {
       <Main></Main>
       <AboutEC></AboutEC>
       <Identity></Identity>
+      <Project></Project>
       <Recruiting></Recruiting>
     </div>
   );
