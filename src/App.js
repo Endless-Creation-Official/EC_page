@@ -2,30 +2,30 @@ import './App.css';
 import logo from './ECmark.png'
 function Header() {
   return (
-  <header id="main-header">
-    <div class="header--container max-width-1200">
-      <i><a href="https://mainpageAeress~.com"><img src={logo} alt="ECmark" class="ECmark"/></a></i>
-      <nav>
-        <ul>
-          <li><a class="menu" href="http://www.HomepageAdress~.com">Home</a></li>
-          <li><a class="menu"href="http://www.IntroducingAdress~.com">About Us</a></li>
-          <li><a class="menu" href="http://www.MemberAdress~.com">Members</a></li>
-          <li><a class="menu" href="http://www.ProjectAdress~.com">Project</a></li>
-          <li><a class="menu" href="http://www.RecruitingPageAdress~.com">Recruit</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+    <header id="main-header">
+      <div className="header--container max-width-1200">
+        <i><a href="https://mainpageAeress~.com"><img src={logo} alt="ECmark" className="ECmark" /></a></i>
+        <nav>
+          <ul>
+            <li><a className="menu" href="http://www.HomepageAdress~.com">Home</a></li>
+            <li><a className="menu" href="http://www.IntroducingAdress~.com">About Us</a></li>
+            <li><a className="menu" href="http://www.MemberAdress~.com">Members</a></li>
+            <li><a className="menu" href="http://www.ProjectAdress~.com">Project</a></li>
+            <li><a className="menu" href="http://www.RecruitingPageAdress~.com">Recruit</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 }
 
 function Main() {
   return (
-    <div class="main-box">
-      <div class="main-title">
+    <div className="main-box">
+      <div className="main-title">
         <h1>성장하는 즐거움!</h1>
         <div id="element"><h1>Endless Creation</h1></div>
-        <h2 class="text-box">34기 모집 예정!</h2>
+        <h2 className="text-box">34기 모집 예정!</h2>
       </div>
     </div>
   )
@@ -33,49 +33,56 @@ function Main() {
 
 function AboutEC() {
   return (
-    <div class="center-text">
+    <div className="center-text">
       <h1>지금까지 EC는?</h1>
-      <div class="container">
-        <div class="box">
+      <div className="container">
+        <div className="box">
           <span>설립일</span>
           Since 1991
         </div>
-        <div class="box">
+        <div className="box">
           <span>멤버</span>
           <div>
             46 명
           </div>
         </div>
-        <div class="box">
+        <div className="box">
           <span>누적 프로젝트 수</span>
           <div>
             84 <b>+</b>
-          </div> 
+          </div>
         </div>
       </div>
-      <h1>EC의 핵심 가치</h1>
-      <div class="container">
-        <div class="box-identity">
-          <img src="/Growth.png" alt="Growth"></img>
-          <p class="identityTitle">growth</p> 
-        </div>
-        <div class="box-identity">
-          <img src="/Sharing.png" alt="Sharing"></img>
-          <p class="identityTitle">Sharing</p>
-        </div>
-        <div class="box-identity">
-          <img src="/Cooperation.png" alt="Cooperation"></img>
-          <p class="identityTitle">Cooperation</p>
-        </div>
-        </div>
     </div>
   )
-}  
+}
+
+function Identity() {
+  return (
+    <div className="center-text">
+      <h1>EC의 핵심 가치</h1>
+      <div className="container">
+        <div className="box-identity">
+          <img src="/Growth.png" alt="Growth"></img>
+          <p className="identityTitle">growth</p>
+        </div>
+        <div className="box-identity">
+          <img src="/Sharing.png" alt="Sharing"></img>
+          <p className="identityTitle">Sharing</p>
+        </div>
+        <div className="box-identity">
+          <img src="/Cooperation.png" alt="Cooperation"></img>
+          <p className="identityTitle">Cooperation</p>
+        </div>
+      </div>
+    </div>
+  )
+}
 
 function Recruiting() {
-  return(
-    <div class="recruiting">
-      <h2 class="center-text">Recruiting Schedule</h2>
+  return (
+    <div className="recruiting">
+      <h2 className="center-text">Recruiting Schedule</h2>
       <ul>
         <li>34기 서류 지원</li>
         <li>1차 합격 발표</li>
@@ -93,6 +100,7 @@ function App() {
       <Header></Header>
       <Main></Main>
       <AboutEC></AboutEC>
+      <Identity></Identity>
       <Recruiting></Recruiting>
     </div>
   );
