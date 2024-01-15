@@ -1,4 +1,5 @@
 import './App.css';
+import React, {useState, useEffect} from 'react';
 import logo from './ECmark.png'
 function Header() {
   return (
@@ -30,8 +31,25 @@ function Main() {
     </div>
   );
 }
+function AboutEC(props) {
+  const [number, setNumber] = useState(0);
+  const endingNumber = 150;
+  useEffect(() => {
+    let start;
+    const animate = (timestamp) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      if (progress < 1000) {
+        setNumber(Math.min(Math.floor((progress / 2000) * endingNumber), endingNumber));
+        requestAnimationFrame(animate);
+      }
+    };
 
-function AboutEC() {
+    requestAnimationFrame(animate);
+
+    return () => setNumber(0); // Reset the number when the component unmounts
+  }, [endingNumber]); // Include endingNumber in the dependency array to react to changes
+
   return (
     <div className="center-text">
       <h1>지금까지 EC는?</h1>
@@ -43,13 +61,13 @@ function AboutEC() {
         <div className="box">
           <span>멤버</span>
           <div>
-            46 명
+            {number} 명
           </div>
         </div>
         <div className="box">
           <span>누적 프로젝트 수</span>
           <div>
-            84 <b>+</b>
+            {number} <b>+</b>
           </div>
         </div>
       </div>
@@ -133,11 +151,12 @@ function Recruiting() {
 }
 
 function App() {
+  const nu=[100, 200];
   return (
     <div>
       <Header></Header>
       <Main></Main>
-      <AboutEC></AboutEC>
+      <AboutEC num={nu}></AboutEC>
       <Identity></Identity>
       <Project></Project>
       <Recruiting></Recruiting>
