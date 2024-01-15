@@ -47,14 +47,14 @@ function AboutEC(props) {
       if (!start) start = timestamp;
       const progress = timestamp - start;
 
-      const animatedMemberCount = Math.min(Math.floor((progress / 2000) * endingMemberCount), endingMemberCount);
-      const animatedProjectCount = Math.min(Math.floor((progress / 2000) * endingProjectCount), endingProjectCount);
+      const animatedMemberCount = Math.min(Math.floor((progress / 4000) * endingMemberCount), endingMemberCount);
+      const animatedProjectCount = Math.min(Math.floor((progress / 4000) * endingProjectCount), endingProjectCount);
 
       setMemberCount(animatedMemberCount);
       setProjectCount(animatedProjectCount);
 
       // Calculate establishment year progress to go from 2024 to 1991
-      const establishmentYearProgress = Math.min((progress / 2000), 1);
+      const establishmentYearProgress = Math.min((progress / 4000), 1);
       const animatedEstablishmentYear = 2024 - Math.floor(establishmentYearProgress * (2024 - startingEstablishmentYear));
       setEstablishmentYear(animatedEstablishmentYear);
 
