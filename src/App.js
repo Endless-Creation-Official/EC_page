@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect, useRef }from 'react';
 import logo from './ECmark.png'
 function Header() {
   return (
@@ -40,34 +40,50 @@ function AboutEC(props) {
   const endingProjectCount = 84;
   const startingEstablishmentYear = 1991;
 
+  const titleRef = useRef();
+
   useEffect(() => {
     let start;
+    let animationStarted = false;
 
-    const animate = (timestamp) => {
-      if (!start) start = timestamp;
-      const progress = timestamp - start;
+    const handleScroll = () => {
+      const titleElement = titleRef.current;
+      const titleRect = titleElement.getBoundingClientRect();
 
-      const animatedMemberCount = Math.min(Math.floor((progress / 4000) * endingMemberCount), endingMemberCount);
-      const animatedProjectCount = Math.min(Math.floor((progress / 4000) * endingProjectCount), endingProjectCount);
+      // Check if the title is visible on the screen
+      if (titleRect.top < window.innerHeight && titleRect.bottom >= 0 && !animationStarted) {
+        animationStarted = true;
 
-      setMemberCount(animatedMemberCount);
-      setProjectCount(animatedProjectCount);
+        const animate = (timestamp) => {
+          if (!start) start = timestamp;
+          const progress = timestamp - start;
 
-      // Calculate establishment year progress to go from 2024 to 1991
-      const establishmentYearProgress = Math.min((progress / 4000), 1);
-      const animatedEstablishmentYear = 2024 - Math.floor(establishmentYearProgress * (2024 - startingEstablishmentYear));
-      setEstablishmentYear(animatedEstablishmentYear);
+          const animatedMemberCount = Math.min(Math.floor((progress / 4000) * endingMemberCount), endingMemberCount);
+          const animatedProjectCount = Math.min(Math.floor((progress / 4000) * endingProjectCount), endingProjectCount);
 
-      if (animatedMemberCount === endingMemberCount && animatedProjectCount === endingProjectCount && animatedEstablishmentYear === startingEstablishmentYear) {
-        return; // Stop the animation when all counts reach their respective endings
+          setMemberCount(animatedMemberCount);
+          setProjectCount(animatedProjectCount);
+
+          // Calculate establishment year progress to go from 2024 to 1991
+          const establishmentYearProgress = Math.min((progress / 4000), 1);
+          const animatedEstablishmentYear = 2024 - Math.floor(establishmentYearProgress * (2024 - startingEstablishmentYear));
+          setEstablishmentYear(animatedEstablishmentYear);
+
+          if (animatedMemberCount === endingMemberCount && animatedProjectCount === endingProjectCount && animatedEstablishmentYear === startingEstablishmentYear) {
+            return; // Stop the animation when all counts reach their respective endings
+          }
+
+          requestAnimationFrame(animate);
+        };
+
+        requestAnimationFrame(animate);
       }
-
-      requestAnimationFrame(animate);
     };
 
-    requestAnimationFrame(animate);
+    window.addEventListener('scroll', handleScroll);
 
     return () => {
+      window.removeEventListener('scroll', handleScroll);
       setMemberCount(0);
       setProjectCount(0);
       setEstablishmentYear(2024);
@@ -76,7 +92,7 @@ function AboutEC(props) {
 
   return (
     <div id="" className="center-text">
-      <h1>지금까지 EC는?</h1>
+      <h1 ref={titleRef}>지금까지 EC는?</h1>
       <div className="container">
         <div className="box">
           <span>설립일</span>
