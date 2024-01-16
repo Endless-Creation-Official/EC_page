@@ -110,13 +110,15 @@ nav {
     height: calc(var(--vh, 1vh) * 100);
     letter-spacing: 2px;
 }
+
 #introducing-box {
     background-size: cover;
     background-position: center;
     color: rgb(255, 255, 255);
     width: inherit;
-    height: calc(var(--vh, 1vh) * 100);
+    margin: 200px;
 }
+
 .main-title {
     position: relative;
     left: 30%;
@@ -266,45 +268,30 @@ nav {
     height: auto;
 }
 
-.recruiting {
-    border: 1px solid black;
+.process {
+    /* 프로세스 컨테이너를 가운데 정렬하고 세로로 배치하는 스타일 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 150px;
+    padding: 30px;
     color: black;
-    text-align: center;
 }
 
-.recruiting ul {
+.process h1 {
+    /* 프로세스 제목 스타일 */
+    text-align: center;
+    /* 가운데 정렬 */
+    color: black;
+    font-size: 42px;
+}
+
+.process ul {
+    /* 프로세스 단계 목록 스타일 초기화 */
     padding: 0;
-    /* 내부 여백 제거 */
-    text-align: center;
-    /* 각 글자 가운데 정렬*/
     list-style: none;
-    /* 기본 목록 스타일 제거 */
-    display: flex;
-    /* 가로로 정렬하기 위해 Flexbox 레이아웃 사용 */
-    justify-content: center;
-    /* 가로 중앙 정렬 */
 }
 
-.recruiting ul {
-    padding: 0;
-    /* 내부 여백 제거 */
-    text-align: center;
-    /* 각 글자 가운데 정렬*/
-    list-style: none;
-    /* 기본 목록 스타일 제거 */
-    display: flex;
-    /* 가로로 정렬하기 위해 Flexbox 레이아웃 사용 */
-    justify-content: center;
-    /* 가로 중앙 정렬 */
-}
-
-.recruiting li {
-    border: 1px solid black;
-    font-size: 20px;
-    margin: 0 50px;
-    padding: 10px 20px;
-}
 
 .center-text h1 {
     text-align: center;
@@ -312,14 +299,156 @@ nav {
     font-size: 42px;
 }
 
+.process-table {
+    width: 50%;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.process-table th,
+.process-table td {
+    padding: 10px;
+    text-align: left;
+}
+
+.process-table th {
+    background-color: #f2f2f2;
+}
+
+
+.process-table tr:nth-child(even) {
+    background-color: #f5f5f5;
+    /* Apply a different background color for even rows */
+}
+
+
 .text-box {
     display: inline-block;
     border: 1px solid black;
     /* 박스 테두리 설정 */
     padding: 10px;
     /* 텍스트와 박스 사이 여백 설정 */
-    margin: 5px 0;
+    margin: 3px 0;
     /* 위아래 여백 설정 */
     border-radius: 10px;
     /* 가장자리를 둥글게 조절하는 속성 */
+    font-size: 25px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.container-faq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding-bottom: 100px;
+}
+
+.accordion .accordion-item {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordion-item button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    display: flex;
+    text-align: left;
+    width: 500px;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordion-title {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordion-content {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordion-content {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    color: black;
+}
+
+.accordion .accordion-content p {
+    font-size: 1rem;
+    font-weight: 450;
+    margin: 2em 0;
 }

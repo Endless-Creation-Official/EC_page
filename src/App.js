@@ -1,5 +1,5 @@
 import './App.css';
-import React, { useState, useEffect, useRef }from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import logo from './ECmark.png'
 function Header() {
   return (
@@ -154,19 +154,19 @@ function Project() {
           <img src="https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png" alt="Join"></img>
         </div>
       </div>
-      <label class="dropdown">
+      <label className="dropdown">
 
-        <div class="dd-button">
+        <div className="dd-button">
           프로젝트 & 스터디 더보기
         </div>
 
-        <input type="checkbox" class="dd-input" id="test" />
+        <input type="checkbox" className="dd-input" id="test" />
 
-        <ul class="dd-menu">
+        <ul className="dd-menu">
           <li>31기</li>
           <li>32기</li>
           <li>33기</li>
-          <li class="divider"></li>
+          <li className="divider"></li>
         </ul>
 
       </label>
@@ -174,23 +174,99 @@ function Project() {
   );
 }
 
-function Recruiting() {
+function Process() {
   return (
-    <div className="recruiting">
-      <h2 className="center-text">Recruiting Schedule</h2>
-      <ul>
-        <li>34기 서류 지원</li>
-        <li>1차 합격 발표</li>
-        <li>2차 면접</li>
-        <li>최종 합격 발표</li>
-        <li>워크샵</li>
-      </ul>
+    <div className="process">
+      <h1 className="center-text">34th process</h1>
+      <table className="process-table">
+        <colgroup>
+          <col style={{ width: '30%' }} />
+          <col style={{ width: '70%' }} />
+        </colgroup>
+        <tbody>
+          <tr>
+            <td>~ 2.15</td>
+            <td>34기 서류 지원</td>
+          </tr>
+          <tr>
+            <td>2.17</td>
+            <td>1차 합격 발표</td>
+          </tr>
+          <tr>
+            <td>2.18 ~ 2.20</td>
+            <td>2차 면접(대면)</td>
+          </tr>
+          <tr>
+            <td>2.22</td>
+            <td>최종 합격 발표</td>
+          </tr>
+          <tr>
+            <td>2.24</td>
+            <td>워크샵</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
 
+function FAQ() {
+  const [expandedIndex, setExpandedIndex] = useState(null);
+
+  const toggleAccordion = (index) => {
+    setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
+  };
+
+  return (
+    <div className="container-faq">
+      <h1>FAQ</h1>
+      <div className="accordion">
+        {faqData.map((item, index) => (
+          <div className="accordion-item" key={index}>
+            <button
+              id={`accordion-button-${index + 1}`}
+              aria-expanded={expandedIndex === index}
+              onClick={() => toggleAccordion(index)}
+            >
+              <span className="accordion-title">{item.question}</span>
+              <span className="icon" aria-hidden="true"></span>
+            </button>
+            <div className="accordion-content">
+              <p>{item.answer}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+const faqData = [
+  {
+    question: '자주하는 질문1',
+    answer: '설명',
+  },
+  {
+    question: '자주하는 질문2',
+    answer: '설명',
+  },
+  {
+    question: '자주하는 질문3',
+    answer: '설명',
+  },
+  {
+    question: '자주하는 질문4',
+    answer: '설명',
+  },
+  {
+    question: '자주하는 질문5',
+    answer: '설명',
+  },
+];
+
+
 function App() {
-  const nu=[100, 200];
+  const nu = [100, 200];
   return (
     <div>
       <Header></Header>
@@ -198,7 +274,8 @@ function App() {
       <AboutEC num={nu}></AboutEC>
       <Identity></Identity>
       <Project></Project>
-      <Recruiting></Recruiting>
+      <Process></Process>
+      <FAQ></FAQ>
     </div>
   );
 }
