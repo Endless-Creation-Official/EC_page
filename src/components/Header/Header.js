@@ -7,7 +7,6 @@ const navigationLinks = [
     { label: "Home", link: "http://www.HomepageAdress~.com" },
     { label: "About Us", link: "http://www.IntroducingAdress~.com" },
     { label: "Members", link: "http://www.MemberAdress~.com" },
-    { label: "Project", link: "http://www.ProjectAdress~.com" },
     { label: "Recruit", link: "http://www.RecruitingPageAdress~.com" },
 ];
 
