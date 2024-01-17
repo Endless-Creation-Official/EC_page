@@ -1,0 +1,52 @@
+/* Header.module.css */
+
+.headerContainer {
+    height: 6rem;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.3);
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 5px solid rgb(57, 184, 31);
+    width: 75%;
+    padding: 0 40px;
+}
+
+.headerContainer ul {
+    display: flex;
+    gap: 30px;
+    font-size: 27px;
+    font-weight: 700;
+    list-style: none;
+}
+
+.headerContainer li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.headerContainer li:hover a {
+    color: rgb(104, 205, 139);
+    transition: color 0.3s ease;
+}
+
+.ECmark {
+    width: 100px;
+    animation: rotate-scale-down 1.3s linear both;
+}
+
+@keyframes rotate-scale-down {
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        transform: scale(0.5) rotateZ(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}

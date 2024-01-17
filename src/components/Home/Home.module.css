@@ -1,0 +1,366 @@
+.mainbox {
+    display: flex;
+    align-items: center;
+    background-image: url(/public/backgroundimage.jpg);
+    background-size: cover;
+    height: calc(var(--vh, 1vh) * 100);
+    letter-spacing: 2px;
+}
+
+.maintitle {
+    position: relative;
+    left: 30%;
+}
+
+.textbox {
+    display: inline-block;
+    border: 1px solid black;
+    /* 박스 테두리 설정 */
+    padding: 10px;
+    /* 텍스트와 박스 사이 여백 설정 */
+    margin: 3px 0;
+    /* 위아래 여백 설정 */
+    border-radius: 10px;
+    /* 가장자리를 둥글게 조절하는 속성 */
+    font-size: 25px;
+}
+
+.identity h1 {
+    text-align: center;
+    color: black;
+    font-size: 42px;
+}
+
+.aboutec h1 {
+    text-align: center;
+    color: black;
+    font-size: 42px;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width: 80%;
+    margin: auto;
+    /* 화면 전체 높이를 차지하도록 설정 */
+}
+
+.box {
+    display: flex;
+    font-size: 35px;
+    width: 300px;
+    height: 80px;
+    padding: 15px 0;
+    background-color: rgb(54, 54, 54);
+    /* 박스 배경색 */
+    margin: 0 50px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.box span {
+    font-size: 25px;
+    color: rgb(195, 194, 194);
+    font-weight: bold;
+}
+
+#introducing-box {
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width: inherit;
+    margin: 200px;
+}
+
+.identity h1{
+    text-align: center;
+    color: black;
+    font-size: 42px;
+    margin-top: 150px;
+}
+
+.boxidentity {
+    display: flex;
+    font-size: 35px;
+    margin: 0 150px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.identityTitle {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+}
+
+.project h1 {
+    text-align: center;
+    color: black;
+    font-size: 42px;
+    margin-top: 150px;
+}
+
+.boxproject {
+    display: flex;
+    font-size: 35px;
+    margin: 20px 30px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.boxproject img {
+    width: 300px;
+    height: auto;
+}
+
+/* Dropdown */
+
+.dropdown {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ddbutton {
+    display: inline-block;
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding: 10px 30px 10px 20px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    color: black;
+}
+
+.ddbutton:hover {
+    background-color: #eeeeee;
+}
+
+
+.ddinput {
+    display: none;
+}
+
+.ddmenu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+.ddinput+.ddmenu {
+    display: none;
+}
+
+.ddinput:checked+.ddmenu {
+    display: block;
+}
+
+.ddmenu li {
+    padding: 10px 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: black;
+}
+
+.ddmenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.ddmenu li:hover {
+    background-color: #f6f6f6;
+}
+
+.ddmenu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+
+.ddmenu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.process {
+    /* 프로세스 컨테이너를 가운데 정렬하고 세로로 배치하는 스타일 */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 150px;
+    padding: 30px;
+    color: black;
+}
+
+.process h1 {
+    /* 프로세스 제목 스타일 */
+    text-align: center;
+    /* 가운데 정렬 */
+    color: black;
+    font-size: 42px;
+}
+
+.process ul {
+    /* 프로세스 단계 목록 스타일 초기화 */
+    padding: 0;
+    list-style: none;
+}
+
+.processtable {
+    width: 50%;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.processtable th,
+.processtable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.processtable th {
+    background-color: #f2f2f2;
+}
+
+
+.processtable tr:nth-child(even) {
+    background-color: #f5f5f5;
+    /* Apply a different background color for even rows */
+}
+
+
+
+.containerfaq {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
+    padding-bottom: 100px;
+}
+
+.accordion .accordionitem {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordionitem button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    display: flex;
+    text-align: left;
+    width: 500px;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordiontitle {
+    padding: 1em 1.5em 1em 0;
+}
+
+.accordion button .icon {
+    display: inline-block;
+    position: absolute;
+    top: 18px;
+    right: 0;
+    width: 22px;
+    height: 22px;
+    border: 1px solid;
+    border-radius: 22px;
+}
+
+.accordion button .icon::before {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 9px;
+    left: 5px;
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+}
+
+.accordion button .icon::after {
+    display: block;
+    position: absolute;
+    content: "";
+    top: 5px;
+    left: 9px;
+    width: 2px;
+    height: 10px;
+    background: currentColor;
+}
+
+.accordion button[aria-expanded=true] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordioncontent {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordioncontent {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    color: black;
+}
+
+.accordion .accordioncontent p {
+    font-size: 1rem;
+    font-weight: 450;
+    margin: 2em 0;
+}
