@@ -3,6 +3,7 @@
 .headerContainer {
     height: 6rem;
     position: fixed;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -13,6 +14,7 @@
     width: 75%;
     padding: 0 40px;
 }
+
 
 .headerContainer ul {
     display: flex;
@@ -34,6 +36,8 @@
 
 .ECmark {
     width: 100px;
+    height: auto;
+
     animation: rotate-scale-down 1.3s linear both;
 }
 
