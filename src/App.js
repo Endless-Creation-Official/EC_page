@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import Home from './components/Home/Home';
 import Aboutus from './components/Aboutus/Aboutus';
+import Members from './components/Members/Members';
 import Recruit from './components/Recruit/Recruit';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />}></Route>
         <Route path='/Aboutus' element={<Aboutus />}></Route>
+        <Route path='/Members' element={<Members />}></Route>
         <Route path='/Recruit' element={<Recruit />}></Route>
       </Routes>
     </Router>
