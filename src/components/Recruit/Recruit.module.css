@@ -1,17 +1,19 @@
+/* .container의 스타일 */
 .container {
     display: flex;
-    position: relative;
-    height: calc(var(--vh, 1vh) * 100);
-    margin-top: 480px;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    position: static;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
     text-align: center;
     color: black;
     letter-spacing: 2px;
     justify-content: center;
     flex-direction: column;
-    text-align: center;
     align-items: center;
+    height: calc(var(--vh, 1vh) * 100);
 }
 
 .container h1 {
@@ -44,13 +46,15 @@
 }
 
 .containerfaq {
+    position: static;
     display: flex;
-    margin: -300px 0 0;
+    position: relative;
     flex-direction: column;
     align-items: center;
     color: black;
     padding-bottom: 100px;
 }
+
 
 .accordion .accordionitem {
     border-bottom: 1px solid #e5e5e5;
