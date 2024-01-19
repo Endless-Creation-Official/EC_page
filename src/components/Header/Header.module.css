@@ -13,6 +13,7 @@
     border-bottom: 5px solid rgb(57, 184, 31);
     width: 75%;
     padding: 0 40px;
+    z-index: 1000;
 }
 
 
