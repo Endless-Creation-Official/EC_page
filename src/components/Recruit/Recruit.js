@@ -1,10 +1,10 @@
-import React, { useState }  from "react";
+import React, { useState } from "react";
 import styles from "./Recruit.module.css";
 import Header from "../Header/Header";
 
 
 function Together() {
-    return(
+    return (
         <div className={styles.container}>
             <h1>EC와 함께하고 싶다면?</h1>
             <button className={styles.button}>지원하러 가기</button>
@@ -20,24 +20,26 @@ function FAQ() {
     };
 
     return (
-        <div className={styles.containerfaq}>
-            <h1>FAQ</h1>
-            <div className={styles.accordion}>
-                {faqData.map((item, index) => (
-                    <div className={styles.accordionitem} key={index}>
-                        <button
-                            id={`accordion-button-${index + 1}`}
-                            aria-expanded={expandedIndex === index}
-                            onClick={() => toggleAccordion(index)}
-                        >
-                            <span className={styles.accordiontitle}>{item.question}</span>
-                            <span className={styles.icon} aria-hidden="true"></span>
-                        </button>
-                        <div className={styles.accordioncontent}>
-                            <p>{item.answer}</p>
+        <div>
+            <div className={styles.containerfaq}>
+                <h1>FAQ</h1>
+                <div className={styles.accordion}>
+                    {faqData.map((item, index) => (
+                        <div className={styles.accordionitem} key={index}>
+                            <button
+                                id={`accordion-button-${index + 1}`}
+                                aria-expanded={expandedIndex === index}
+                                onClick={() => toggleAccordion(index)}
+                            >
+                                <span className={styles.accordiontitle}>{item.question}</span>
+                                <span className={styles.icon} aria-hidden="true"></span>
+                            </button>
+                            <div className={styles.accordioncontent}>
+                                <p>{item.answer}</p>
+                            </div>
                         </div>
-                    </div>
-                ))}
+                    ))}
+                </div>
             </div>
         </div>
     );
