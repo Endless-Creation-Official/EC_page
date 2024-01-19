@@ -5,8 +5,8 @@ import Header from "../Header/Header";
 function Main() {
     return (
         <div className={styles.container}>
-            <div className={styles.photo}>
-                
+            <div className={styles.slider}>
+                <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" alt="example"></img>
             </div>
             <div className={styles.about}>
                 <div className={styles.head}>

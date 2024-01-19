@@ -1,7 +1,6 @@
 /* .container의 스타일 */
 .container {
     display: flex;
-    position: static;
     top: 0;
     right: 0;
     bottom: 0;
