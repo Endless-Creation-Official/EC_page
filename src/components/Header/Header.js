@@ -12,10 +12,14 @@ const navigationLinks = [
 ];
 
 function Header() {
+    const handleClick = () => {
+        window.scrollTo(0, 0);
+    };
+
     return (
         <div className={styles.headerContainer}>
             <i>
-                <Link to="/">
+                <Link to="/" onClick={handleClick}>
                     <img
                         src={process.env.PUBLIC_URL + '/ECmark.png'}
                         alt="ECmark"
@@ -27,7 +31,7 @@ function Header() {
                 <ul>
                     {navigationLinks.map(({ label, link }) => (
                         <li key={label}>
-                            <Link to={link}>{label}</Link>
+                            <Link to={link} onClick={handleClick}>{label}</Link>
                         </li>
                     ))}
                 </ul>
