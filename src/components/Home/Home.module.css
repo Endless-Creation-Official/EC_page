@@ -25,18 +25,23 @@
     font-size: 25px;
 }
 
-.identity h1 {
-    text-align: center;
-    color: black;
-    font-size: 42px;
-}
+
 
 .aboutec h1 {
     text-align: center;
     color: black;
     font-size: 42px;
-    margin-top: 100px;
+    margin-top: 250px;
 }
+
+
+.identity h1 {
+    text-align: center;
+    color: black;
+    font-size: 42px;
+    margin-top: 250px;
+}
+
 
 .container {
     display: flex;
@@ -80,12 +85,6 @@
     margin: 200px;
 }
 
-.identity h1{
-    text-align: center;
-    color: black;
-    font-size: 42px;
-    margin-top: 150px;
-}
 
 .boxidentity {
     display: flex;
@@ -111,7 +110,7 @@
     text-align: center;
     color: black;
     font-size: 42px;
-    margin-top: 150px;
+    margin-top: 250px;
 }
 
 .boxproject {
@@ -214,6 +213,7 @@
     flex-direction: column;
     align-items: center;
     margin: 150px;
+    margin-top: 250px;
     padding: 30px;
     color: black;
 }
@@ -255,14 +255,13 @@
     /* Apply a different background color for even rows */
 }
 
-
-
 .containerfaq {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: black;
     padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .accordion .accordionitem {
