@@ -1,13 +1,19 @@
 import React, { useState }  from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./Recruit.module.css";
 import Header from "../Header/Header";
 
 
+
 function Together() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('../../components/Apply/Apply');
+    }
     return(
         <div className={styles.container}>
             <h1>EC와 함께하고 싶다면?</h1>
-            <button className={styles.button}>지원하러 가기</button>
+            <button className={styles.button} onClick = {handleClick}>지원하러 가기</button>
         </div>
     )
 }
