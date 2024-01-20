@@ -1,5 +1,5 @@
 import styles from "./Home.module.css";
-import Header from "../Header/Header"
+import Header from "../Header/Header";
 import React, { useState, useEffect, useRef } from 'react';
 
 function Main() {

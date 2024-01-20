@@ -34,11 +34,48 @@ function Main() {
         </div>
     )
 }
+
+function Operator() {
+    return (
+        <div className={styles.operatorContainer}>
+            <div className={styles.operator}>
+                <h2>EC 34th</h2>
+                <h1>운영진</h1>
+            </div>
+            <div className={styles.operatorYH}>
+                <div className={styles.profileImage}>
+                    dd
+                </div>
+                <div className={styles.introduction}>
+                    hi
+                </div>
+            </div>
+            <div className={styles.operatorKT}>
+                <div className={styles.profileImage}>
+                    dd
+                </div>
+                <div className={styles.introduction}>
+                    hi
+                </div>
+            </div>
+            <div className={styles.operatorJH}>
+                <div className={styles.profileImage}>
+                    dd
+                </div>
+                <div className={styles.introduction}>
+                    hi
+                </div>
+            </div>
+        </div>
+    )
+}
+
 function Aboutus() {
     return (
         <div>
             <Header></Header>
             <Main></Main>
+            <Operator></Operator>
         </div>
     )
 }
