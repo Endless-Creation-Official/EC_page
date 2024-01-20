@@ -1,17 +1,17 @@
 .container {
     position: relative;
-    width: min(1200px, 100%);
-    height: calc(var(--vh, 1vh) * 100);
+    width: min(1400px, 77%);
+    height: calc(var(--vh, 1vh) * 90);
     margin: auto;
-}
+    margin-top: 6rem;
+  }
 
 .slider {
     position: absolute;
     width: 40%;
     top: 50%;
     transform: translateY(-50%);
-    align-items: center;
-    /* 수직 가운데 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
 }
 
 .about {
