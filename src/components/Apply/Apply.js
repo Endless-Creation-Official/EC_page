@@ -1,13 +1,22 @@
 //Apply.js
-import React from "react";
+import React, {useEffect, useState} from "react";
 import Header from "../Header/Header";
 import styles from "./Apply.module.css";
+import fs from "fs";
 
 
-function FormBox() {
+function FormBox(questionNumber) {
+
+    const [questions, setQuestions] = useState([]);
+    fs.promises.readFile('./Question.txt', "utf-8");
+    
+    
+
+
     return(
         <div className={styles.form}>
-            <p className={styles.question}>질문 1</p>
+            <p className={styles.question}>{questionNumber}. </p>
+            <p className={styles.question}>{questionText}</p>
             <input type="text" className={styles.textbox}></input>
         </div>
     )
@@ -20,6 +29,9 @@ function Main() {
         <FormBox></FormBox>
         <FormBox></FormBox>
         <FormBox></FormBox>
+        <FormBox></FormBox>
+        <FormBox></FormBox>
+        
     </div>
     )
 }
