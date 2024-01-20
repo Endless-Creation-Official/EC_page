@@ -1,3 +1,5 @@
+/* Aboutus */
+
 .container {
     position: relative;
     width: min(1400px, 77%);
@@ -126,6 +128,12 @@
     display: flex;
     align-items: center;
 }
+
+@media screen and (max-width: 1600px) {
+    .introduction {
+      width: 60%;
+    }
+  }
 
 .introduction p {
     margin: 0;
