@@ -1,7 +1,7 @@
 //Apply.js
 import React from "react";
 import Header from "../Header/Header";
-import styles from "./Apply.moudle.css";
+import styles from "./Apply.module.css";
 
 function Main() {
     return (

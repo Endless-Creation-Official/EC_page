@@ -8,7 +8,7 @@ import Header from "../Header/Header";
 function Together() {
     const navigate = useNavigate();
     const handleClick = () => {
-        navigate('../../components/Apply/Apply');
+        navigate('/Apply');
     }
     return(
         <div className={styles.container}>
