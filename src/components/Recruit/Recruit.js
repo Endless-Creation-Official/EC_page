@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Recruit.module.css";
 import Header from "../Header/Header";
 
+
+
 function Together() {
     const navigate = useNavigate();
     const handleClick = () => {
@@ -18,7 +20,6 @@ function Together() {
 
 function FAQ() {
     const [expandedIndex, setExpandedIndex] = useState(null);
-
     const toggleAccordion = (index) => {
         setExpandedIndex((prevIndex) => (prevIndex === index ? null : index));
     };
