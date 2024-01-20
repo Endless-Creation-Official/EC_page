@@ -4,14 +4,15 @@
     height: calc(var(--vh, 1vh) * 90);
     margin: auto;
     margin-top: 6rem;
-  }
+}
 
 .slider {
     position: absolute;
     width: 40%;
     top: 50%;
     transform: translateY(-50%);
-    align-items: center; /* 수직 가운데 정렬 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
 }
 
 .about {
@@ -44,4 +45,80 @@
     margin: 10px 0;
     word-break: keep-all;
     line-height: 1.5;
+}
+
+.operatorContainer {
+    position: relative;
+    width: min(1400px, 77%);
+    height: calc(var(--vh, 1vh) * 70);
+    margin: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(103, 89, 89);
+}
+
+.operator {
+    position: absolute; /* 상대적인 위치를 기준으로 절대적인 위치 설정 */
+    width: 550px; /* 부모 요소의 너비에 대한 비율로 크기 설정 */
+    height: 100px;
+    top: 15%; /* 부모 요소의 상단에서 50% 떨어진 위치로 설정 */
+    left: 50%; /* 부모 요소의 왼쪽에서 50% 떨어진 위치로 설정 */
+    transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
+    background-color: #ffcc00; /* 배경색 추가 (예시) */
+    text-align: center;
+}
+
+.operator h2{
+    font-size: 30px;
+    margin: 0;
+}
+
+.operator h1{
+    font-size: 50px;
+    margin: 0;
+}
+
+.operatorYH {
+    position: absolute; /* 상대적인 위치를 기준으로 절대적인 위치 설정 */
+    width: 550px; /* 부모 요소의 너비에 대한 비율로 크기 설정 */
+    height: 30%;
+    top: 45%; /* 부모 요소의 상단에서 50% 떨어진 위치로 설정 */
+    left: 25%; /* 부모 요소의 왼쪽에서 50% 떨어진 위치로 설정 */
+    transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
+    background-color: #ffcc00; /* 배경색 추가 (예시) */
+    display: flex;
+    gap: 36px;
+}
+
+.operatorKT {
+    position: absolute; /* 상대적인 위치를 기준으로 절대적인 위치 설정 */
+    width: 550px; /* 부모 요소의 너비에 대한 비율로 크기 설정 */
+    height: 30%;
+    top: 45%; /* 부모 요소의 상단에서 50% 떨어진 위치로 설정 */
+    left: 75%; /* 부모 요소의 왼쪽에서 50% 떨어진 위치로 설정 */
+    transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
+    background-color: #ffcc00; /* 배경색 추가 (예시) */
+    display: flex;
+    gap: 36px;
+}
+
+.operatorJH {
+    position: absolute; /* 상대적인 위치를 기준으로 절대적인 위치 설정 */
+    width: 550px; /* 부모 요소의 너비에 대한 비율로 크기 설정 */
+    height: 30%;
+    top: 80%; /* 부모 요소의 상단에서 50% 떨어진 위치로 설정 */
+    left: 25%; /* 부모 요소의 왼쪽에서 50% 떨어진 위치로 설정 */
+    transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
+    background-color: #ffcc00; /* 배경색 추가 (예시) */
+    display: flex;
+    gap: 30px;
+}
+
+.profileImage {
+    width: 120px;
+    height: 120px;
+}
+
+.introduction {
+    width: 400px;
 }
