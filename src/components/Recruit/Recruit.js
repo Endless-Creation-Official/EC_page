@@ -3,8 +3,6 @@ import { useNavigate } from "react-router-dom";
 import styles from "./Recruit.module.css";
 import Header from "../Header/Header";
 
-
-
 function Together() {
     const navigate = useNavigate();
     const handleClick = () => {
