@@ -1,9 +1,4 @@
-body {
-    display:flex;
-    align-items: center;
-    flex-direction: column;
-    width:900px;
-}
+
 .main {
     width:80%;
     margin-top: 6rem;
