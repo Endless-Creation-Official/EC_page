@@ -3,15 +3,17 @@
     width: min(1200px, 100%);
     height: calc(var(--vh, 1vh) * 100);
     margin: auto;
-  }
+}
 
 .slider {
     position: absolute;
     width: 40%;
     top: 50%;
     transform: translateY(-50%);
-    align-items: center; /* 수직 가운데 정렬 */
+    align-items: center;
+    /* 수직 가운데 정렬 */
 }
+
 .about {
     width: 55%;
     position: absolute;
