@@ -91,7 +91,7 @@
     transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
     background-color: #ffffff; /* 배경색 추가 (예시) */
     display: flex;
-    gap: 36px;
+    gap: 25px;
 }
 
 .operatorKT {
@@ -103,7 +103,7 @@
     transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
     background-color: white; /* 배경색 추가 (예시) */
     display: flex;
-    gap: 36px;
+    gap: 25px;
 }
 
 .operatorJH {
@@ -115,9 +115,16 @@
     transform: translate(-50%, -50%); /* 요소의 중심을 기준으로 위치 조정 */
     background-color: white; /* 배경색 추가 (예시) */
     display: flex;
-    gap: 30px;
+    gap: 25px;
 }
 
+.name {
+    position: absolute;
+    left: 25%;
+    top: 3%;
+    color: black;
+    font-size: 25px;
+}
 
 .introduction {
     margin-top: 40px;
