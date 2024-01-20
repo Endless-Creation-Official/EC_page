@@ -1,28 +1,46 @@
 
 .main {
-    position: fixed;
+    position: relative;
     left: 5%;
     display:flex;
     align-items: center;
     flex-direction: column;
     background-size:cover;
     width:90%;
-    margin-top: 7rem;
+    margin-top: 10rem;
     color:black;
-    background-color: rgb(42, 222, 18);
+    background-color: rgb(225, 241, 224);
+    border:5px solid rgb(51, 178, 82);
+    border-radius: 1rem
 }
+
 .form{
-align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: static;
+    left:10%;
     box-sizing: border-box;
-    margin:auto;
-    width:85%;
-    background-color: black;
-    border: 10px solid red;
+    margin-bottom: 2rem;
+    width:90%;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid black;
 }
 .question{
-    background-color: rgb(255, 255, 255);
+    margin-top:10px;
+    margin-bottom:10px;
+    background-color: rgb(76, 98, 134);
+    text-align: left;
 }
 .textbox{
+    vertical-align: top;
     width: 80%;
+    height: calc(var(--vh, 1vh) * 60);
+    margin-top:3rem;
+    margin-bottom: 3rem;
+    border:5px solid rgb(0, 0, 0);
+    border-radius: 2rem;
+}
+input::placeholder{
+    color:gray;
 }

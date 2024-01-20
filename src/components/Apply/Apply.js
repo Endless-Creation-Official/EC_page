@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../Header/Header";
 import styles from "./Apply.module.css";
 
+
 function FormBox() {
     return(
         <div className={styles.form}>
@@ -16,6 +17,8 @@ function Main() {
     return (
     <div className={styles.main}>
         <h1 className={styles.title}>34기 지원서 </h1>
+        <FormBox></FormBox>
+        <FormBox></FormBox>
         <FormBox></FormBox>
     </div>
     )
