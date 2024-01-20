@@ -1,14 +1,24 @@
 
 .main {
-    width:80%;
-    margin-top: 6rem;
+    position: fixed;
+    left: 5%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    background-size:cover;
+    width:90%;
+    margin-top: 7rem;
     color:black;
-    background-color: rgb(255, 162, 0);
+    background-color: rgb(42, 222, 18);
 }
 .form{
-    width:100%;
-    background-color: blue;
-    padding: 10px, rgb(255, 255, 255);
+align-items: center;
+    position: static;
+    box-sizing: border-box;
+    margin:auto;
+    width:85%;
+    background-color: black;
+    border: 10px solid red;
 }
 .question{
     background-color: rgb(255, 255, 255);
