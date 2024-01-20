@@ -1,5 +1,6 @@
 .mainbox {
     display: flex;
+    flex-direction: row;
     align-items: center;
     background-image: url(/public/backgroundimage.jpg);
     background-size: cover;
