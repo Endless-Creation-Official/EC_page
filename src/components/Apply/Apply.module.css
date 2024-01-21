@@ -23,14 +23,14 @@
     box-sizing: border-box;
     margin-bottom: 2rem;
     width:90%;
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(169, 205, 162);
     border: 5px solid black;
 }
 .question{
+    width:80%;
+    align-items: center;
     margin-top:10px;
-    margin-bottom:10px;
-    background-color: rgb(76, 98, 134);
-    text-align: left;
+    font-size:x-large;
 }
 .textbox{
     vertical-align: top;
