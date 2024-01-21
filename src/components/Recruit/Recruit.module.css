@@ -35,8 +35,15 @@
     transition: background-color 0.3s ease;
     /* 배경색 변경 시 부드럽게 전환 */
     border-radius: 15px;
-    width: 250px; /* 원하는 너비 값 설정 */
-    height: 60px; /* 원하는 높이 값 설정 */
+    width: 250px;
+    /* 원하는 너비 값 설정 */
+    height: 60px;
+    /* 원하는 높이 값 설정 */
+    font-family : 'SOYOMapleBoldTTF';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 6px;
 }
 
 .button:hover {

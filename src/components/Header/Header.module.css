@@ -7,11 +7,11 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.9);
     justify-content: space-between;
     align-items: center;
     border-bottom: 5px solid rgb(57, 184, 31);
-    width: 75%;
+    width: min(1200px, 90%);
     padding: 0 40px;
     z-index: 1000;
 }
@@ -38,8 +38,83 @@
 .ECmark {
     width: 100px;
     height: auto;
-
     animation: rotate-scale-down 1.3s linear both;
+}
+
+@media (min-width: 900px) {
+    .hamburger {
+        display: none;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+/* 900px 미만일 때의 스타일 */
+@media (max-width: 900px) {
+    .ECmark {
+        width: 70px;
+    }
+
+    .headerContainer {
+        height: 5rem;
+        padding: 0 10px;
+        border-bottom: 3px solid rgb(57, 184, 31);
+    }
+
+    nav {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+        width: 30px;
+        flex-direction: column;
+        padding: 8px;
+    }
+
+    .hamburger div {
+        height: 3px;
+        background-color: black;
+        margin: 3px 0;
+        transition: 0.3s;
+    }
+
+    .one {
+        width: 50%;
+    }
+
+    .two {
+        width: 100%;
+    }
+
+    .three {
+        width: 75%;
+    }
+    .sidebar {
+        position: fixed;
+        right: -55%;
+        top: 5.2rem;
+        width: 30%;
+        height: 100vh;
+        transition: right 0.3s ease-in-out;
+        background-color: rgb(208, 244, 225);
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .sidebar.open {
+        right: -5%;
+    }
+    
+
+    .sidebar li {
+        list-style: none;
+        font-size: 20px;
+        text-align: right;
+    }
 }
 
 @keyframes rotate-scale-down {
