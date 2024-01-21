@@ -43,39 +43,60 @@ function Operator() {
                 <h2>EC 34th</h2>
                 <h1>운영진</h1>
             </div>
-            <div className={styles.operatorYH}>
-                <div className={styles.name}>
-                    <b>강영훈</b> / 회장
+            <section className={styles.operators}>
+                <div className={styles.operatorcard}>
+                    <img src="https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/7180cbff-52d3-4e30-ac6a-66bf4506b454/KakaoTalk_20220225_110523300.jpg?id=692dc0ca-ab0a-423a-b612-2d02afe58f99&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705824000000&signature=khi5fuAYVFUfA-p6Yy5-8tMzQte1iFsvwzgsRKYQ914&downloadName=KakaoTalk_20220225_110523300.jpg" className={styles.profilePhoto} alt="YH"></img>
+                    <div className={styles.centent}>
+                        <div className={styles.name}>
+                            <b>강영훈</b> / 회장
+                        </div>
+                        <div className={styles.introduction}>
+                            <p>
+                                ISTP이구요 좀 게으른 편입니다
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img src="https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/7180cbff-52d3-4e30-ac6a-66bf4506b454/KakaoTalk_20220225_110523300.jpg?id=692dc0ca-ab0a-423a-b612-2d02afe58f99&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705824000000&signature=khi5fuAYVFUfA-p6Yy5-8tMzQte1iFsvwzgsRKYQ914&downloadName=KakaoTalk_20220225_110523300.jpg" className={styles.profilePhoto} alt="YH"></img>
-                <div className={styles.introduction}>
-                    <p>
-                        ISTP이구요 좀 게으른 편입니다
-                    </p>
+                <div className={styles.operatorcard}>
+                    <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F74219185-16d7-4a89-9818-37331851ad35%2F20220528_132044.jpg?table=block&id=c0563a0b-40e7-4b94-ac31-ba610582d7d9&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&width=2000&userId=4841d5f9-c7e0-48fe-80fc-fc9539bf4a87&cache=v2" className={styles.profilePhoto} alt="KT"></img>
+                    <div className={styles.centent}>
+                        <div className={styles.name}>
+                            <b>김경태</b> / 부회장
+                        </div>
+                        <div className={styles.introduction}>
+                            <p>
+                                ENTJ 활발그자체
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.operatorKT}>
-                <div className={styles.name}>
-                    <b>김경태</b> / 부회장
+                <div className={styles.operatorcard}>
+                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="YH"></img>
+                    <div className={styles.centent}>
+                        <div className={styles.name}>
+                            <b>박진홍</b> / 학술부장
+                        </div>
+                        <div className={styles.introduction}>
+                            <p>
+                                안녕하세요!
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <img src="https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F74219185-16d7-4a89-9818-37331851ad35%2F20220528_132044.jpg?table=block&id=c0563a0b-40e7-4b94-ac31-ba610582d7d9&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&width=2000&userId=4841d5f9-c7e0-48fe-80fc-fc9539bf4a87&cache=v2" className={styles.profilePhoto} alt="KT"></img>
-                <div className={styles.introduction}>
-                    <p>
-                        ENTJ 활발그자체<br></br>
-                    </p>
+                <div className={styles.operatorcard}>
+                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="KT"></img>
+                    <div className={styles.centent}>
+                        <div className={styles.name}>
+                            <b>김병호</b> / 홍보부장
+                        </div>
+                        <div className={styles.introduction}>
+                            <p>
+                                안녕하세요~!
+                            </p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div className={styles.operatorJH}>
-                <div className={styles.name}>
-                    <b>박진홍</b> / 학술부장
-                </div>
-                <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="JH"></img>
-                <div className={styles.introduction}>
-                    <p>
-                        안녕하세요!
-                    </p>
-                </div>
-            </div>
+            </section>
         </div>
     )
 }
