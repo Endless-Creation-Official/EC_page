@@ -45,27 +45,30 @@ input::placeholder{
     color:gray;
 }
 
+
+.ButtonContainer {
+    position: relative;
+    width:25%;
+    margin: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .admitButton {
+    position: relative;
     color:black;
     font-size:x-large;
     border:5px solid rgb(0, 0, 0);
     border-radius: 1rem;
-    width: 30%;
-    height: 50px;
-    position: relative;
-    width:30%;
-    left:35%;
-    margin-top: 3rem;
-    margin-bottom: 6rem;
+    width:80%;
+    height: 30%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
   }
   
   .admitButton:hover{
-    position: relative;
-    width:35%;
-    height: 60px;
-    left:32.5%;
     background-color: rgb(118, 197, 94);
   }
