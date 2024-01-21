@@ -27,14 +27,14 @@
     border: 5px solid black;
 }
 .question{
-    width:80%;
+    width:90%;
     align-items: center;
     margin-top:10px;
     font-size:x-large;
 }
 .textbox{
     vertical-align: top;
-    width: 80%;
+    width: 90%;
     height: calc(var(--vh, 1vh) * 60);
     margin-top:3rem;
     margin-bottom: 3rem;
@@ -44,3 +44,28 @@
 input::placeholder{
     color:gray;
 }
+
+.admitButton {
+    color:black;
+    font-size:x-large;
+    border:5px solid rgb(0, 0, 0);
+    border-radius: 1rem;
+    width: 30%;
+    height: 50px;
+    position: relative;
+    width:30%;
+    left:35%;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .admitButton:hover{
+    position: relative;
+    width:35%;
+    height: 60px;
+    left:32.5%;
+    background-color: rgb(118, 197, 94);
+  }
