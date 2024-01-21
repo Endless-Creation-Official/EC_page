@@ -33,15 +33,19 @@ function Main() {
 function Admit() {
     //useState와 Onclick evevt로 제출할 때 서버에 내용 전달하기: 나중에 추가예정
     return(
-        <div className={styles.admitButton}>제출하기</div>
+      <div className={styles.ButtonContainer}>
+        <div className={styles.admitButton}>
+          제출하기
+        </div>
+      </div>
     )
 }
 
 function Apply() {
   return (
     <div>
-      <Header />
-      <Main />
+      <Header></Header>
+      <Main></Main>
       <Admit></Admit>
     </div>
   );
