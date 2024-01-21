@@ -142,18 +142,22 @@
 }
 
 .ddbutton {
+    font-size: x-large;
+    width:300px;
+    height: 3rem;
     display: inline-block;
     border: 1px solid gray;
-    border-radius: 4px;
+    border-radius: 1rem;
     padding: 10px 30px 10px 20px;
     background-color: #ffffff;
     cursor: pointer;
     white-space: nowrap;
     color: black;
+    background-color: rgb(113, 184, 119);
 }
 
 .ddbutton:hover {
-    background-color: #eeeeee;
+    background-color: #51b73d;
 }
 
 
