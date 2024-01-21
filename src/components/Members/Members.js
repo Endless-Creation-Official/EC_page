@@ -59,39 +59,11 @@ function Main() {
             description: "19학번이고 25살입니다"
         },
         {
-            name: "황인서",
-            term: "31기",
-            skills: ["Front-end", "Mobile", "React"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/5c6ca3b4-f10d-4fd2-995a-0d8229a368e1/KakaoTalk_Photo_2022-02-27-01-13-44.jpeg?id=f2b4ec5f-c273-4f46-8d3d-f493f1b26996&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=JWQLbNs5u2stDwl5L_g9ki3BhvgOyCUuBllADn2vorU&downloadName=KakaoTalk_Photo_2022-02-27-01-13-44.jpeg",
-            description: "주변을 긍정적으로 보려 노력하는 편이랍니다."
-        },
-        {
             name: "유환욱",
             term: "28기",
             skills: ["Front-end", "Web", "React"],
             image: "/profile.png",
             description: "매순간 최선을 다하는 사람이 되고 싶습니다!"
-        },
-        {
-            name: "오정진",
-            term: "28기",
-            skills: ["Front-end", "Web", "React"],
-            image: "https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F575ef771-cba5-42bc-92a2-170b116b6aab%2FIMG_0061.heic?table=block&id=a314c906-0c78-4474-a994-fd69afe19d68&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&width=2000&userId=4841d5f9-c7e0-48fe-80fc-fc9539bf4a87&cache=v2",
-            description: "INFJ랑 ENFJ랑 왔다갔다 합니다 :)"
-        },
-        {
-            name: "김윤성",
-            term: "28기",
-            skills: ["Game", "Unreal"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/5db2c1dd-3f91-4325-8615-118ba122a4a1/Untitled.png?id=f5f7b79c-08cf-450e-82c2-4f2274b75e6e&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=rd-_2DngKsqscb_o1mvdFQNRT6skEVYgu5VNEusT6QU&downloadName=Untitled.png",
-            description: "김윤성, INFP 에요!"
-        },
-        {
-            name: "엄태욱",
-            term: "28기",
-            skills: ["Java", "Spring", "Back-end"],
-            image: "/profile.png",
-            description: ""
         },
         {
             name: "조재영",
@@ -101,25 +73,11 @@ function Main() {
             description: "이름은 조재영이고, 99년생 입니다.."
         },
         {
-            name: "허동준",
-            term: "28기",
-            skills: ["Android","Mobile"],
-            image: "/profile.png",
-            description: ""
-        },
-        {
             name: "김현종",
             term: "29기",
             skills: ["Game"],
             image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/db158569-1f90-4f07-9075-0d389dfd1763/profile.jpg?id=ecc2c6ac-7da5-41d8-a087-d48b9b8368bd&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=pouAFxHWrDe7tR7n7ICECh75Ivau_FrqWGa_HLZLE_I&downloadName=profile.jpg",
             description: "시도해 보고 싶은 것이 많습니다!"
-        },
-        {
-            name: "마경미",
-            term: "29기",
-            skills: ["iOS","React"],
-            image: "/profile.png",
-            description: "집에만 있습니다 ... 꺼내지 말아주세여.."
         },
         {
             name: "오예진",
@@ -206,20 +164,6 @@ function Main() {
             description: "지독한 앱등이라 맥북 사용 중입니다.!"
         },
         {
-            name: "송지원",
-            term: "32기",
-            skills: ["Android","Mobile"],
-            image: "/profile.png",
-            description: "istj입니다~ 친해지고 싶어요"
-        },
-        {
-            name: "오승태",
-            term: "32기",
-            skills: ["React"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/36854c3b-c824-44d8-adf9-9e594b1abd91/20220308_155122.jpg?id=beef741b-4256-45a7-9956-9783641147b1&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=yZJumv6ExNSHs4NEKGsorBi8zQPAm4aKN45eSe_UiLw&downloadName=20220308_155122.jpg",
-            description: "INTP 게으름뱅이 입니다."
-        },
-        {
             name: "이동준",
             term: "32기",
             skills: ["Spring"],
@@ -227,32 +171,11 @@ function Main() {
             description: "성장하는 것에 관심이 많습니다!"
         },
         {
-            name: "이종훈",
-            term: "32기",
-            skills: ["Web","Java","Spring"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/0505f16c-7fd2-4160-b0ce-04689562aaa4/KakaoTalk_20190826_072826074_09.jpg?id=8d305c12-5587-4b59-8734-43813d09e9a9&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=AwqTikSd4-1E74LS33j6RASbHdQbxXoi4I0PMDk3Xeo&downloadName=KakaoTalk_20190826_072826074_09.jpg",
-            description: "부족한 점들이 많지만 최선을 다하고 싶습니다!"
-        },
-        {
-            name: "이채은",
-            term: "32기",
-            skills: ["Web","Mobile","Java"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/a01a9032-9234-453e-8f36-8d8e4cc9a173/1646015174634.jpg?id=48f1fd7d-af8e-4cfd-a7b2-d981d81ff8f2&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=nLvfI2gKwddzvGr2QRvKVHkmTCM40AS5vrFx3jHZi4A&downloadName=1646015174634.jpg",
-            description: "화이팅!"
-        },
-        {
             name: "이현화",
             term: "32기",
             skills: ["Mobile","iOS"],
             image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/25617cbe-63b1-44ba-9543-e087993ab345/2.jpg?id=cff00d03-85f2-463b-b280-203a6ef167e3&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=VlwidkhPwtzX49lODmA89JrIBIA7XEYQutGHys4kWRs&downloadName=2.jpg",
             description: "반갑습니당! 동아리 활동 열심히 할게요~~"
-        },
-        {
-            name: "이효린",
-            term: "32기",
-            skills: ["AI","Java"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/6f1c9d2c-ce3e-48cd-91db-5902d1681f95/61D36B62-047E-4DAE-AADB-B7B4FD214488.jpeg?id=c7060a15-f609-4846-bbae-f4c620878fb3&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=DbCfJ3HQk6UXyfXzmS-Ifa7bwiPC_snmjGNtt9O3Pnw&downloadName=61D36B62-047E-4DAE-AADB-B7B4FD214488.jpeg",
-            description: "편하게 대해주시면 좋을 것 같습니다 ㅎ"
         },
         {
             name: "정지원",
