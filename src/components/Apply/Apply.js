@@ -1,37 +1,42 @@
-//Apply.js
-import React from "react";
+// Apply.js
+import React, { useState } from "react";
 import Header from "../Header/Header";
 import styles from "./Apply.module.css";
+import { questions } from "./Question" // Import the questions object
 
-
-function FormBox() {
-    return(
-        <div className={styles.form}>
-            <p className={styles.question}>질문 1</p>
-            <input type="text" className={styles.textbox}></input>
+function FormBox({ questionNumber, questionText }) {
+  return (
+    <div className={styles.form}>
+        <div className={styles.question}>
+            <h3 className={styles.question}>{`질문 ${questionNumber}`}</h3>
+            <p>{questionText}</p>
         </div>
-    )
+      <input type="text" className={styles.textbox}></input>
+    </div>
+  );
 }
 
 function Main() {
-    return (
+  // Map through the questions object and create FormBox for each question
+  const formBoxes = Object.entries(questions).map(([key, value]) => (
+    <FormBox key={key} questionNumber={key} questionText={value} />
+  ));
+
+  return (
     <div className={styles.main}>
-        <h1 className={styles.title}>34기 지원서 </h1>
-        <FormBox></FormBox>
-        <FormBox></FormBox>
-        <FormBox></FormBox>
+      <h1 className={styles.title}>34기 지원서 </h1>
+      {formBoxes}
     </div>
-    )
+  );
 }
 
 function Apply() {
-
-    return( 
+  return (
     <div>
-        <Header></Header>
-        <Main></Main>
+      <Header />
+      <Main />
     </div>
-    )
+  );
 }
 
-export default Apply; 
+export default Apply;
