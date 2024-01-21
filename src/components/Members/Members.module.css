@@ -1,6 +1,6 @@
 .container {
     position: relative;
-    width: min(1100px, 77%);
+    width: min(1100px, 90%);
     height: calc(var(--vh, 1vh) * 90);
     margin: auto;
     margin-top: 6rem;
@@ -29,6 +29,19 @@
     grid-gap: 20px;
     margin-bottom: 30px;
 }
+
+@media (max-width: 900px) {
+    .membercontents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .membercontents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
 
 .membercard {
     color: black;
@@ -66,13 +79,15 @@
 .profilephoto {
     border-radius: 50%;
     width: 70px;
-    height: 70px; /* 동일한 높이 설정 */
-    object-fit: cover; /* object-fit을 사용하여 강제로 원형으로 자름 */
+    height: 70px;
+    /* 동일한 높이 설정 */
+    object-fit: cover;
+    /* object-fit을 사용하여 강제로 원형으로 자름 */
 }
 
 .description {
     color: black;
     padding-top: 10px;
-    font-size: 16px;    
+    font-size: 16px;
     word-wrap: break-word;
 }
