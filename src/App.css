@@ -12,8 +12,22 @@ body {
     /* 전체 배경색을 검정색으로 설정 */
     color: rgb(255, 255, 255);
     /* 글자색을 흰색으로 설정 */
+    font-family : 'SOYOMapleBoldTTF';
 }
 
 h1 {
     font-size: 50px;
+}
+
+@font-face {
+    font-family: 'TAEBAEKmilkyway';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/TAEBAEKmilkyway.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'SOYOMapleBoldTTF';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
 }
