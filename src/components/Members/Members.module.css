@@ -40,6 +40,14 @@
     .membercontents {
         grid-template-columns: repeat(1, 1fr);
     }
+
+    .membertitle {
+        padding: 20px 0;
+    }
+
+    .container {
+        margin-top: 5rem;
+    }
 }
 
 

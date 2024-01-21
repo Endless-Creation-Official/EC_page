@@ -4,12 +4,14 @@
     align-items: center;
     background-image: url(/public/backgroundimage.jpg);
     background-size: cover;
+    width: 100%;
+    margin: auto;
     height: calc(var(--vh, 1vh) * 100);
     letter-spacing: 2px;
 }
 
 .maintitle {
-    position: relative;
+    position: absolute;
     left: 25%;
 }
 
@@ -142,22 +144,23 @@
 }
 
 .ddbutton {
-    font-size: x-large;
-    width:300px;
-    height: 3rem;
-    display: inline-block;
-    border: 1px solid gray;
+    font-size: 20px;
+    display: -webkit-inline-flex;
+    
     border-radius: 1rem;
-    padding: 10px 30px 10px 20px;
+    padding: 10px 20px;
+    padding-top: 5px;
     background-color: #ffffff;
     cursor: pointer;
     white-space: nowrap;
-    color: black;
-    background-color: rgb(113, 184, 119);
+    color: rgb(58, 58, 58);
+    background-color: rgb(167, 208, 171);
+    text-align: center;
+    justify-content: center;
 }
 
 .ddbutton:hover {
-    background-color: #51b73d;
+    background-color: #ddeada;
 }
 
 
