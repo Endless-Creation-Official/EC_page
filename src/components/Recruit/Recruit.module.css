@@ -1,23 +1,32 @@
 /* .container의 스타일 */
 .container {
     display: flex;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin: auto;
     text-align: center;
     color: black;
-    letter-spacing: 2px;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+
+.firstContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     height: calc(var(--vh, 1vh) * 100);
 }
 
 .container h1 {
     font-size: 70px;
     color: rgb(11, 159, 75);
+}
+
+@media (max-width: 900px) {
+    .container h1 {
+        font-size: 35px;
+    }
 }
 
 .button {
@@ -46,22 +55,41 @@
     padding-top: 6px;
 }
 
+@media (max-width: 900px) {
+    .button {
+        font-size: 18px;
+        width: 145px;
+        /* 원하는 너비 값 설정 */
+        height: 40px;
+        /* 원하는 높이 값 설정 */
+    }
+}
+
 .button:hover {
     background-color: #33b929;
     /* 마우스를 올렸을 때 배경색 변경 */
 }
 
 .containerfaq {
-    position: static;
     display: flex;
+    width: min(1200px, 90%);
     position: relative;
     flex-direction: column;
     align-items: center;
     color: black;
-    padding-bottom: 100px;
+    margin: 70px 0;
 }
 
+.accordion {
+    width: 40%;
+    font-family : 'SOYOMapleBoldTTF';
+}
 
+@media (max-width: 600px) {
+    .accordion {
+        width: 80%;
+    }
+}
 .accordion .accordionitem {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -73,7 +101,7 @@
 .accordion button {
     display: flex;
     text-align: left;
-    width: 500px;
+    width: 100%;
     color: #7288a2;
     font-size: 1.15rem;
     font-weight: 400;
@@ -97,6 +125,7 @@
 
 .accordion button .accordiontitle {
     padding: 1em 1.5em 1em 0;
+    font-family : 'SOYOMapleBoldTTF';
 }
 
 
