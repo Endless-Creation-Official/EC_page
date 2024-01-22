@@ -1,7 +1,6 @@
 .container {
     position: relative;
     width: min(1100px, 90%);
-    height: calc(var(--vh, 1vh) * 90);
     margin: auto;
     margin-top: 6rem;
     flex-direction: column;
