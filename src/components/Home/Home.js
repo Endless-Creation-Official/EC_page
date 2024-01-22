@@ -4,12 +4,20 @@ import React, { useState, useEffect, useRef } from 'react';
 
 function Main() {
     return (
-        <div className={styles.mainbox}>
+        <div className={styles.container}>
             <div className={styles.maintitle}>
-                <h1>성장하는 즐거움!</h1>
-                <div><h1>Endless Creation</h1></div>
-                <h2 className={styles.textbox}>34기 모집 예정!</h2>
+                <div className={styles.title}>
+                    <h1>성장하는 즐거움!</h1>
+                    <h1>Endless Creation</h1>
+                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
+                </div>
             </div>
+
+            <AboutEC></AboutEC>
+            <Identity></Identity>
+            <Project></Project>
+            <Process></Process>
+            <FAQ></FAQ>
         </div>
     );
 }
@@ -75,7 +83,7 @@ function AboutEC(props) {
     return (
         <div className={styles.aboutec}>
             <h1 ref={titleRef}>지금까지 EC는?</h1>
-            <div className={styles.container}>
+            <div className={styles.aboutecContainer}>
                 <div className={styles.box}>
                     <span>설립일</span>
                     Since {establishmentYear}
@@ -99,18 +107,24 @@ function Identity() {
     return (
         <div className={styles.identity}>
             <h1>EC의 핵심 가치</h1>
-            <div className={styles.container}>
+            <div className={styles.identityContainer}>
                 <div className={styles.boxidentity}>
-                    <img src="/Growth.png" alt="Growth"></img>
-                    <p className={styles.identityTitle}>growth</p>
+                    <div className={styles.identityTitle}>
+                        <img src="/Growth.png" className={styles.identityImage} alt="Growth"></img>
+                    </div>
+                    <div className={styles.identityTitle}>growth</div>
                 </div>
                 <div className={styles.boxidentity}>
-                    <img src="/Sharing.png" alt="Sharing"></img>
-                    <p className={styles.identityTitle}>Sharing</p>
+                    <div className={styles.identityTitle}>
+                        <img src="/Sharing.png" className={styles.identityImage} alt="Sharing"></img>
+                    </div>
+                    <div className={styles.identityTitle}>Sharing</div>
                 </div>
                 <div className={styles.boxidentity}>
-                    <img src="/Cooperation.png" alt="Cooperation"></img>
-                    <p className={styles.identityTitle}>Cooperation</p>
+                    <div className={styles.identityTitle}>
+                        <img src="/Cooperation.png" className={styles.identityImage} alt="Cooperation"></img>
+                    </div>
+                    <div className={styles.identityTitle}>Cooperation</div>
                 </div>
             </div>
         </div>
@@ -121,7 +135,7 @@ function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-            <div className={styles.container}>
+            <div className={styles.projectContainer}>
                 <div className={styles.boxproject}>
                     <img src="https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png" alt="MoyeoRun"></img>
                 </div>
@@ -160,8 +174,8 @@ function Process() {
             <h1>34th process</h1>
             <table className={styles.processtable}>
                 <colgroup>
-                    <col style={{ width: '30%' }} />
-                    <col style={{ width: '70%' }} />
+                    <col className={styles.col1} />
+                    <col className={styles.col2} />
                 </colgroup>
                 <tbody>
                     <tr>
@@ -245,16 +259,11 @@ const faqData = [
 ];
 
 function Home() {
-    return(
+    return (
         <div>
-        <Header></Header>
-        <Main></Main>
-        <AboutEC></AboutEC>
-        <Identity></Identity>
-        <Project></Project>
-        <Process></Process>
-        <FAQ></FAQ>
-      </div>
+            <Header></Header>
+            <Main></Main>
+        </div>
     )
 }
 

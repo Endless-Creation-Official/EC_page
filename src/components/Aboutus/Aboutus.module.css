@@ -111,11 +111,9 @@
     .aboutContainer {
         width: 90%
     }
-
     .about {
         position: relative;
     }
-
     .about p {
         line-height: 2;
     }
@@ -127,7 +125,6 @@
     .slider {
         display: none;
     }
-
     .about {
         text-align: center;
         width: 100%;
@@ -147,8 +144,7 @@
     display: grid;
     gap: 20px;
     margin: auto;
-    grid-template-columns: 1fr 3fr;
-    /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
+    grid-template-columns: 1fr 3fr; /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
 }
 
 .centent {
