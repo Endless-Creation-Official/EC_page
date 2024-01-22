@@ -3,9 +3,17 @@
 .container {
     position: relative;
     width: min(1250px, 77%);
-    height: calc(var(--vh, 1vh) * 90);
     margin: auto;
     margin-top: 6rem;
+}
+
+.aboutContainer {
+    position: relative;
+    width: 100;
+    height: calc(var(--vh, 1vh) * 90);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 .slider {
@@ -52,8 +60,7 @@
 .operatorContainer {
     position: relative;
     width: min(1400px, 100%);
-    margin: auto;
-    margin-top: 100px;
+    margin: 120px auto;
     display: flex;
     flex-direction: column;
 }
@@ -64,13 +71,13 @@
     text-align: center;
 }
 
-.operator h2{
+.operator h2 {
     font-size: 30px;
     margin: 0;
     color: black;
 }
 
-.operator h1{
+.operator h1 {
     font-size: 50px;
     margin: 0;
     color: #51de74;
@@ -78,27 +85,66 @@
 
 .operators {
     position: relative;
-    width: 85%;
+    width: 100%;
     margin: auto;
-    max-width: 100%; /* 추가: 최대 너비를 100%로 설정하여 화면 크기에 따라 조절됨 */
+    max-width: 100%;
+    /* 추가: 최대 너비를 100%로 설정하여 화면 크기에 따라 조절됨 */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
-    margin-bottom: 30px;
+}
+
+/* 1300px 미만일 때의 스타일 */
+@media (max-width: 1300px) {
+    .aboutusImage {
+        width: 100%;
+    }
 }
 
 /* 900px 미만일 때의 스타일 */
 @media (max-width: 900px) {
+    .container {
+        width: 100%;
+        position: relative;
+    }
+
+    .aboutContainer {
+        width: 90%
+    }
+    .about {
+        position: relative;
+    }
+    .about p {
+        line-height: 2;
+    }
+
+    .hiddenP {
+        display: none;
+    }
+
+    .slider {
+        display: none;
+    }
+    .about {
+        text-align: center;
+        width: 100%;
+    }
+
     .operators {
-        grid-template-columns: 1fr; /* 한 열로 변경 */
-        text-align: center; /* 텍스트 등 가운데 정렬을 위해 추가 */
+        grid-template-columns: 1fr;
+        /* 한 열로 변경 */
+    }
+
+    .operatorContainer {
+        width: 90%;
     }
 }
 
 .operatorcard {
-    display: flex;
+    display: grid;
     gap: 20px;
     margin: auto;
+    grid-template-columns: 1fr 3fr; /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
 }
 
 .centent {
@@ -114,23 +160,23 @@
 
 .introduction {
     height: 90px;
-    width: 350px;
+    width: 1fr;
     border-radius: 30px;
     background-color: #addeba;
     display: flex;
     align-items: center;
+    text-align: left;
 }
 
 .introduction p {
     margin: 0;
-    width: 400px;
     padding: 5% 5%;
     font-size: 20px;
     word-wrap: break-word;
 }
 
 .profilePhoto {
-    width: 120px;
-    height: 120px;
+    width: 100%;
+    height: auto;
     border-radius: 50%;
 }

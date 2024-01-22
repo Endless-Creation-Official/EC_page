@@ -83,7 +83,7 @@ function Main() {
             name: "오예진",
             term: "29기",
             skills: ["React"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/8f0836ce-cca1-4d46-a392-f97044bb60ba/Untitled.png?id=c8953f42-79c0-4532-9538-5dbc38e62b2d&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=ahkRDyVsnA9b4hZPQWr58IfGvYLWd4lI_VeebJ32p1s&downloadName=Untitled.png",
+            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/8f0836ce-cca1-4d46-a392-f97044bb60ba/Untitled.png?id=c8953f42-79c0-4532-9538-5dbc38e62b2d&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705996800000&signature=dmprI2Tqew7XF5OHOypLg4VoTt9zTuwlimcQSlGJ4Pc&downloadName=Untitled.png",
             description: ""
         },
         {
@@ -97,7 +97,7 @@ function Main() {
             name: "김상현",
             term: "30기",
             skills: ["iOS"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/e5d831a1-d182-4858-9a74-b4e35b5d1ba8/IMG_1564.jpeg?id=73a788d2-6b91-478b-a880-a60da16a0f42&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=WdKTPHRe9_3Q--KfDL9ATMvHyI__us0VbtMjtwQU7i8&downloadName=IMG_1564.jpeg",
+            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/e5d831a1-d182-4858-9a74-b4e35b5d1ba8/IMG_1564.jpeg?id=73a788d2-6b91-478b-a880-a60da16a0f42&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705996800000&signature=OszZ3iYP1KuwUZqfWBEjMcdJl_ZztkcwtTcCeGqasiY&downloadName=IMG_1564.jpeg",
             description: "ESTJ / 성격이 활발한 편입니다!"
         },
         {
@@ -139,7 +139,7 @@ function Main() {
             name: "김정효",
             term: "32기",
             skills: ["Game","Unity"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/3fac8c6a-3763-49f6-a329-3dbc36359276/Untitled.png?id=551b1684-b89b-46a0-be02-98b5f87b5e17&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=fhMNoWndVZqj__CxK-QC5swQ86ad4e8_e7Rr5lMZcQQ&downloadName=Untitled.png",
+            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/3fac8c6a-3763-49f6-a329-3dbc36359276/Untitled.png?id=551b1684-b89b-46a0-be02-98b5f87b5e17&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705996800000&signature=Bv0mCxQxkdPgTkq-nojBKQyh2hXqHQSpqjMaZ0Sy92U&downloadName=Untitled.png",
             description: "둥글둥글한 성격이에요!"
         },
         {
@@ -160,7 +160,7 @@ function Main() {
             name: "백수진",
             term: "32기",
             skills: ["iOS","Game","Java"],
-            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/6708a4a0-84d0-40fe-9d64-0680892ed666/D218263E-6429-4D83-ACB5-8C676F079C17.png?id=191d09eb-e49e-414a-bdd0-c125329b9011&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705860000000&signature=OM2uKAONircQ3rXePxk39z0jINeR5M99XZjJjPpJy9k&downloadName=D218263E-6429-4D83-ACB5-8C676F079C17.png",
+            image: "https://file.notion.so/f/f/e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4/6708a4a0-84d0-40fe-9d64-0680892ed666/D218263E-6429-4D83-ACB5-8C676F079C17.png?id=191d09eb-e49e-414a-bdd0-c125329b9011&table=block&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&expirationTimestamp=1705996800000&signature=jVWzpRu0UiXo5IUd2Dt6GOOtZhYJZsZZF4BmgoJGee4&downloadName=D218263E-6429-4D83-ACB5-8C676F079C17.png",
             description: "지독한 앱등이라 맥북 사용 중입니다.!"
         },
         {
