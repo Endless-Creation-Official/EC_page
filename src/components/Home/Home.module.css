@@ -1,34 +1,74 @@
-.mainbox {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-image: url(/public/backgroundimage.jpg);
-    background-size: cover;
+.container {
     width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: auto;
-    height: calc(var(--vh, 1vh) * 100);
-    letter-spacing: 2px;
 }
 
 .maintitle {
-    position: absolute;
-    left: 25%;
+    background-image: url(/public/backgroundimage.jpg);
+    background-size: cover;
+    width: 100%;
+    height: calc(var(--vh, 1vh) * 100);
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.title {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+
+.title h1 {
+    margin: 2% 0;
 }
 
 .textbox {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border: 1px solid black;
     /* 박스 테두리 설정 */
     padding: 10px;
     /* 텍스트와 박스 사이 여백 설정 */
-    margin: 3px 0;
-    /* 위아래 여백 설정 */
     border-radius: 10px;
     /* 가장자리를 둥글게 조절하는 속성 */
     font-size: 25px;
+    width: fit-content;
 }
 
+@media (max-width: 900px) {
+    .title {
+        width: 70%;
+    }
 
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .textbox {
+        font-size: 20px;
+    }
+}
+
+.aboutec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .aboutec h1 {
     text-align: center;
@@ -38,34 +78,19 @@
 }
 
 
-.identity h1 {
-    text-align: center;
-    color: black;
-    font-size: 42px;
-    margin-top: 250px;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-    width: 80%;
-    margin: auto;
-    /* 화면 전체 높이를 차지하도록 설정 */
+.aboutecContainer {
+    width: min(1200px, 90%);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
 }
 
 .box {
     display: flex;
     font-size: 35px;
-    width: 300px;
-    height: 80px;
     padding: 15px 0;
     background-color: rgb(54, 54, 54);
     /* 박스 배경색 */
-    margin: 0 50px;
-    /* 간격 설정 */
     justify-content: center;
     /* 수평 중앙 정렬 */
     align-items: center;
@@ -80,6 +105,47 @@
     font-weight: bold;
 }
 
+
+@media (max-width: 900px) {
+    .aboutec h1 {
+        font-size: 30px;
+    }
+
+    .aboutecContainer {
+        width: 90%;
+        grid-gap: 5%;
+    }
+
+    .box {
+        font-size: 15px;
+    }
+
+    .box span {
+        font-size: 13px;
+    }
+}
+
+.identity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.identity h1 {
+    text-align: center;
+    color: black;
+    font-size: 42px;
+    margin-top: 250px;
+}
+
+.identityContainer {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2%;
+}
+
 #introducing-box {
     background-size: cover;
     background-position: center;
@@ -90,23 +156,72 @@
 
 
 .boxidentity {
-    display: flex;
+    display: grid;
+    width: 100%;
     font-size: 35px;
-    margin: 0 150px;
     /* 간격 설정 */
     justify-content: center;
     /* 수평 중앙 정렬 */
-    align-items: center;
-    /* 수직 중앙 정렬 */
     border-radius: 20px;
-    flex-direction: column;
+    grid-template-columns: 1fr;
+    align-items: flex-end;
 }
 
-.identityTitle {
-    margin-top: 20px;
+.identityImage {
+    width: 25%;
+}
+
+.identityTitle:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.identityTitle:nth-child(2) {
+    position: relative;
+    margin: auto;
     font-size: 20px;
     color: black;
     font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .identity h1 {
+        font-size: 30px;
+    }
+
+    .identityTitle {
+        font-size: 15px;
+    }
+
+    .identityContainer {
+        width: 75%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxidentity {
+        width: 100%;
+    }
+
+    .identityTitle:nth-child(2) {
+        font-size: 17px;
+    }
+
+    .boxidentity:nth-child(3) {
+        position: relative;
+        transform: translate(-50%, -50%);
+        left: 105%;
+        top: 70%;
+    }
+
+    .identityImage {
+        width: 80px;
+    }
+}
+
+.project {
+    width: min(1200px, 90%);
 }
 
 .project h1 {
@@ -116,10 +231,38 @@
     margin-top: 250px;
 }
 
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1%;
+}
+
+.boxproject img {
+    max-width: 100%;
+    max-height: auto;
+}
+
+@media (max-width: 900px) {
+    .project h1 {
+        font-size: 30px;
+    }
+    .projectContainer {
+        display: flex;
+        flex-direction: column;
+    }
+    .boxproject {
+        display: flex;
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+
 .boxproject {
     display: flex;
+    width: 100%;
     font-size: 35px;
-    margin: 20px 30px;
     /* 간격 설정 */
     justify-content: center;
     /* 수평 중앙 정렬 */
@@ -146,7 +289,7 @@
 .ddbutton {
     font-size: 20px;
     display: -webkit-inline-flex;
-    
+
     border-radius: 1rem;
     padding: 10px 20px;
     padding-top: 5px;
@@ -216,13 +359,11 @@
 }
 
 .process {
-    /* 프로세스 컨테이너를 가운데 정렬하고 세로로 배치하는 스타일 */
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 150px;
     margin-top: 250px;
-    padding: 30px;
     color: black;
 }
 
@@ -234,6 +375,13 @@
     font-size: 42px;
 }
 
+@media (max-width: 900px) {
+    .process h1 {
+        font-size: 30px;
+    }
+}
+
+
 .process ul {
     /* 프로세스 단계 목록 스타일 초기화 */
     padding: 0;
@@ -241,10 +389,27 @@
 }
 
 .processtable {
-    width: 50%;
+    width: 40%;
     border-collapse: collapse;
     font-size: 20px;
     font-weight: bold;
+}
+
+.col1 {
+    width: 30%;
+}
+.col2 {
+    width: 70%;
+}
+
+@media (max-width: 900px) {
+    .containerfaq h1 {
+        font-size: 30px;
+    }
+    .processtable {
+        width: 77%;
+        font-size: 14px;
+    }
 }
 
 .processtable th,
@@ -265,11 +430,23 @@
 
 .containerfaq {
     display: flex;
+    width: min(1200px, 90%);
+    position: relative;
     flex-direction: column;
     align-items: center;
     color: black;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    margin: 70px 0;
+}
+
+.accordion {
+    width: 50%;
+    font-family: 'SOYOMapleBoldTTF';
+}
+
+@media (max-width: 600px) {
+    .accordion {
+        width: 80%;
+    }
 }
 
 .accordion .accordionitem {
@@ -283,7 +460,7 @@
 .accordion button {
     display: flex;
     text-align: left;
-    width: 500px;
+    width: 100%;
     color: #7288a2;
     font-size: 1.15rem;
     font-weight: 400;
@@ -307,7 +484,10 @@
 
 .accordion button .accordiontitle {
     padding: 1em 1.5em 1em 0;
+    font-family: 'SOYOMapleBoldTTF';
 }
+
+
 
 .accordion button[aria-expanded=true] {
     color: #03b5d2;
