@@ -1,12 +1,11 @@
 
 .main {
     position: relative;
-    width:min(1250px, 79.5%);
+    width:min(1250px, 100%);
     margin:auto;
+    display:flex;
     align-items: center;
     flex-direction: column;
-    background-size:cover;
-    width:79.5%;
     margin-top: 10rem;
     color:black;
     background-color: rgb(255, 255, 255);
@@ -16,10 +15,10 @@
 
 .form{
     display: flex;
-    margin:auto;
     flex-direction: column;
     align-items: center;
-    position: flex;
+    position: static;
+    left:10%;
     box-sizing: border-box;
     margin-bottom: 2rem;
     width:90%;
