@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    background-color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.3);
     backdrop-filter: blur(10px);
     justify-content: space-between;
     align-items: center;
@@ -55,7 +55,7 @@
 @media (max-width: 900px) {
     .ECmark {
         width: 70px;
-        margin: 0 5%;
+        margin: 0 10%;
     }
 
     .headerContainer {

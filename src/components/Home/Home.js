@@ -7,9 +7,8 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.maintitle}>
                 <div className={styles.title}>
-                    <h1>성장하는 즐거움!</h1>
                     <h1>Endless Creation</h1>
-                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
+                    <h2 className={styles.textbox}>34기 모집 중!</h2>
                 </div>
             </div>
 
