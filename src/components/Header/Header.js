@@ -1,6 +1,6 @@
 // Header.js
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Header.module.css';
 
@@ -15,20 +15,34 @@ function Header() {
     const [isHamburgerOpen, setHamburgerOpen] = useState(false);
 
     const handleToggle = () => {
-        // handleToggle이 눌리면
-        setHamburgerOpen((prevIsHamburgerOpen) => {
-            // 새로운 상태값 반환
-            return !prevIsHamburgerOpen;
-        });
+        setHamburgerOpen((prevIsHamburgerOpen) => !prevIsHamburgerOpen);
     };
 
-    // 네비게이션을 눌렀을 때
     const handleNavigationClick = () => {
-        // 스크롤 맨 위로 하고
         window.scrollTo(0, 0);
-        // 햄버거 상태를 닫음
         setHamburgerOpen(false);
     };
+
+    useEffect(() => {
+        const handleDocumentClick = (event) => {
+            // Check if the click occurred outside the hamburger menu
+            if (
+                isHamburgerOpen &&
+                event.target.closest(`.${styles.sidebar}`) === null &&
+                event.target.closest(`.${styles.hamburger}`) === null
+            ) {
+                setHamburgerOpen(false);
+            }
+        };
+
+        // Add event listener when the component mounts
+        document.addEventListener('click', handleDocumentClick);
+
+        // Remove event listener when the component unmounts
+        return () => {
+            document.removeEventListener('click', handleDocumentClick);
+        };
+    }, [isHamburgerOpen]);
     return (
         <div className={styles.headerContainer}>
             <i>

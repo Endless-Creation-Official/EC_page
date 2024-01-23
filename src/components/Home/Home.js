@@ -26,7 +26,7 @@ function AboutEC(props) {
     const [memberCount, setMemberCount] = useState(0);
     const [projectCount, setProjectCount] = useState(0);
     const [establishmentYear, setEstablishmentYear] = useState(2024);
-    const endingMemberCount = 46;
+    const endingMemberCount = 37;
     const endingProjectCount = 84;
     const startingEstablishmentYear = 1991;
 
