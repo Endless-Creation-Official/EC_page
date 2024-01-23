@@ -10,6 +10,7 @@
 .maintitle {
     background-image: url(/public/backgroundimage.jpg);
     background-size: cover;
+    background-position: 60%;
     width: 100%;
     height: calc(var(--vh, 1vh) * 100);
     letter-spacing: 2px;
@@ -21,10 +22,11 @@
 
 
 .title {
+    color: white;
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 70%;
 }
 
 
@@ -32,19 +34,11 @@
 
 .title h1 {
     margin: 2% 0;
+    font-size: 70px;
 }
 
 .textbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid black;
-    /* 박스 테두리 설정 */
-    padding: 10px;
-    /* 텍스트와 박스 사이 여백 설정 */
-    border-radius: 10px;
-    /* 가장자리를 둥글게 조절하는 속성 */
-    font-size: 25px;
+    font-size: 30px;
     width: fit-content;
 }
 
