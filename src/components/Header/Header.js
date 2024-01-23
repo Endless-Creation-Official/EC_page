@@ -48,7 +48,7 @@ function Header() {
             <i>
                 <Link to="/" onClick={handleNavigationClick}>
                     <img
-                        src={"https://www.notion.so/image/https%3A%2F%2Fprod-files-secure.s3.us-west-2.amazonaws.com%2Fe7a0fe55-4730-44f6-9a1f-5dbe79c25ad4%2F07b1fe48-9912-448b-97c7-d60d16452672%2FKakaoTalk_Photo_2022-02-10-20-24-02.png?table=block&id=d476bc43-df1d-4cf8-8e29-b8411c726e61&spaceId=e7a0fe55-4730-44f6-9a1f-5dbe79c25ad4&width=250&userId=4841d5f9-c7e0-48fe-80fc-fc9539bf4a87&cache=v2"}
+                        src={"/ECmark.png"}
                         alt="ECmark"
                         className={styles.ECmark}
                     />
