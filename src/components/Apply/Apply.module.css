@@ -7,7 +7,7 @@
     align-items: center;
     flex-direction: column;
 
-    margin-top: 10rem;
+    margin-top: 9rem;
     color:black;
     background-color: rgb(255, 255, 255);
     border:5px solid rgb(0, 0, 0);
@@ -23,6 +23,7 @@
     width:90%;
     background-color: rgb(169, 205, 162);
     border: 5px solid black;
+    border-radius: 1.5rem;
 }
 .question{
     width:90%;
@@ -73,7 +74,12 @@ input::placeholder{
 
   @media (max-width: 1300px) {
     .main {
+        margin-top: 6rem;
         width:95%;
+        border:none;
+    }
+    .title {
+        font-size: 30px;
     }
     .question h1{
         font-size: 20px;
