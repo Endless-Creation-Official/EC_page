@@ -27,6 +27,7 @@ function Footer() {
                 <div className={styles.contact}>
                     <b>Contact Us</b>
                     <div className={styles.contactImageContainer}>
+                        <img src="/notion.png" alt="notion" className={styles.contactImage}></img>
                         <img src="/slack.png" alt="slack" className={styles.contactImage}></img>
                         <img src="/github.png" alt="github" className={styles.contactImage}></img>
                         <img src="/instagram.png" alt="instagram" className={styles.contactImage}></img>
