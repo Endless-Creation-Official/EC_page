@@ -68,7 +68,7 @@ function Operator() {
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                ENTJ 활발그자체
+                                함께 성장해요! 질문은 언제나 환영입니다
                             </p>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ function Operator() {
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                안녕하세요~!
+                                안되면 되게하라
                             </p>
                         </div>
                     </div>

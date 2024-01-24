@@ -15,7 +15,7 @@ function Footer(){
             <div className={styles.wraper}>
 
                 <div className={styles.madeMember}>
-                    <b>made & degined</b>
+                    <b>made & designed</b>
                     <ul>
                         <li>32기 강영훈</li>
                         <li>32기 김경태</li>
