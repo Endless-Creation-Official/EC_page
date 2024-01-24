@@ -1,7 +1,22 @@
 footer{
+    padding-top: 3rem;
+    background-color: rgb(59, 170, 82);
+    font-size:17px;
+    letter-spacing: 0.7px;
+}
+.wraper{
     display:flex;
     flex-direction:row;
     justify-content: space-between;
-    background-color: rgb(0, 0, 0);
 }
 
+li a{
+    text-decoration: none;
+    color:aliceblue
+}
+.madeMember{
+    margin-left: 4rem;
+}
+.contact{
+    margin-right: 4rem;
+}
