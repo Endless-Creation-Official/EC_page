@@ -40,9 +40,9 @@ function Main() {
         {
             name: "김경태",
             term: "32기",
-            skills: ["Web", "Mobile"],
+            skills: ["Web", "Back-end", "Machine Learning", "AI"],
             image: "members_photo/김경태.png",
-            description: "ENTJ 활발그자체"
+            description: "성장하는 즐거움!"
         },
         {
             name: "박진홍",
@@ -148,20 +148,6 @@ function Main() {
             skills: ["Game"],
             image: "/profile.png",
             description: "왠만하면 금방 친해지는 스타일입니다!"
-        },
-        {
-            name: "류진혁",
-            term: "32기",
-            skills: ["Android","AI"],
-            image: "/profile.png",
-            description: "많이 부족하지만 열심히 배우겠습니다!! 홧팅!"
-        },
-        {
-            name: "백수진",
-            term: "32기",
-            skills: ["iOS","Game","Java"],
-            image: "members_photo/백수진.png",
-            description: "지독한 앱등이라 맥북 사용 중입니다.!"
         },
         {
             name: "이동준",
