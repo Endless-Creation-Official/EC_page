@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import React, { useState, useEffect, useRef } from 'react';
 
 function Main() {
@@ -262,6 +263,7 @@ function Home() {
         <div>
             <Header></Header>
             <Main></Main>
+            <Footer></Footer>
         </div>
     )
 }
