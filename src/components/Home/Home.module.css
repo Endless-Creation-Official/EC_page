@@ -514,3 +514,12 @@
     font-weight: 450;
     margin: 2em 0;
 }
+
+@media (max-width: 350px) {
+    .box {
+        font-size: 12px;
+    }
+    .box span{
+        font-size: 10px;
+    }
+}
