@@ -2,6 +2,7 @@
 import React from "react";
 import styles from "./Aboutus.module.css";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 
 function Main() {
     return (
@@ -109,6 +110,7 @@ function Aboutus() {
         <div>
             <Header></Header>
             <Main></Main>
+            <Footer></Footer>
         </div>
     )
 }

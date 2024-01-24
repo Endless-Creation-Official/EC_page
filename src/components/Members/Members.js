@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./Members.module.css";
 import Header from "../Header/Header"
+import Footer from "../Footer/Footer";
 
 function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", description = "" }) {
     return (
@@ -199,6 +200,7 @@ function Members() {
         <div>
             <Header></Header>
             <Main></Main>
+            <Footer></Footer>
         </div>
     )
 }
