@@ -12,25 +12,28 @@ const contactLink = [
 function Footer(){
     return(
         <footer>
-            <div>
-                <b>made & degined</b>
-                <ul>
-                    <li>32기 강영훈</li>
-                    <li>32기 김경태</li>
-                    <li>33기 박진홍</li>
-                </ul>
-            </div>
-            <div>
-                <b>Contact Us</b>
-                <ul>
-                    {contactLink.map(({content, link}) => (
-                        <li key={content}>
-                            <Link to={link}>
-                                {content}
-                            </Link>
-                        </li>
-                    ))}
-                </ul>
+            <div className={styles.wraper}>
+
+                <div className={styles.madeMember}>
+                    <b>made & degined</b>
+                    <ul>
+                        <li>32기 강영훈</li>
+                        <li>32기 김경태</li>
+                        <li>33기 박진홍</li>
+                    </ul>
+                </div>
+                <div className={styles.contact}>
+                    <b>Contact Us</b>
+                    <ul>
+                        {contactLink.map(({content, link}) => (
+                            <li key={content} className={styles.contactLink}>
+                                <Link to={link}>
+                                    {content}
+                                </Link>
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             </div>
         </footer>
     );
