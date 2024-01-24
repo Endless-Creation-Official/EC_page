@@ -29,16 +29,18 @@
     margin-bottom: 30px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1050px) {
     .membercontents {
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-@media (max-width: 600px) {
+@media (max-width: 750px) {
     .membercontents {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+@media (max-width: 600px) {
 
     .membertitle {
         padding: 20px 0;

@@ -1,6 +1,7 @@
 // Apply.js
 import React, { useState } from "react";
 import Header from "../Header/Header";
+import Footer from "../Footer/Footer";
 import styles from "./Apply.module.css";
 import { questions } from "./Question" // Import the questions object
 
@@ -48,6 +49,7 @@ function Apply() {
       <Header></Header>
       <Main></Main>
       <Admit></Admit>
+      <Footer></Footer>
     </div>
   );
 }
