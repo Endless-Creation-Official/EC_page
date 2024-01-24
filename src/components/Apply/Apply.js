@@ -32,6 +32,7 @@ function Main() {
 
 function Admit() {
     //useState와 Onclick evevt로 제출할 때 서버에 내용 전달하기: 나중에 추가예정
+    //제출완료되었습니다. prompt 추가하기
     return(
       <div className={styles.ButtonContainer}>
         <div className={styles.admitButton}>

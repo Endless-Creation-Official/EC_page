@@ -74,6 +74,7 @@
 
 .aboutecContainer {
     width: min(1200px, 90%);
+    margin-top: 4rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 10%;
@@ -136,6 +137,7 @@
 .identityContainer {
     width: 80%;
     display: grid;
+    margin-top: 3rem;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 2%;
 }
