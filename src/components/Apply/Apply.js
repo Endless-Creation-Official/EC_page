@@ -12,7 +12,7 @@ function FormBox({ questionNumber, questionText }) {
             <h1 className={styles.question}>{`질문 ${questionNumber}`}</h1>
             <p>{questionText}</p>
         </div>
-      <input type="text" className={styles.textbox}></input>
+      <textarea type="text" className={styles.textbox}></textarea>
     </div>
   );
 }
