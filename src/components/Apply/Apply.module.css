@@ -31,14 +31,21 @@
     margin-top:10px;
     font-size:x-large;
 }
-.textbox{
+
+.textbox {
     vertical-align: top;
-    width: 90%;
+    position: relative;
+    width: 80%;
     height: calc(var(--vh, 1vh) * 60);
     margin-bottom: 3rem;
-    border:5px solid rgb(0, 0, 0);
+    border: 5px solid rgb(0, 0, 0);
     border-radius: 2rem;
+    padding: 20px;
+    font-size: 20px;
+    overflow-wrap: break-word; /* 단어가 박스 경계를 넘어갈 때 줄 바꿈 */
+    overflow: auto; /* 너비가 다 차면 자동으로 줄 바꿈 */
 }
+
 input::placeholder{
     border: 20px solid red;
     border-radius: 10rem;
