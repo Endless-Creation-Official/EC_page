@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Recruit.module.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 
 function Main() {
@@ -74,14 +72,4 @@ const faqData = [
     },
 ];
 
-function Recruit() {
-    return (
-        <div>
-            <Header></Header>
-            <Main></Main>
-            <Footer></Footer>
-        </div>
-    )
-}
-
-export default Recruit;
+export default Main;

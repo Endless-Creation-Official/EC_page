@@ -1,10 +1,10 @@
 import React from 'react';
 import './App.css';
-import Home from './components/Home/Home';
-import Aboutus from './components/Aboutus/Aboutus';
-import Members from './components/Members/Members';
-import Recruit from './components/Recruit/Recruit';
-import Apply from './components/Apply/Apply';
+import Home from './pages/home';
+import Aboutus from './pages/aboutus';
+import Members from './pages/members';
+import Recruit from './pages/recruit';
+import Apply from './pages/apply';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {

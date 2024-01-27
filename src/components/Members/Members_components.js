@@ -1,7 +1,5 @@
 import React from "react";
 import styles from "./Members.module.css";
-import Header from "../Header/Header"
-import Footer from "../Footer/Footer";
 
 function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", description = "" }) {
     return (
@@ -195,14 +193,4 @@ function Main() {
 }
 
 
-function Members() {
-    return (
-        <div>
-            <Header></Header>
-            <Main></Main>
-            <Footer></Footer>
-        </div>
-    )
-}
-
-export default Members;
+export default Main;
