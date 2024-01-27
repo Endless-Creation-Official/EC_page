@@ -7,7 +7,7 @@
     left: 50%;
     transform: translateX(-50%);
     display: flex;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(65, 63, 63, 0.3);
     backdrop-filter: blur(10px);
     justify-content: space-between;
     align-items: center;
@@ -28,7 +28,7 @@
 
 .headerContainer li a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .headerContainer li:hover a {
@@ -79,7 +79,7 @@
 
     .hamburger div {
         height: 3px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         margin: 3px 0;
         transition: 0.3s;
     }
@@ -102,7 +102,8 @@
         width: 30%;
         height: 100vh;
         transition: right 0.3s ease-in-out;
-        background-color: rgb(208, 244, 225);
+        background-color: rgb(70, 81, 75);
+        color: white;
         padding: 40px;
         display: flex;
         flex-direction: column;

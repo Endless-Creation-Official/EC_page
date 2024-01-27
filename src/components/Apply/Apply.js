@@ -45,4 +45,4 @@ function Admit() {
 }
 
 
-export default { Main, Admit };
+export { Main, Admit };

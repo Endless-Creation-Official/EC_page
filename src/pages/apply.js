@@ -1,6 +1,5 @@
 import React from 'react';
-import Main from "../components/Apply/Apply_components";
-import Admit from "../components/Apply/Apply_components";
+import {Main, Admit} from "../components/Apply/Apply";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 

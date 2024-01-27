@@ -66,7 +66,7 @@
 
 .aboutec h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 42px;
     margin-top: 250px;
 }
@@ -129,17 +129,18 @@
 
 .identity h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 42px;
     margin-top: 250px;
 }
 
 .identityContainer {
-    width: 80%;
+    width: 60%;
     display: grid;
     margin-top: 3rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 2%;
+    grid-gap: 10%;
+
 }
 
 #introducing-box {
@@ -150,21 +151,29 @@
     margin: 200px;
 }
 
-
 .boxidentity {
+    justify-self: center;
+    /* 수평 중앙 정렬 */
+    align-self: center;
     display: grid;
-    width: 100%;
+    width: 80%;
     font-size: 35px;
     /* 간격 설정 */
     justify-content: center;
     /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬로 수정 */
+    aspect-ratio: 1.2/1;
+    /* 너비와 높이의 비율을 1:1로 설정 */
     border-radius: 20px;
     grid-template-columns: 1fr;
-    align-items: flex-end;
+    background-color: rgb(43, 43, 43);
+    margin: 5% 0;
+    /* padding 대신 margin 사용 */
 }
 
 .identityImage {
-    width: 25%;
+    width: 40%;
 }
 
 .identityTitle:nth-child(1) {
@@ -178,7 +187,7 @@
     position: relative;
     margin: auto;
     font-size: 20px;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -198,6 +207,7 @@
 
     .boxidentity {
         width: 100%;
+        max-width: 200px;
     }
 
     .identityTitle:nth-child(2) {
@@ -206,9 +216,8 @@
 
     .boxidentity:nth-child(3) {
         position: relative;
-        transform: translate(-50%, -50%);
-        left: 105%;
-        top: 70%;
+        left: 60%;
+        top: 0%;
     }
 
     .identityImage {
@@ -222,7 +231,7 @@
 
 .project h1 {
     text-align: center;
-    color: black;
+    color: white;
     font-size: 42px;
     margin-top: 250px;
 }
@@ -243,10 +252,12 @@
     .project h1 {
         font-size: 30px;
     }
+
     .projectContainer {
         display: flex;
         flex-direction: column;
     }
+
     .boxproject {
         display: flex;
         width: 100%;
@@ -360,14 +371,14 @@
     flex-direction: column;
     align-items: center;
     margin-top: 250px;
-    color: black;
+    color: white;
 }
 
 .process h1 {
     /* 프로세스 제목 스타일 */
     text-align: center;
     /* 가운데 정렬 */
-    color: black;
+    color: white;
     font-size: 42px;
 }
 
@@ -394,6 +405,7 @@
 .col1 {
     width: 30%;
 }
+
 .col2 {
     width: 70%;
 }
@@ -402,6 +414,7 @@
     .containerfaq h1 {
         font-size: 30px;
     }
+
     .processtable {
         width: 77%;
         font-size: 14px;
@@ -420,7 +433,7 @@
 
 
 .processtable tr:nth-child(even) {
-    background-color: #f5f5f5;
+    background-color: #272727;
     /* Apply a different background color for even rows */
 }
 
@@ -430,7 +443,7 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    color: black;
+    color: white;
     margin: 70px 0;
 }
 
@@ -506,7 +519,7 @@
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-    color: black;
+    color: white;
 }
 
 .accordion .accordioncontent p {
@@ -519,7 +532,8 @@
     .box {
         font-size: 12px;
     }
-    .box span{
+
+    .box span {
         font-size: 10px;
     }
 }

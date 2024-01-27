@@ -54,8 +54,8 @@
 
 
 .membercard {
-    color: black;
-    background-color: rgb(210, 231, 218);
+    color: white;
+    background-color: rgb(59, 63, 61);
     border-radius: 10px;
     padding: 15px;
     position: relative;
@@ -80,7 +80,7 @@
 
 .skills {
     padding: 3px 8px;
-    background-color: #a2e2b2;
+    background-color: #638f6e;
     border-radius: 5px;
     text-align: center;
     font-size: 14px;
@@ -96,7 +96,7 @@
 }
 
 .description {
-    color: black;
+    color: rgb(255, 255, 255);
     padding-top: 10px;
     font-size: 16px;
     word-wrap: break-word;
