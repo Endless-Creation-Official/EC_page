@@ -1,6 +1,4 @@
 import styles from "./Home.module.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 import React, { useState, useEffect, useRef } from 'react';
 
 function Main() {
@@ -12,7 +10,6 @@ function Main() {
                     <h2 className={styles.textbox}>34기 모집 중!</h2>
                 </div>
             </div>
-
             <AboutEC></AboutEC>
             <Identity></Identity>
             <Project></Project>
@@ -258,14 +255,4 @@ const faqData = [
     },
 ];
 
-function Home() {
-    return (
-        <div>
-            <Header></Header>
-            <Main></Main>
-            <Footer></Footer>
-        </div>
-    )
-}
-
-export default Home;
+export default Main;

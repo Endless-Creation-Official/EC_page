@@ -1,8 +1,6 @@
 /* Aboutus js*/
 import React from "react";
 import styles from "./Aboutus.module.css";
-import Header from "../Header/Header";
-import Footer from "../Footer/Footer";
 
 function Main() {
     return (
@@ -105,14 +103,5 @@ function Operator() {
     )
 }
 
-function Aboutus() {
-    return (
-        <div>
-            <Header></Header>
-            <Main></Main>
-            <Footer></Footer>
-        </div>
-    )
-}
 
-export default Aboutus;
+export default Main;
