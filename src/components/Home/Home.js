@@ -11,7 +11,7 @@ function Main() {
             <div className={styles.maintitle}>
                 <div className={styles.title}>
                     <h1>Endless Creation</h1>
-                    <h2 className={styles.textbox}>34기 모집 중!</h2>
+                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
                 </div>
             </div>
             <AboutEC></AboutEC>
@@ -132,24 +132,24 @@ function Identity() {
     );
 }
 
-const projects=[
-    {imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink:"https://github.com/gom-3/dutying-web"},
-    {imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink:"https://github.com/gom-3/dutying-web"},
-    {imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink:"https://github.com/gom-3/dutying-web"},
-    {imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink:"https://github.com/gom-3/dutying-web"}
+const projects = [
+    { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
 
 ];
-function ProjectSlide(){
+function ProjectSlide() {
     const settings = {
-      className:"center",
-      centerMode:true,
-      infinite: true,
-      dots: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows:true
-      
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+
     };
 
     const randerSlides = () => (
@@ -160,7 +160,7 @@ function ProjectSlide(){
         ))
     );
 
-    return(
+    return (
         <div className={styles.slideContainer}>
             <Slider {...settings}> {randerSlides()}</Slider>
         </div>
@@ -171,7 +171,9 @@ function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-            <ProjectSlide></ProjectSlide>
+            <div class={styles.slidebox}>
+                <ProjectSlide></ProjectSlide>
+            </div>
             <label className={styles.dropdown}>
                 <div className={styles.ddbutton}>
                     프로젝트 & 스터디 더보기
