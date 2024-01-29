@@ -26,6 +26,7 @@ function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", d
     );
 }
 
+
 function GraduatesCard({ name = "", term = "", skills = [], image = "", alt = "", description = "", careers = [] }) {
     return (
         <div className={styles.graduatescard}>
@@ -541,6 +542,5 @@ function Main() {
         </div>
     );
 }
-
 
 export default Main;
