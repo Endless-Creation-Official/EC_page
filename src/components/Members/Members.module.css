@@ -128,7 +128,7 @@
 
 .graduatescard {
     color: white;
-    background-color: rgb(59, 63, 61);
+    background-color: rgb(90, 94, 93);
     border-radius: 10px;
     padding: 15px;
     position: relative;
@@ -139,6 +139,7 @@
 
 .graduatesheadercontainer {
     display: flex;
+    align-items: center;
     gap: 10px;
 }
 
@@ -146,6 +147,13 @@
     display: flex;
     gap: 20px;
     justify-content: center;
+}
+
+.companyMark {
+    align-self: center;
+    display: flex;
+    top: 0;
+    height: 25px;
 }
 
 .graduatesskill {

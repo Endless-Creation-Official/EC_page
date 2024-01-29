@@ -1,5 +1,7 @@
 ## EC 34기 홈페이지 제작
 
+**URL : https://endless-creation.netlify.app/Recruit**
+
 ### 1. Home
 <div style="display: flex; gap: 10px; flex-direction: row;">
     <img src="README_image/Home1.png" alt="Home" style="object-fit: contain; height:auto; width: min(550px, 100%);">
