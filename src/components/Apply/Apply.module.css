@@ -1,0 +1,105 @@
+
+.main {
+    position: relative;
+    width:min(1250px, 100%);
+    margin:auto;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 9rem;
+    color:rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+    border-radius: 1rem
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    width:90%;
+    background-color: rgb(61, 72, 60);
+    border: 5px solid black;
+    border-radius: 1.5rem;
+}
+.question{
+    width:90%;
+    align-items: center;
+    margin-top:10px;
+    font-size:x-large;
+}
+
+.textbox {
+    vertical-align: top;
+    position: relative;
+    width: 80%;
+    background-color: black;
+    color: white;
+    height: calc(var(--vh, 1vh) * 60);
+    margin-bottom: 3rem;
+    border: 5px solid rgb(0, 0, 0);
+    border-radius: 2rem;
+    padding: 20px;
+    font-size: 20px;
+    overflow-wrap: break-word; /* 단어가 박스 경계를 넘어갈 때 줄 바꿈 */
+    overflow: auto; /* 너비가 다 차면 자동으로 줄 바꿈 */
+}
+
+input::placeholder{
+    border: 20px solid red;
+    border-radius: 10rem;
+}
+
+
+.ButtonContainer {
+    position: relative;
+    width:25%;
+    margin: auto;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.admitButton {
+    position: relative;
+    color:rgb(255, 255, 255);
+    font-size:x-large;
+    border:5px solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    width:80%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .admitButton:hover{
+    background-color: rgb(59, 77, 53);
+  }
+
+  @media (max-width: 1300px) {
+    .main {
+        margin-top: 6rem;
+        width:95%;
+        border:none;
+    }
+    .title {
+        font-size: 30px;
+    }
+    .question h1{
+        font-size: 20px;
+    }
+    .question p {
+        font-size: 15px;
+    }
+    .textbox {
+        width:85%;
+        height: calc(var(--vh, 1vh) * 30);
+    }
+    .ButtonContainer {
+        width:60%;
+    }
+  }

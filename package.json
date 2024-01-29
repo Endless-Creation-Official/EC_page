@@ -8,8 +8,15 @@
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+<<<<<<< HEAD
     "react-router-dom": "^6.21.1",
+=======
+    "react-router-dom": "^6.21.2",
+>>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5
     "react-scripts": "5.0.1",
+    "react-simple-image-slider": "^2.4.1",
+    "react-slick": "^0.29.0",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
