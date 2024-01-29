@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Members.module.css";
 
 function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", description = "" }) {
@@ -28,6 +28,10 @@ function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", d
 
 
 function GraduatesCard({ name = "", term = "", skills = [], mark = null, image = "", alt = "", description = "", careers = [] }) {
+    const [showAllCareers, setShowAllCareers] = useState(false);
+
+    const showHamburger = careers.length > 1;
+
     return (
         <div className={styles.graduatescard}>
             <div className={styles.graduatesheadercontainer}>
@@ -37,6 +41,13 @@ function GraduatesCard({ name = "", term = "", skills = [], mark = null, image =
                     </div>
                 </div>
                 {mark && <img src={mark} className={styles.companyMark} alt="companyMark" />}
+                {showHamburger && (
+                    <div className={styles.hamburger} onClick={() => setShowAllCareers(!showAllCareers)}>
+                        <div className={styles.one}></div>
+                        <div className={styles.two}></div>
+                        <div className={styles.three}></div>
+                    </div>
+                )}
             </div>
             <div className={styles.graduatesskill}>
                 {skills.map((skill, index) => (
@@ -46,15 +57,24 @@ function GraduatesCard({ name = "", term = "", skills = [], mark = null, image =
                 ))}
             </div>
             <div>
-                {careers.map((career, index) => (
-                    <div key={index} className={styles.careers}>
-                        {career}
-                    </div>
-                ))}
+                {showAllCareers
+                    ? careers.map((career, index) => (
+                          <div key={index} className={styles.careers}>
+                              {career}
+                          </div>
+                      ))
+                    : (
+                        <div className={styles.careers}>
+                            {careers[careers.length - 1]}
+                        </div>
+                    )
+                }
             </div>
         </div>
     );
 }
+
+
 
 
 
@@ -578,6 +598,7 @@ function Main() {
             <div className={styles.membertitle}>
                 <h1>EC graduates</h1>
             </div>
+            <h2>※ 2024년 2월 기준</h2>
             <section className={styles.graduatescontents}>
                 {graduates.map((member, index) => (
                     <GraduatesCard key={index} {...member} />
