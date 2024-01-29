@@ -1,5 +1,6 @@
 import styles from "./Home.module.css";
 import React, { useState, useEffect, useRef } from 'react';
+<<<<<<< HEAD
 import { throttle } from 'lodash';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
@@ -40,6 +41,14 @@ function Main() {
 }
 
 function Title() {
+=======
+
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+function Main() {
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
     return (
         <div className={styles.container}>
             <div className={styles.maintitle}>
@@ -48,6 +57,14 @@ function Title() {
                     <h2 className={styles.textbox}>34기 모집 중!</h2>
                 </div>
             </div>
+<<<<<<< HEAD
+=======
+            <AboutEC></AboutEC>
+            <Identity></Identity>
+            <Project></Project>
+            <Process></Process>
+            <FAQ></FAQ>
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
         </div>
     );
 }
@@ -161,10 +178,43 @@ function Identity() {
     );
 }
 
+<<<<<<< HEAD
+=======
+const projects=['A', 'B', 'C', 'D', 'E'];
+function ProjectSlide(){
+    const settings = {
+      className:"center",
+      centerMode:true,
+      infinite: true,
+      dots: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:true
+      
+    };
+
+    const randerSlides = () => (
+        projects.map(element => (
+            <div className={styles.projectImageContainer}>
+                <h3>{element}</h3>
+            </div>
+        ))
+    );
+
+    return(
+        <div className={styles.slideContainer}>
+            <Slider {...settings}> {randerSlides()}</Slider>
+        </div>
+    )
+}
+
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
 function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
+<<<<<<< HEAD
             <div className={styles.projectContainer}>
                 <div className={styles.boxproject}>
                     <img src="https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png" alt="MoyeoRun"></img>
@@ -181,6 +231,10 @@ function Project() {
             </div>
             <label className={styles.dropdown}>
 
+=======
+            <ProjectSlide></ProjectSlide>
+            <label className={styles.dropdown}>
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
                 <div className={styles.ddbutton}>
                     프로젝트 & 스터디 더보기
                 </div>
@@ -288,4 +342,8 @@ const faqData = [
     },
 ];
 
+<<<<<<< HEAD
 export default Main;
+=======
+export default Main;
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1

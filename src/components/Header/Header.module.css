@@ -60,7 +60,11 @@
 
     .headerContainer {
         width: 100%;
+<<<<<<< HEAD
         height: 5rem;
+=======
+        height: 4rem;
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
         padding: 0 5px;
         border-bottom: 3px solid rgb(57, 184, 31);
     }
@@ -98,7 +102,11 @@
     .sidebar {
         position: fixed;
         right: -55%;
+<<<<<<< HEAD
         top: 5.2rem;
+=======
+        top: 4.2rem;
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
         width: 30%;
         height: 100vh;
         transition: right 0.3s ease-in-out;
@@ -134,4 +142,8 @@
     100% {
         transform: scale(1) rotateZ(360deg);
     }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
