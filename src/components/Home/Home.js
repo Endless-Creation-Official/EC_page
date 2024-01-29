@@ -132,7 +132,10 @@ function Identity() {
     );
 }
 
-const projects=['A', 'B', 'C', 'D', 'E'];
+const projects=[
+    {imageLink: "https://private-user-images.githubusercontent.com/24623403/266497399-cf1c692a-1579-49a2-8d82-341d45f37fd3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY1MjUzOTIsIm5iZiI6MTcwNjUyNTA5MiwicGF0aCI6Ii8yNDYyMzQwMy8yNjY0OTczOTktY2YxYzY5MmEtMTU3OS00OWEyLThkODItMzQxZDQ1ZjM3ZmQzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMjklMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTI5VDEwNDQ1MlomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTA5NTY0ODljMTUyYjU3NjM4ZWY2Y2RjNzk5ZjY3NTNiMjlhYzI4MzIxMmNjYmYxYWRjYTJlZDNmYzNhZDFlMGUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.Kb8vb41Fuwz5R05jfJAo1rIDhNi8D9a8aRduZm1x9nQ", mainLink:"https://github.com/gom-3/dutying-web"}
+
+];
 function ProjectSlide(){
     const settings = {
       className:"center",
@@ -147,9 +150,9 @@ function ProjectSlide(){
     };
 
     const randerSlides = () => (
-        projects.map(element => (
+        projects.map((element, index) => (
             <div className={styles.projectImageContainer}>
-                <h3>{element}</h3>
+                <img src={index.imageLink} alt={index.mainLink}></img>
             </div>
         ))
     );
