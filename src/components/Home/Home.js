@@ -1,6 +1,10 @@
 import styles from "./Home.module.css";
 import React, { useState, useEffect, useRef } from 'react';
 
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
 function Main() {
     return (
         <div className={styles.container}>
@@ -128,26 +132,41 @@ function Identity() {
     );
 }
 
+const projects=['A', 'B', 'C', 'D', 'E'];
+function ProjectSlide(){
+    const settings = {
+      className:"center",
+      centerMode:true,
+      infinite: true,
+      dots: true,
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows:true
+      
+    };
+
+    const randerSlides = () => (
+        projects.map(element => (
+            <div className={styles.projectImageContainer}>
+                <h3>{element}</h3>
+            </div>
+        ))
+    );
+
+    return(
+        <div className={styles.slideContainer}>
+            <Slider {...settings}> {randerSlides()}</Slider>
+        </div>
+    )
+}
+
 function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-            <div className={styles.projectContainer}>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png" alt="MoyeoRun"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png" alt="Upgle"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png" alt="Gamp"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png" alt="Join"></img>
-                </div>
-            </div>
+            <ProjectSlide></ProjectSlide>
             <label className={styles.dropdown}>
-
                 <div className={styles.ddbutton}>
                     프로젝트 & 스터디 더보기
                 </div>
