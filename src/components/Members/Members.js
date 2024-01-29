@@ -1,9 +1,3 @@
-<<<<<<< HEAD
-function Members() {
-    return (
-        <div>
-            <h1>Members</h1>
-=======
 import React from "react";
 import styles from "./Members.module.css";
 
@@ -28,14 +22,10 @@ function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", d
             <div className={styles.description}>
                 {description}
             </div>
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5
         </div>
     );
 }
 
-<<<<<<< HEAD
-export default Members;
-=======
 
 function Main() {
     const members = [
@@ -204,4 +194,3 @@ function Main() {
 
 
 export default Main;
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5

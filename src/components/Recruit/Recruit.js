@@ -1,21 +1,3 @@
-<<<<<<< HEAD
-import Header from "../Header/Header";
-
-function Recruit() {
-    return(
-        <div>
-            <Header />
-            <div class="recruiting">
-            <h2 class="center-text">Recruiting Schedule</h2>
-            <ul>
-                <li>34기 서류 지원</li>
-                <li>1차 합격 발표</li>
-                <li>2차 면접</li>
-                <li>최종 합격 발표</li>
-                <li>워크샵</li>
-            </ul>
-            </div>
-=======
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styles from "./Recruit.module.css";
@@ -33,14 +15,10 @@ function Main() {
                 <button className={styles.button} onClick={handleClick}>지원하러 가기</button>
             </div>
             <FAQ></FAQ>
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5
         </div>
     )
 }
 
-<<<<<<< HEAD
-export default Recruit;
-=======
 function FAQ() {
     const [expandedIndex, setExpandedIndex] = useState(null);
     const toggleAccordion = (index) => {
@@ -95,4 +73,3 @@ const faqData = [
 ];
 
 export default Main;
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5

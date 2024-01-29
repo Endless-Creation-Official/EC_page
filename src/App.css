@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-=======
 html {
     overflow-y: scroll;
 }
@@ -14,60 +9,15 @@ body {
     color: rgb(255, 255, 255);
     /* 글자색을 흰색으로 설정 */
     font-family : 'SOYOMapleBoldTTF';
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5
 }
 
 h1 {
     font-size: 50px;
 }
 
-<<<<<<< HEAD
-.recruiting {
-    border: 1px solid white;
-    margin: 150px 10%;
-}
-
-.recruiting ul {
-    padding: 0;
-    /* 내부 여백 제거 */
-    text-align: center;
-    /* 각 글자 가운데 정렬*/
-    list-style: none;
-    /* 기본 목록 스타일 제거 */
-    display: flex;
-    /* 가로로 정렬하기 위해 Flexbox 레이아웃 사용 */
-    justify-content: center;
-    /* 가로 중앙 정렬 */
-}
-
-.recruiting ul {
-    padding: 0;
-    /* 내부 여백 제거 */
-    text-align: center;
-    /* 각 글자 가운데 정렬*/
-    list-style: none;
-    /* 기본 목록 스타일 제거 */
-    display: flex;
-    /* 가로로 정렬하기 위해 Flexbox 레이아웃 사용 */
-    justify-content: center;
-    /* 가로 중앙 정렬 */
-}
-
-.recruiting li {
-    border: 1px solid white;
-    font-size: 20px;
-    margin: 0 50px;
-    padding: 10px 20px;
-}
-
-.center-text {
-    text-align: center;
-}
-=======
 @font-face {
     font-family: 'SOYOMapleBoldTTF';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2310@1.0/SOYOMapleBoldTTF.woff2') format('woff2');
     font-weight: 700;
     font-style: normal;
 }
->>>>>>> 42110e6d88da118e98a843862ae54dec32382ae5
