@@ -114,3 +114,87 @@
         height: 30px;
     }
 }
+
+
+
+.graduatescontents {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-bottom: 30px;
+}
+
+.graduatescard {
+    color: white;
+    background-color: rgb(59, 63, 61);
+    border-radius: 10px;
+    padding: 15px;
+    position: relative;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.graduatesheadercontainer {
+    display: flex;
+    gap: 10px;
+}
+
+.graduatesheaderName {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.graduatesskill {
+    display: flex;
+    gap: 10px;
+}
+
+.careers {
+    font-size: 15px;
+}
+
+.graduatesskills {
+    padding: 3px 8px;
+    background-color: #3d5743;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 12px;
+}
+
+.graduatesprofilephoto {
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    /* 동일한 높이 설정 */
+    object-fit: cover;
+    /* object-fit을 사용하여 강제로 원형으로 자름 */
+}
+
+.graduatesdescription {
+    color: rgb(255, 255, 255);
+    padding-top: 10px;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+@media (max-width: 1050px) {
+    .graduatescontents {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 750px) {
+    .graduatescontents {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media (max-width: 300px) {
+    .graduatesprofilephoto {
+        width: 30px;
+        height: 30px;
+    }
+}
