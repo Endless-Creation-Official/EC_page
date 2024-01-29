@@ -207,6 +207,8 @@
 .profilePhoto {
     width: 100%;
     height: auto;
+    display: flex;
+    align-self: center;
     border-radius: 50%;
 }
 
