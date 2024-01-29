@@ -1,7 +1,45 @@
 import styles from "./Home.module.css";
 import React, { useState, useEffect, useRef } from 'react';
+import { throttle } from 'lodash';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function Main() {
+    const [currentSection, setCurrentSection] = useState(0);
+
+    const handleScroll = throttle((event) => {
+        if (event.deltaY > 0) {
+            setCurrentSection(prev => Math.min(prev + 1, 5)); // 섹션 수 수정
+        } else {
+            setCurrentSection(prev => Math.max(prev - 1, 0));
+        }
+    }, 1000);
+
+    useEffect(() => {
+        window.addEventListener('wheel', handleScroll);
+        return () => window.removeEventListener('wheel', handleScroll);
+    }, []);
+
+    return (
+        <TransitionGroup>
+            <CSSTransition
+                key={currentSection}
+                classNames="fade"
+                timeout={300}
+            >
+                <div>
+                    {currentSection === 0 && <Title />}
+                    {currentSection === 1 && <AboutEC />}
+                    {currentSection === 2 && <Identity />}
+                    {currentSection === 3 && <Project />}
+                    {currentSection === 4 && <Process />}
+                    {currentSection === 5 && <FAQ />}
+                </div>
+            </CSSTransition>
+        </TransitionGroup>
+    );
+}
+
+function Title() {
     return (
         <div className={styles.container}>
             <div className={styles.maintitle}>
@@ -10,11 +48,6 @@ function Main() {
                     <h2 className={styles.textbox}>34기 모집 중!</h2>
                 </div>
             </div>
-            <AboutEC></AboutEC>
-            <Identity></Identity>
-            <Project></Project>
-            <Process></Process>
-            <FAQ></FAQ>
         </div>
     );
 }
