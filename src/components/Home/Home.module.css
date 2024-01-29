@@ -537,3 +537,18 @@
         font-size: 10px;
     }
 }
+
+
+.imagesize {
+    height: 400px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    border: 3px soild white;
+}
+@media (max-width: 900px) {
+    .imagesize {
+        height: 130px;
+    }
+}
+
