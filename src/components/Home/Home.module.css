@@ -8,17 +8,28 @@
 }
 
 .maintitle {
-    background-image: url(/public/backgroundimage.jpg);
-    background-size: cover;
-    background-position: 60%;
+    position: relative;
     width: 100%;
-    height: calc(var(--vh, 1vh) * 100);
-    letter-spacing: 2px;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    color: white; /* 텍스트 색상을 흰색으로 설정 */
+    letter-spacing: 2px;
+
+    /* 배경 이미지 설정 */
+    background-image: url(/public/backgroundimage.jpg);
+    background-size: cover;
+    background-position: 60%;
 }
 
+.maintitle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4); /* 어두운 배경색 */
+}
 
 
 .title {
@@ -226,7 +237,7 @@
 }
 
 .project {
-    width: min(1200px, 90%);
+    width: min(1200px, 80%);
 }
 
 .project h1 {
@@ -538,17 +549,19 @@
     }
 }
 
-
+.slidebox {
+    width: 100%;
+}
 .imagesize {
     height: 400px;
     display: flex;
     align-self: center;
     margin: auto;
-    border: 3px soild white;
 }
 @media (max-width: 900px) {
     .imagesize {
-        height: 130px;
+        width: 200px;
+        height: 100%;
     }
 }
 
