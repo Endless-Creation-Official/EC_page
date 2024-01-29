@@ -8,6 +8,7 @@
 }
 
 .ECmark {
+    grid-column: 1; /* ECmark를 첫 번째 컬럼에 배치 */
     width: 100px;
 }
 
@@ -20,34 +21,28 @@
     z-index: 1000;
 }
 
-.main-header ul {
+.tags {
+    grid-column: 3; /* 메뉴 아이템들을 두 번째 컬럼에 배치 */
     display: flex;
-    gap: 20px;
+    gap: 50px;
     font-size: 25px;
     font-weight: 700;
     margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.main-header li:hover a {
-    color: aquamarine;
-    transition: color 0.3s ease;
-}
-
-.headerContainerMaxWidth1200 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    width: 90%;
-    padding: 0 40px;
-    margin: auto;
-}
-
-a {
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: bold;
+}
+
+.headerContainerMaxWidth1200 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 첫 번째 컬럼에 ECmark, 두 번째 컬럼에 나머지 요소들을 배치 */
+    justify-content: space-between;
+    column-gap: 180px;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    margin: auto;
 }

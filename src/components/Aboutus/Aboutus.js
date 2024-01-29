@@ -1,32 +1,35 @@
 import Header from "../Header/Header";
-
+import styles from "./Aboutus.module.css";
 function Aboutus() {
     return (
-        <div>
+        <div className={styles.container}>
             <Header />
-            <div class="center-text">
-            <h1>AboutEC</h1>
-            <div class="container">
-                <div class="box">
-                <span>설립일</span>
-                Since 1991
-                </div>
-                <div class="box">
-                <span>멤버</span>
+            <div className={styles.box}>
                 <div>
-                    46 명
+                    설립 날짜
                 </div>
-                </div>
-                <div class="box">
-                <span>누적 프로젝트 수</span>
                 <div>
-                    84 <b>+</b>
-                </div> 
+                    1991년
                 </div>
             </div>
+            <div className={styles.box}>
+                <div>
+                    활동 인원
+                </div>
+                <div>
+                    41명
+                </div>
+            </div>
+            <div className={styles.box}>
+                <div>
+                    만든 프로젝트
+                </div>
+                <div>
+                    90+
+                </div>
             </div>
         </div>
-      )
+    )
 }
 
 export default Aboutus;
