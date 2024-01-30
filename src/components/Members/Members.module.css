@@ -26,6 +26,39 @@
     font-size: 40px;
 }
 
+/* CSS keyframes로 애니메이션 정의 */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+    }
+    40% {
+      transform: translateY(-8px);
+    }
+    60% {
+      transform: translateY(-4px);
+    }
+  }
+
+.scrolldown {
+    display: none;
+    width: auto;
+    float: right;
+    padding: 5px;
+    font-size: 15px;
+    animation: bounce 2s infinite;
+    border-radius: 10px;
+    margin-bottom: 2%;
+    margin-right: 2%;
+    background-color: #303030;
+}
+
+@media (max-width: 900px) {
+    .scrolldown {
+        display: flex;
+    }
+}
+
+
 .membercontents {
     position: relative;
     width: 100%;
