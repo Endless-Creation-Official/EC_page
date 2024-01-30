@@ -15,7 +15,7 @@ function Main() {
                         <h1>Endless Creation</h1>
                     </div>
                     <p>
-                        <b>Endless Creation</b>은 사람과 컴퓨터를 사랑하는 동아리로, 창립한 지 34년째 되는 역사 깊은 동아리입니다.
+                        <b>Endless Creation</b>은 사람과 컴퓨터를 사랑하는 동아리로, 창립한 지 34년째 되는 서울과학기술대학교에서 가장 오래된 역사 깊은 동아리입니다.
                     </p>
                     <p className={styles.hiddenP}>
                         EC에서는 1학기 동안 C언어를 비롯한 프로그래밍 언어와 기초적인 CS지식에 대한 스터디를 통해 멤버들의 전문성을 키워나갑니다.
