@@ -60,7 +60,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/김경태.png" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김경태1.jpg" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김경태</b> / 부회장
