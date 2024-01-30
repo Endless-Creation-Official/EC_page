@@ -547,7 +547,21 @@
 .accordion .accordioncontent p {
     font-size: 1rem;
     font-weight: 450;
-    margin: 2em 0;
+    margin: 1.2rem 0;
+}
+
+
+@media (max-width: 900px) {
+    .accordion {
+        width: 90%;
+    }
+    .accordion button {
+        font-size: 1rem;
+    }
+    .accordion .accordioncontent p {
+        font-size: 13px;
+        margin: 1em 0;
+    }
 }
 
 @media (max-width: 350px) {
