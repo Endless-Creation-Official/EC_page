@@ -16,6 +16,7 @@ function FormBox({ questionNumber, questionText }) {
 }
 
 function Main() {
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const formBoxes = Object.entries(questions).map(([key, value]) => (
     <FormBox key={key} questionNumber={key} questionText={value} />
   ));
