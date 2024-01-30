@@ -18,7 +18,7 @@ function Footer() {
                         Endless Creation
                     </div>
                     <div className={styles.designedby}>
-                        designed by&nbsp;&nbsp; 강영훈&nbsp; 김경태&nbsp; 박진홍
+                        Designed by&nbsp;&nbsp; 강영훈&nbsp; 김경태&nbsp; 박진홍
                     </div>
                     <div className={styles.copyright}>
                         Copyright ⓒ Endless Creation 2024
