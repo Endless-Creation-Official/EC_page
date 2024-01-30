@@ -1,6 +1,6 @@
 ## EC 34기 홈페이지 제작
 
-**URL : https://endless-creation.netlify.app/Recruit**
+**URL : https://endless-creation.netlify.app**
 
 ### 1. Home
 <div style="display: flex; gap: 10px; flex-direction: row;">
