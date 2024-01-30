@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Members.module.css";
 
 function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", description = "" }) {
@@ -182,6 +182,13 @@ function Main() {
             skills: ["Cloud"],
             careers: ["現 현대오토에버"],
             mark: "companyMark/현대오토에버.png"
+        },
+        {
+            name: "이혜연",
+            term: "26기",
+            skills: ["System"],
+            careers: ["現 삼성생명 시스템 운영팀"],
+            mark: "companyMark/삼성생명.png"
         },
         {
             name: "표명일",
@@ -585,27 +592,43 @@ function Main() {
         },
     ];
 
+    const graduatesSectionRef = useRef(null);
+
+    const handleClick = () => {
+      // EC graduates 섹션의 top 위치를 계산
+      const topOffset = graduatesSectionRef.current.offsetTop- 8 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+  
+      // 스크롤 이동 애니메이션
+      window.scrollTo({
+        top: topOffset,
+        behavior: 'smooth', // 부드러운 애니메이션 효과
+      });
+    };
+
     return (
         <div className={styles.container}>
-            <div className={styles.membertitle}>
-                <h1>EC members</h1>
-            </div>
-            <section className={styles.membercontents}>
-                {members.map((member, index) => (
-                    <MemberCard key={index} {...member} />
-                ))}
-            </section>
-            <div className={styles.membertitle}>
-                <h1>EC graduates</h1>
-            </div>
-            <h2>※ 2024년 2월 기준</h2>
-            <section className={styles.graduatescontents}>
-                {graduates.map((member, index) => (
-                    <GraduatesCard key={index} {...member} />
-                ))}
-            </section>
+          <div className={styles.membertitle}>
+            <h1>EC members</h1>
+          </div>
+          <div className={styles.scrolldown} onClick={handleClick}>
+            click me!
+          </div>
+          <section className={styles.membercontents}>
+            {members.map((member, index) => (
+              <MemberCard key={index} {...member} />
+            ))}
+          </section>
+          <div className={styles.membertitle}>
+            <h1>EC graduates</h1>
+          </div>
+          <h2>※ 2024년 2월 기준</h2>
+          <section ref={graduatesSectionRef} className={styles.graduatescontents}>
+            {graduates.map((member, index) => (
+              <GraduatesCard key={index} {...member} />
+            ))}
+          </section>
         </div>
-    );
+      );
 }
 
 export default Main;
