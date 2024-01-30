@@ -545,7 +545,7 @@ function Main() {
             name: "김경태",
             term: "32기",
             skills: ["Web", "Back-end", "ML", "AI"],
-            image: "members_photo/김경태.png",
+            image: "members_photo/김경태1.png",
             description: "성장하는 즐거움!"
         },
         {
