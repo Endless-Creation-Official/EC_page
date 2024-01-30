@@ -1,5 +1,5 @@
 import React from 'react';
-import {Main, Admit} from "../components/Apply/Apply";
+import Main from "../components/Apply/Apply";
 import Header from "../components/Header/Header";
 import Footer from "../components/Footer/Footer";
 
@@ -8,7 +8,6 @@ function Apply() {
       <div>
         <Header></Header>
         <Main></Main>
-        <Admit></Admit>
         <Footer></Footer>
       </div>
     );

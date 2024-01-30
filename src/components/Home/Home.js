@@ -171,7 +171,7 @@ function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-            <div class={styles.slidebox}>
+            <div className={styles.slidebox}>
                 <ProjectSlide></ProjectSlide>
             </div>
             <label className={styles.dropdown}>
