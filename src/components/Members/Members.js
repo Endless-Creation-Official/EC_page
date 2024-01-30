@@ -444,13 +444,6 @@ function Main() {
 
     const members = [
         {
-            name: "홍준희",
-            term: "31기",
-            skills: ["ML"],
-            image: "/profile.png",
-            description: "19학번이고 25살입니다"
-        },
-        {
             name: "유환욱",
             term: "28기",
             skills: ["Front-end", "Web", "React"],
