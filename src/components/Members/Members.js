@@ -85,8 +85,7 @@ function Main() {
             name: "오예진",
             term: "29기",
             skills: ["React"],
-            careers: ["現 카카오엔터프라이즈 인턴"],
-            mark: "companyMark/kakaoenterprise.png"
+            careers: ["前 카카오엔터프라이즈 인턴", "前 네이버 클라우드 인턴", "現 AWS Cloud Club 1st Captain"]
         },
         {
             name: "황인서",
@@ -316,6 +315,7 @@ function Main() {
         {
             name: "최세종",
             term: "21기",
+            skills: ["Cloud", "Infra"],
             careers: ["現 삼성전자"],
             mark: "companyMark/samsung.png"
         },
@@ -460,7 +460,7 @@ function Main() {
         {
             name: "조재영",
             term: "28기",
-            skills: ["Spring", "iOS"],
+            skills: ["Spring", "IOS"],
             image: "members_photo/조재영.png",
             description: "이름은 조재영이고, 99년생 입니다.."
         },
@@ -488,7 +488,7 @@ function Main() {
         {
             name: "김상현",
             term: "30기",
-            skills: ["iOS"],
+            skills: ["IOS"],
             image: "members_photo/김상현.jpeg",
             description: "ESTJ / 성격이 활발한 편입니다!"
         },
@@ -572,7 +572,7 @@ function Main() {
         {
             name: "이현화",
             term: "32기",
-            skills: ["Mobile", "iOS"],
+            skills: ["Mobile", "IOS"],
             image: "members_photo/이현화.jpg",
             description: "반갑습니당! 동아리 활동 열심히 할게요~~"
         },

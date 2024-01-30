@@ -86,14 +86,14 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김병호.jpeg" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김병호</b> / 홍보부장
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                안되면 되게하라
+                                해치지않아요~
                             </p>
                         </div>
                     </div>
