@@ -73,14 +73,14 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/박진홍.jpeg" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>박진홍</b> / 학술부장
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                안녕하세요!
+                                EC의 자랑이 되어주세요!
                             </p>
                         </div>
                     </div>

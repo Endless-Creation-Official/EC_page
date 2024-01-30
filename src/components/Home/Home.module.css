@@ -324,6 +324,11 @@
     background-color: #ddeada;
 }
 
+@media (max-width: 900px) {
+    .ddbutton {
+        font-size: 12px;
+    }
+}
 
 .ddinput {
     display: none;
@@ -339,6 +344,12 @@
     box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
     background-color: #ffffff;
     list-style-type: none;
+}
+
+@media (max-width: 900px) {
+    .ddmenu {
+        font-size: 12px;
+    }
 }
 
 .ddinput+.ddmenu {

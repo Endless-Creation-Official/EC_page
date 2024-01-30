@@ -56,6 +56,21 @@ li a {
     gap: 5%;
 }
 
+.seoultechMark {
+    position: absolute;
+    right: 10%;
+}
+
+.seoultech {
+    width: 50px;
+}
+
+@media (max-width: 900px) {
+    .seoultech {
+        width: 40px;
+    }
+}
+
 .contact b {
     position: absolute;
     right: 10%;
