@@ -133,7 +133,10 @@ function Identity() {
 }
 
 const projects = [
+    { imageLink: "https://private-user-images.githubusercontent.com/24623403/266497399-cf1c692a-1579-49a2-8d82-341d45f37fd3.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MDY2MjE1MDksIm5iZiI6MTcwNjYyMTIwOSwicGF0aCI6Ii8yNDYyMzQwMy8yNjY0OTczOTktY2YxYzY5MmEtMTU3OS00OWEyLThkODItMzQxZDQ1ZjM3ZmQzLnBuZz9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDAxMzAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQwMTMwVDEzMjY0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTc4NDRkMWNiZjRiZjlkODM2ZTczOGQ4NDQ4YjJkMDgyMGY5MzU0YTEzY2MwNTNkYmFlYWU0Y2VmOGIwMmZkNzQmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0JmFjdG9yX2lkPTAma2V5X2lkPTAmcmVwb19pZD0wIn0.8qT5oH1NgmxEpkZyx_Wirr4_8f3YN6fWY4Ba1nTWONk", mainLink:"https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
+    { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
