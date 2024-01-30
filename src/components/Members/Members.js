@@ -444,27 +444,6 @@ function Main() {
 
     const members = [
         {
-            name: "강영훈",
-            term: "32기",
-            skills: ["React", "Web", "Mobile"],
-            image: "members_photo/강영훈.jpg",
-            description: "ISTP이구요 좀 게으른 편입니다"
-        },
-        {
-            name: "김경태",
-            term: "32기",
-            skills: ["Web", "Back-end", "ML", "AI"],
-            image: "members_photo/김경태.png",
-            description: "성장하는 즐거움!"
-        },
-        {
-            name: "박진홍",
-            term: "33기",
-            skills: ["React"],
-            image: "https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png",
-            description: "안녕하세요~"
-        },
-        {
             name: "홍준희",
             term: "31기",
             skills: ["ML"],
@@ -521,6 +500,13 @@ function Main() {
             description: "손창준 / 20학번 00년생입니다!"
         },
         {
+            name: "홍준희",
+            term: "31기",
+            skills: ["ML"],
+            image: "/profile.png",
+            description: "19학번이고 25살입니다"
+        },
+        {
             name: "곽용진",
             term: "31기",
             skills: ["AI", "Game"],
@@ -547,6 +533,20 @@ function Main() {
             skills: ["Java", "Spring", "Back-end"],
             image: "members_photo/한가을.jpg",
             description: "조용하고 낯가림이 심해요. ㅇㅅㅇ,,,"
+        },
+        {
+            name: "강영훈",
+            term: "32기",
+            skills: ["React", "Web", "Mobile"],
+            image: "members_photo/강영훈.jpg",
+            description: "ISTP이구요 좀 게으른 편입니다"
+        },
+        {
+            name: "김경태",
+            term: "32기",
+            skills: ["Web", "Back-end", "ML", "AI"],
+            image: "members_photo/김경태.png",
+            description: "성장하는 즐거움!"
         },
         {
             name: "김정효",
@@ -584,12 +584,19 @@ function Main() {
             description: "EC 화이팅!"
         },
         {
+            name: "박진홍",
+            term: "33기",
+            skills: ["React"],
+            image: "members_photo/박진홍.jpeg",
+            description: "신뢰받는 개발자가 되고싶습니다!"
+        },
+        {
             name: "송진현",
             term: "33기",
             skills: ["Game", "Web", "Unity"],
             image: "members_photo/송진현.jpg",
             description: "23학번 송진현입니다!!"
-        },
+        }
     ];
 
     const graduatesSectionRef = useRef(null);
