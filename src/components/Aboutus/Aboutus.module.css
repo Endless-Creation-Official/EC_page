@@ -207,11 +207,8 @@
 .profilePhoto {
     width: 100%;
     height: auto;
-<<<<<<< HEAD
-=======
     display: flex;
     align-self: center;
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
     border-radius: 50%;
 }
 

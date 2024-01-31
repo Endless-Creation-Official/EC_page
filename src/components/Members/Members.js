@@ -26,10 +26,6 @@ function MemberCard({ name = "", term = "", skills = [], image = "", alt = "", d
     );
 }
 
-<<<<<<< HEAD
-
-function Main() {
-=======
 function GraduatesCard({ name = "", term = "", skills = [], image = "", alt = "", description = "", careers = [] }) {
     return (
         <div className={styles.graduatescard}>
@@ -374,14 +370,13 @@ function Main() {
         }
     ];
 
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
     const members = [
         {
             name: "강영훈",
             term: "32기",
-            skills: ["React", "Web", "Mobile"],
+            skills: ["React", "Web"],
             image: "members_photo/강영훈.jpg",
-            description: "ISTP이구요 좀 게으른 편입니다"
+            description: "열심히 하겠습니다."
         },
         {
             name: "김경태",
@@ -414,11 +409,7 @@ function Main() {
         {
             name: "조재영",
             term: "28기",
-<<<<<<< HEAD
-            skills: ["Spring","iOS"],
-=======
             skills: ["Spring", "iOS"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/조재영.png",
             description: "이름은 조재영이고, 99년생 입니다.."
         },
@@ -460,11 +451,7 @@ function Main() {
         {
             name: "곽용진",
             term: "31기",
-<<<<<<< HEAD
-            skills: ["AI","Game"],
-=======
             skills: ["AI", "Game"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "/profile.png",
             description: ""
         },
@@ -478,33 +465,21 @@ function Main() {
         {
             name: "정다운",
             term: "31기",
-<<<<<<< HEAD
-            skills: ["ML","Front-end","Data"],
-=======
             skills: ["ML", "Front-end", "Data"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/정다운.jpg",
             description: "논리적이고 적게 일하고 많이 얻는게 좋아요..^^"
         },
         {
             name: "한가을",
             term: "31기",
-<<<<<<< HEAD
-            skills: ["Java","Spring","Back-end"],
-=======
             skills: ["Java", "Spring", "Back-end"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/한가을.jpg",
             description: "조용하고 낯가림이 심해요. ㅇㅅㅇ,,,"
         },
         {
             name: "김정효",
             term: "32기",
-<<<<<<< HEAD
-            skills: ["Game","Unity"],
-=======
             skills: ["Game", "Unity"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/김정효.png",
             description: "둥글둥글한 성격이에요!"
         },
@@ -525,33 +500,21 @@ function Main() {
         {
             name: "이현화",
             term: "32기",
-<<<<<<< HEAD
-            skills: ["Mobile","iOS"],
-=======
             skills: ["Mobile", "iOS"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/이현화.jpg",
             description: "반갑습니당! 동아리 활동 열심히 할게요~~"
         },
         {
             name: "정지원",
             term: "32기",
-<<<<<<< HEAD
-            skills: ["Back-end","Spring","Java"],
-=======
             skills: ["Back-end", "Spring", "Java"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "/profile.png",
             description: "EC 화이팅!"
         },
         {
             name: "송진현",
             term: "33기",
-<<<<<<< HEAD
-            skills: ["Game","Web","Unity"],
-=======
             skills: ["Game", "Web", "Unity"],
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
             image: "members_photo/송진현.jpg",
             description: "23학번 송진현입니다!!"
         },
@@ -567,8 +530,6 @@ function Main() {
                     <MemberCard key={index} {...member} />
                 ))}
             </section>
-<<<<<<< HEAD
-=======
             <div className={styles.membertitle}>
                 <h1>EC graduates</h1>
             </div>
@@ -577,14 +538,9 @@ function Main() {
                     <GraduatesCard key={index} {...member} />
                 ))}
             </section>
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
         </div>
     );
 }
 
 
-<<<<<<< HEAD
 export default Main;
-=======
-export default Main;
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1

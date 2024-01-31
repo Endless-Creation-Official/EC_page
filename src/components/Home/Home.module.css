@@ -19,11 +19,8 @@
     justify-content: center;
 }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
 .title {
     color: white;
     position: relative;
@@ -539,27 +536,4 @@
     .box span {
         font-size: 10px;
     }
-<<<<<<< HEAD
 }
-
-.fade-enter {
-    opacity: 0;
-}
-  
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 300ms ease-in;
-}
-  
-.fade-exit {
-  opacity: 1;
-}
-  
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 300ms ease-in;
-}
-  
-=======
-}
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1

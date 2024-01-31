@@ -13,10 +13,6 @@
     "react-scripts": "5.0.1",
     "react-simple-image-slider": "^2.4.1",
     "react-slick": "^0.29.0",
-<<<<<<< HEAD
-    "react-transition-group": "^4.4.5",
-=======
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
     "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },

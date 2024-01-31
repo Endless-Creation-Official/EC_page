@@ -72,8 +72,4 @@ const faqData = [
     },
 ];
 
-<<<<<<< HEAD
 export default Main;
-=======
-export default Main;
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1

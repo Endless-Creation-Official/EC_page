@@ -1,54 +1,11 @@
 import styles from "./Home.module.css";
 import React, { useState, useEffect, useRef } from 'react';
-<<<<<<< HEAD
-import { throttle } from 'lodash';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
-
-function Main() {
-    const [currentSection, setCurrentSection] = useState(0);
-
-    const handleScroll = throttle((event) => {
-        if (event.deltaY > 0) {
-            setCurrentSection(prev => Math.min(prev + 1, 5)); // 섹션 수 수정
-        } else {
-            setCurrentSection(prev => Math.max(prev - 1, 0));
-        }
-    }, 1000);
-
-    useEffect(() => {
-        window.addEventListener('wheel', handleScroll);
-        return () => window.removeEventListener('wheel', handleScroll);
-    }, []);
-
-    return (
-        <TransitionGroup>
-            <CSSTransition
-                key={currentSection}
-                classNames="fade"
-                timeout={300}
-            >
-                <div>
-                    {currentSection === 0 && <Title />}
-                    {currentSection === 1 && <AboutEC />}
-                    {currentSection === 2 && <Identity />}
-                    {currentSection === 3 && <Project />}
-                    {currentSection === 4 && <Process />}
-                    {currentSection === 5 && <FAQ />}
-                </div>
-            </CSSTransition>
-        </TransitionGroup>
-    );
-}
-
-function Title() {
-=======
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
+
 function Main() {
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
     return (
         <div className={styles.container}>
             <div className={styles.maintitle}>
@@ -57,14 +14,11 @@ function Main() {
                     <h2 className={styles.textbox}>34기 모집 중!</h2>
                 </div>
             </div>
-<<<<<<< HEAD
-=======
             <AboutEC></AboutEC>
             <Identity></Identity>
             <Project></Project>
             <Process></Process>
             <FAQ></FAQ>
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
         </div>
     );
 }
@@ -178,8 +132,6 @@ function Identity() {
     );
 }
 
-<<<<<<< HEAD
-=======
 const projects=['A', 'B', 'C', 'D', 'E'];
 function ProjectSlide(){
     const settings = {
@@ -209,32 +161,12 @@ function ProjectSlide(){
     )
 }
 
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
 function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-<<<<<<< HEAD
-            <div className={styles.projectContainer}>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png" alt="MoyeoRun"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png" alt="Upgle"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png" alt="Gamp"></img>
-                </div>
-                <div className={styles.boxproject}>
-                    <img src="https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png" alt="Join"></img>
-                </div>
-            </div>
-            <label className={styles.dropdown}>
-
-=======
             <ProjectSlide></ProjectSlide>
             <label className={styles.dropdown}>
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
                 <div className={styles.ddbutton}>
                     프로젝트 & 스터디 더보기
                 </div>
@@ -342,8 +274,4 @@ const faqData = [
     },
 ];
 
-<<<<<<< HEAD
 export default Main;
-=======
-export default Main;
->>>>>>> b0c3ec0e822612fdbc088d458584d0361035a1d1
