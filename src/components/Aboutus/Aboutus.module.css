@@ -205,8 +205,10 @@
 }
 
 .profilePhoto {
+    object-fit: cover;
+    /* object-fit을 사용하여 강제로 원형으로 자름 */
     width: 100%;
-    height: auto;
+    aspect-ratio: 1 / 1; /* 가로 세로 비율을 1:1로 설정 */
     display: flex;
     align-self: center;
     border-radius: 50%;
