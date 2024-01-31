@@ -16,33 +16,32 @@ function FormBox({ questionNumber, questionText }) {
 }
 
 function Main() {
-  // Map through the questions object and create FormBox for each question
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const formBoxes = Object.entries(questions).map(([key, value]) => (
     <FormBox key={key} questionNumber={key} questionText={value} />
   ));
+  const handleSubmit= async (event) => {
+    event.preventDefault();
+    // let formData = new FormData(event.target);
+    // for(let entry of formData.entries()){
+    //   console.log(entry[0], entry[1]);
+    // }
+    alert("아직 지원 기간이 아닙니다. \n서류 지원 기간: 2월20일 ~ 3월 1일");
+  }
 
   return (
-    <form action={(formData)=>{
-      // 데이터 가져와서
-      // 비동기 처리
-    }}>
+    <form onSubmit={handleSubmit}>
       <div className={styles.main}>
         <h1 className={styles.title}>34기 지원서 </h1>
         {formBoxes}
+      </div>
+      <div className={styles.ButtonContainer}>
+        <button type="submit" className={styles.admitButton}>
+          제출하기
+        </button>
       </div>
     </form>
   );
 }
 
-function Admit() {
-    return(
-      <div className={styles.ButtonContainer}>
-        <div className={styles.admitButton}>
-          제출하기
-        </div>
-      </div>
-    )
-}
-
-
-export { Main, Admit };
+export default Main;

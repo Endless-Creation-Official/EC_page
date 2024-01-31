@@ -81,15 +81,11 @@
 }
 
 .accordion {
-    width: 40%;
+    width: 50%;
     font-family : 'SOYOMapleBoldTTF';
 }
 
-@media (max-width: 600px) {
-    .accordion {
-        width: 80%;
-    }
-}
+
 .accordion .accordionitem {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -151,11 +147,26 @@
     overflow: hidden;
     transition: opacity 200ms linear, max-height 200ms linear;
     will-change: opacity, max-height;
-    color: black;
+    color: rgb(255, 255, 255);
 }
 
 .accordion .accordioncontent p {
     font-size: 1rem;
     font-weight: 450;
-    margin: 2em 0;
+    margin: 2rem 0;
+    text-align: left;
+}
+
+
+@media (max-width: 900px) {
+    .accordion {
+        width: 90%;
+    }
+    .accordion button {
+        font-size: 1rem;
+    }
+    .accordion .accordioncontent p {
+        font-size: 14px;
+        margin: 1rem 0;
+    }
 }

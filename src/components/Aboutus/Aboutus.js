@@ -15,7 +15,7 @@ function Main() {
                         <h1>Endless Creation</h1>
                     </div>
                     <p>
-                        <b>Endless Creation</b>은 사람과 컴퓨터를 사랑하는 동아리로, 창립한 지 34년째 되는 역사 깊은 동아리입니다.
+                        <b>Endless Creation</b>은 사람과 컴퓨터를 사랑하는 동아리로, 창립한 지 34년째 되는 서울과학기술대학교에서 가장 오래된 역사 깊은 동아리입니다.
                     </p>
                     <p className={styles.hiddenP}>
                         EC에서는 1학기 동안 C언어를 비롯한 프로그래밍 언어와 기초적인 CS지식에 대한 스터디를 통해 멤버들의 전문성을 키워나갑니다.
@@ -60,7 +60,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/김경태.png" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김경태1.jpg" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김경태</b> / 부회장
@@ -73,27 +73,27 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/박진홍.jpeg" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>박진홍</b> / 학술부장
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                안녕하세요!
+                                EC의 자랑이 되어주세요!
                             </p>
                         </div>
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김병호.jpeg" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김병호</b> / 홍보부장
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                안되면 되게하라
+                                해치지않아요~
                             </p>
                         </div>
                     </div>

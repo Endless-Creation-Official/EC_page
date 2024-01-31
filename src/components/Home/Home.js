@@ -3,15 +3,13 @@ import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
-
 function Main() {
     return (
         <div className={styles.container}>
             <div className={styles.maintitle}>
                 <div className={styles.title}>
                     <h1>Endless Creation</h1>
-                    <h2 className={styles.textbox}>34기 모집 중!</h2>
+                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
                 </div>
             </div>
             <AboutEC></AboutEC>
@@ -132,29 +130,38 @@ function Identity() {
     );
 }
 
-const projects=['A', 'B', 'C', 'D', 'E'];
-function ProjectSlide(){
+const projects = [
+    { imageLink: "./projectimage/duting-app.png", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
+    { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
+    { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
+
+];
+function ProjectSlide() {
     const settings = {
-      className:"center",
-      centerMode:true,
-      infinite: true,
-      dots: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      arrows:true
-      
+        className: "center",
+        centerMode: true,
+        infinite: true,
+        dots: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true
+
     };
 
     const randerSlides = () => (
         projects.map(element => (
             <div className={styles.projectImageContainer}>
-                <h3>{element}</h3>
+                <img src={element.imageLink} className={styles.imagesize} alt={element.mainLink}></img>
             </div>
         ))
     );
 
-    return(
+    return (
         <div className={styles.slideContainer}>
             <Slider {...settings}> {randerSlides()}</Slider>
         </div>
@@ -165,7 +172,9 @@ function Project() {
     return (
         <div className={styles.project}>
             <h1>Project & Study</h1>
-            <ProjectSlide></ProjectSlide>
+            <div className={styles.slidebox}>
+                <ProjectSlide></ProjectSlide>
+            </div>
             <label className={styles.dropdown}>
                 <div className={styles.ddbutton}>
                     프로젝트 & 스터디 더보기
@@ -195,24 +204,24 @@ function Process() {
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>~ 2.15</td>
+                        <td>2.15~3.1</td>
                         <td>34기 서류 지원</td>
                     </tr>
                     <tr>
-                        <td>2.17</td>
+                        <td>3.3</td>
                         <td>1차 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>2.18 ~ 2.20</td>
+                        <td>3.4~3.7</td>
                         <td>2차 면접(대면)</td>
                     </tr>
                     <tr>
-                        <td>2.22</td>
+                        <td>3.9</td>
                         <td>최종 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>2.24</td>
-                        <td>워크샵</td>
+                        <td>3.11</td>
+                        <td>개강총회</td>
                     </tr>
                 </tbody>
             </table>
@@ -253,25 +262,29 @@ function FAQ() {
 
 const faqData = [
     {
-        question: '자주하는 질문1',
-        answer: '설명',
+        question: 'EC에서는 어떤 활동을 하나요?',
+        answer: '1학기에 신입생분들은 학술부장의 주도 하에 C 스터디를 진행합니다. 2, 3학년의 경우, 인원을 모아 프로젝트나 CS지식 등 분야에 관계없이 자유롭게 스터디를 진행합니다. 2학기에는 팀을 형성하여 1학기에 쌓은 지식을 기반으로 다양한 프로젝트에 도전하게 됩니다.',
     },
     {
-        question: '자주하는 질문2',
-        answer: '설명',
+        question: '개발 경험이 거의 없는데, 활동할 수 있을까요?',
+        answer: '네! EC는 열정 넘치는 사람들이 모여 함께 성장하는 것을 추구합니다. 따라서 개발 경험과 실력보다는 배우고자 하는 열정과 이루고자 하는 목표를 더 중요시합니다. 여러분의 뜨거운 열정을 기대하겠습니다!',
     },
     {
-        question: '자주하는 질문3',
-        answer: '설명',
+        question: 'EC에서 얻어갈 수 있는 것이 무엇인가요?',
+        answer: 'EC에서는 선후배 간의 네트워킹 세미나와 다양한 프로젝트를 통해 성장할 수 있는 소중한 경험을 제공합니다. 또한, 이를 토대로 각자의 포트폴리오를 구축할 수 있는 기회를 마련하고 있습니다.',
     },
     {
-        question: '자주하는 질문4',
-        answer: '설명',
+        question: '스터디 외에 어떤 다른 활동을 하나요?',
+        answer: '스터디 외에 MT, 한강나들이 등 친목 활동을 하며 동아리원들과의 추억을 쌓습니다. 이외에도 공부하다 지친다면 자유롭게 인원을 구성하여 놀러가셔도 됩니다.',
     },
     {
-        question: '자주하는 질문5',
-        answer: '설명',
+        question: 'EC만의 장점이 있나요?',
+        answer: 'Endless Creation은 컴퓨터공학과에서 가장 오랜 역사를 자랑하는 동아리로, 그만큼 선배들이 쌓아놓은 자료들과 소통 창구가 잘 구성되어있습니다. 오랜 기간 동안 쌓인 노하우와 경험을 통해, 회원들이 보다 풍부한 학문적인 환경에서 성장할 수 있도록 최선을 다하고 있습니다.',
     },
+    {
+        question: '세미나에서는 어떤 것들을 하나요?',
+        answer: '세미나에서는 한 학기 동안 공부한 내용을 토대로 발표를 진행하며, 세미나 종료 후에는 회원 간의 소통을 촉진하기 위해 회식이 준비되어 있습니다. 함께 지낸 시간을 더욱 소중하게 만들어 줄 특별한 순간들이 기다리고 있습니다.',
+    }
 ];
 
 export default Main;

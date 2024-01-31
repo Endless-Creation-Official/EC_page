@@ -64,6 +64,7 @@ input::placeholder{
 }
 
 .admitButton {
+    background-color: rgb(62, 217, 104);
     position: relative;
     color:rgb(255, 255, 255);
     font-size:x-large;
