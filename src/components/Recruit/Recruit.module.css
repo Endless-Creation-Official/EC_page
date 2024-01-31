@@ -1,5 +1,6 @@
 /* .container의 스타일 */
 .container {
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(26, 66, 14) 61%, rgb(62, 100, 50) 100%);
     display: flex;
     margin: auto;
     text-align: center;
