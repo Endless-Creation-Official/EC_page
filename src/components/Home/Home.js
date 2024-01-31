@@ -145,7 +145,7 @@ function ProjectSlide() {
         className: "center",
         centerMode: true,
         infinite: true,
-        dots: true,
+        dots: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,

@@ -232,9 +232,19 @@
 
 
 
-
-.slidebox {
+.activity {
+    width: min(1200px, 80%);
+    position: relative;
+    align-self: center;
+    text-align: center;
+    margin: 20% auto;
+}
+.activity h1 {
+    font-size: 45px;
+}
+.slideBox {
     width: 100%;
+    margin: 10% 0;
 }
 .imagesize {
     height: 400px;
@@ -247,5 +257,10 @@
         width: 200px;
         height: 100%;
     }
+    .activity h1 {
+        font-size: 28px;
+    }
+    .slideBox {
+        font-size: 11px;
+    }
 }
-
