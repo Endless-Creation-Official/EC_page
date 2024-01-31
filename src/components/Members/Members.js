@@ -545,7 +545,7 @@ function Main() {
             name: "강영훈",
             term: "32기",
             skills: ["React", "Web", "ML"],
-            image: "members_photo/강영훈.jpg",
+            image: "members_photo/강영훈.png",
             description: "열심히 하는 중"
         },
         {

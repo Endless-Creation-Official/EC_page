@@ -39,23 +39,18 @@ function Main() {
                 </div>
             </div>
             <Operator></Operator>
-            <h1>활동</h1>
             <div className={styles.activity}>
-                <div className={styles.slideWrapper}>
+                <h1>활동</h1>
+                <div className={styles.slideBox}>
                     <h2>growth & cooperation</h2>
-                    <div className={styles.slideBox}>
-                        <Slide slideImage = {growth}></Slide>
-                    </div>
+                    <Slide slideImage={growth}></Slide>
                 </div>
-                <div className={styles.slideWrapper}>
+                <div className={styles.slideBox}>
                     <h2>networking</h2>
-                    <div className={styles.slideBox}>
-                        <Slide slideImage = {networking}></Slide>
-                    </div>
+                    <Slide slideImage={networking}></Slide>
                 </div>
             </div>
         </div>
-
     )
 }
 
@@ -68,7 +63,7 @@ function Operator() {
             </div>
             <section className={styles.operators}>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/강영훈.jpg" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/강영훈.png" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>강영훈</b> / 회장
@@ -125,7 +120,7 @@ function Operator() {
 }
 
 const growth = [
-    { imageLink: "./projectimage/duting-app.png", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/duting-app.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
@@ -135,7 +130,7 @@ const growth = [
 
 ];
 const networking = [
-    { imageLink: "./projectimage/duting-app.png", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/duting-app.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
@@ -145,12 +140,12 @@ const networking = [
 
 ];
 function Slide(props) {
-    const {slideImage} = props;
+    const { slideImage } = props;
     const settings = {
         className: "center",
         centerMode: true,
         infinite: true,
-        dots: true,
+        dots: false,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,
