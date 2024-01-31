@@ -544,9 +544,9 @@ function Main() {
         {
             name: "강영훈",
             term: "32기",
-            skills: ["React", "Web", "Mobile"],
+            skills: ["React", "Web", "ML"],
             image: "members_photo/강영훈.jpg",
-            description: "ISTP이구요 좀 게으른 편입니다"
+            description: "열심히 하는 중"
         },
         {
             name: "김경태",
