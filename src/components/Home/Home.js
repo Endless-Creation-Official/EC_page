@@ -222,7 +222,7 @@ function Process() {
                     </tr>
                     <tr>
                         <td>3.11</td>
-                        <td>워크샵</td>
+                        <td>개강총회</td>
                     </tr>
                 </tbody>
             </table>
