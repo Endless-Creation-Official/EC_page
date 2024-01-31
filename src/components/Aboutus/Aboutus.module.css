@@ -229,3 +229,23 @@
         height: calc(var(--vh, 1vh) * 120);
     }
 }
+
+
+
+
+.slidebox {
+    width: 100%;
+}
+.imagesize {
+    height: 400px;
+    display: flex;
+    align-self: center;
+    margin: auto;
+}
+@media (max-width: 900px) {
+    .imagesize {
+        width: 200px;
+        height: 100%;
+    }
+}
+
