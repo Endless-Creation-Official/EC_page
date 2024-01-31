@@ -205,23 +205,23 @@ function Process() {
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>~ 2.15</td>
+                        <td>2.15~3.1</td>
                         <td>34기 서류 지원</td>
                     </tr>
                     <tr>
-                        <td>2.17</td>
+                        <td>3.3</td>
                         <td>1차 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>2.18 ~ 2.20</td>
+                        <td>3.4~3.7</td>
                         <td>2차 면접(대면)</td>
                     </tr>
                     <tr>
-                        <td>2.22</td>
+                        <td>3.9</td>
                         <td>최종 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>2.24</td>
+                        <td>3.11</td>
                         <td>워크샵</td>
                     </tr>
                 </tbody>
