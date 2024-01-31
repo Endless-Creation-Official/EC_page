@@ -392,6 +392,13 @@ function Main() {
             mark: "companyMark/데브구루.png"
         },
         {
+            name: "최정현",
+            term: "9기",
+            skills: ["System", "Mobile", "Back-end"],
+            careers: ["現 데브구루 연구소장"],
+            mark: "companyMark/데브구루.png"
+        },
+        {
             name: "이주용",
             term: "8기",
             careers: ["現 LG전자"],
@@ -498,6 +505,13 @@ function Main() {
             skills: ["ML"],
             image: "/profile.png",
             description: "19학번이고 25살입니다"
+        },
+        {
+            name: "김병호",
+            term: "31기",
+            skills: ["Secure", "Mobile"],
+            image: "./members_photo/김병호.jpeg",
+            description: "해치지않아요~"
         },
         {
             name: "곽용진",
