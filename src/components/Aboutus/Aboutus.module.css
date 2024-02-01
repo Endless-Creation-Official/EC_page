@@ -284,6 +284,7 @@
 
 .imagesize {
     height: 400px;
+    width: auto;
     display: flex;
     align-self: center;
     margin: auto;
@@ -296,8 +297,8 @@
         align-items: center;
     }
     .imagesize {
-        width: 180px;
-        height: 100%;
+        height: 400px;
+        width: auto;
     }
 
     .activity h1 {
@@ -306,5 +307,40 @@
 
     .slideBox {
         font-size: 11px;
+    }
+}
+
+@media (max-width: 800px) {
+    .imagesize {
+        height: 300px;
+        width: auto;
+    }
+}
+
+@media (max-width: 700px) {
+    .imagesize {
+        height: 200px;
+        width: auto;
+    }
+}
+
+@media (max-width: 550px) {
+    .imagesize {
+        height: 150px;
+        width: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .imagesize {
+        height: 120px;
+        width: auto;
+    }
+}
+
+@media (max-width: 350px) {
+    .imagesize {
+        height: 100px;
+        width: auto;
     }
 }
