@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.aboutContainer}>
                 <div className={styles.slider}>
-                    <img src="./cooperationimage/정기세션타이틀.jpg" className={styles.aboutusImage} alt="example"></img>
+                    <img src="./networkingimage/정기세션타이틀.jpg" className={styles.aboutusImage} alt="example"></img>
                 </div>
                 <div className={styles.about}>
                     <div className={styles.head}>
