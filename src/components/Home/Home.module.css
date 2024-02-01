@@ -270,13 +270,29 @@
 
     .projectContainer {
         display: flex;
+        position: relative;
+        height: 20vh;
         flex-direction: column;
     }
-
+    .slidebox{
+        display:flex;
+        flex-direction: column;
+        justify-self:center;
+    }
     .boxproject {
         display: flex;
+        position:relative;
         width: 100%;
-        margin: 10px 0;
+        height: 100px;
+        margin-left:10px;
+    }
+    .imagesize {
+        width: 175px;
+        height: 150px;
+    }
+    .i5magesize{
+        width:80%;;
+        height: 150px;
     }
 }
 
@@ -585,15 +601,9 @@
 }
 
 .imagesize {
-    height: 400px;
+    width:95%;
+    height: 130px;
     display: flex;
     align-self: center;
     margin: auto;
-}
-
-@media (max-width: 900px) {
-    .imagesize {
-        width: 200px;
-        height: 100%;
-    }
 }
