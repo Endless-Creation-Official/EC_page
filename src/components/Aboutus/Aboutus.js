@@ -12,6 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.aboutContainer}>
                 <div className={styles.slider}>
+
                     <img src="https://img1.daumcdn.net/thumb/C500x500/?fname=http://t1.daumcdn.net/brunch/service/guest/image/jhenA17EwA0hMPpjb9z2iEx2--0.png" className={styles.aboutusImage} alt="example"></img>
                 </div>
                 <div className={styles.about}>
@@ -42,11 +43,11 @@ function Main() {
             <div className={styles.activity}>
                 <h1>활동</h1>
                 <div className={styles.slideBox}>
-                    <h2>growth & cooperation</h2>
-                    <Slide slideImage={growth}></Slide>
+                    <h2>Cooperation</h2>
+                    <Slide slideImage={cooperation}></Slide>
                 </div>
                 <div className={styles.slideBox}>
-                    <h2>networking</h2>
+                    <h2>Networking</h2>
                     <Slide slideImage={networking}></Slide>
                 </div>
             </div>
@@ -119,25 +120,23 @@ function Operator() {
     )
 }
 
-const growth = [
-    { imageLink: "./projectimage/duting-app.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
-    { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
-
+const cooperation = [
+    { imageLink: "./cooperationimage/정기세션1.jpg", mainLink: "선배특강2" },
+    { imageLink: "./cooperationimage/정기세션2.jpg", mainLink: "선배특강2" },
+    { imageLink: "./cooperationimage/정기세션3.jpg", mainLink: "선배특강2" },
+    { imageLink: "./cooperationimage/선배특강.jpg", mainLink: "선배특강2" },
+    { imageLink: "./cooperationimage/세미나네트워킹.jpg", mainLink: "선배특강2" },
+    { imageLink: "./cooperationimage/정기세션단체사진.jpg", mainLink: "선배특강2" }
 ];
 const networking = [
-    { imageLink: "./projectimage/duting-app.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
-    { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
-
+    { imageLink: "./networkingimage/세미나회식.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/하계MT단체1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/하계MT단체2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/하계MT단체3.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/하계MT단체4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/한강1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/한강2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./networkingimage/한강4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" }
 ];
 function Slide(props) {
     const { slideImage } = props;
