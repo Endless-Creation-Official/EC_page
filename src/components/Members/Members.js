@@ -172,7 +172,7 @@ function Main() {
             name: "김건훈",
             term: "27기",
             skills: ["System", "Back-end"],
-            careers: ["前 SW마에스트로", "前 당근 인턴", "現 네이버웹툰"],
+            careers: ["前 당근 인턴", "前 SW마에스트로", "現 네이버웹툰"],
             mark: "companyMark/webtoon.png"
         },
         {
