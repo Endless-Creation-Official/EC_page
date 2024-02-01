@@ -91,8 +91,8 @@ function Main() {
             name: "황인서",
             term: "28기",
             skills: ["Front-end"],
-            careers: ["前 SW마에스트로", "現 네이버웹툰"],
-            mark: "companyMark/webtoon.png"
+            careers: ["前 SW마에스트로", "現 네이버"],
+            mark: "companyMark/네이버.png"
         },
         {
             name: "조재영",
