@@ -137,6 +137,11 @@ const projects = [
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/토이프로젝트.jpg", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/알고리즘스터디.jpg", mainLink: "알고리즘 스터디" },
+    { imageLink: "./projectimage/React스터디.jpg", mainLink: "리액트 스터디" },
+    { imageLink: "./projectimage/머신러닝스터디.jpg", mainLink: "머신러닝 스터디" },
+    { imageLink: "./projectimage/게임스터디.jpg", mainLink: "게임 스터디" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
 
 ];
