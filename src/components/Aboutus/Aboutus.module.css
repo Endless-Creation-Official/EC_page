@@ -221,6 +221,17 @@
     border-radius: 50%;
 }
 
+.slidebox{
+    display:flex;
+    flex-direction: column;
+    justify-self:center;
+}
+
+.imageContainer{
+    position:relative;
+    height:20vh;
+}
+
 @media (max-width: 900px) {
     .name {
         font-size: 18px;
@@ -236,7 +247,20 @@
     .aboutContainer {
         height: calc(var(--vh, 1vh) * 120);
     }
+
+    .slidebox {
+        width: 100%;
+    }
+    
+    .imagesize {
+        width:95%;
+        height: 130px;
+        display: flex;
+        align-self: center;
+        margin: auto;
+    }
 }
+
 
 
 

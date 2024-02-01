@@ -286,14 +286,7 @@
         height: 100px;
         margin-left:10px;
     }
-    .imagesize {
-        width: 175px;
-        height: 150px;
-    }
-    .i5magesize{
-        width:80%;;
-        height: 150px;
-    }
+
 }
 
 
@@ -602,7 +595,7 @@
 
 .imagesize {
     width:95%;
-    height: 130px;
+    height: 500px;
     display: flex;
     align-self: center;
     margin: auto;
