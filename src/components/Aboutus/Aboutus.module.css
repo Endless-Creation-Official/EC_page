@@ -221,15 +221,16 @@
     border-radius: 50%;
 }
 
-.slidebox{
-    display:flex;
-    flex-direction: column;
-    justify-self:center;
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1%;
 }
 
-.imageContainer{
-    position:relative;
-    height:20vh;
+.boxproject img {
+    max-width: 100%;
+    max-height: auto;
 }
 
 @media (max-width: 900px) {
@@ -289,8 +290,13 @@
 }
 
 @media (max-width: 900px) {
+    .imageContainer{
+        margin-left:2px;
+        margin-right: 2px;
+        align-items: center;
+    }
     .imagesize {
-        width: 200px;
+        width: 180px;
         height: 100%;
     }
 
