@@ -42,12 +42,12 @@ function Main() {
             <div className={styles.activity}>
                 <h1>활동</h1>
                 <div className={styles.slideBox}>
-                    <h2>Cooperation</h2>
-                    <Slide slideImage={cooperation}></Slide>
+                    <h2>Netwroking</h2>
+                    <Slide slideImage={networking}></Slide>
                 </div>
                 <div className={styles.slideBox}>
-                    <h2>Networking</h2>
-                    <Slide slideImage={networking}></Slide>
+                    <h2>Cooperation</h2>
+                    <Slide slideImage={cooperation}></Slide>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@ function Operator() {
                         </div>
                         <div className={styles.introduction}>
                             <p>
-                                ISTP이구요 좀 게으른 편입니다
+                                열심히 하는 중
                             </p>
                         </div>
                     </div>
@@ -119,23 +119,23 @@ function Operator() {
     )
 }
 
-const cooperation = [
-    { imageLink: "./cooperationimage/정기세션1.jpg", mainLink: "선배특강2" },
-    { imageLink: "./cooperationimage/정기세션2.jpg", mainLink: "선배특강2" },
-    { imageLink: "./cooperationimage/정기세션3.jpg", mainLink: "선배특강2" },
-    { imageLink: "./cooperationimage/선배특강.jpg", mainLink: "선배특강2" },
-    { imageLink: "./cooperationimage/세미나네트워킹.jpg", mainLink: "선배특강2" },
-    { imageLink: "./cooperationimage/정기세션단체사진.jpg", mainLink: "선배특강2" }
-];
 const networking = [
-    { imageLink: "./networkingimage/세미나회식.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/하계MT단체1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/하계MT단체2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/하계MT단체3.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/하계MT단체4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/한강1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/한강2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./networkingimage/한강4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" }
+    { imageLink: "./networkingimage/정기세션1.jpg", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션2.jpg", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션3.jpg", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/선배특강.jpg", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/세미나네트워킹.jpg", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션단체사진.jpg", mainLink: "선배특강2" }
+];
+const cooperation = [
+    { imageLink: "./cooperationimage/세미나회식.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체3.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" }
 ];
 function Slide(props) {
     const { slideImage } = props;
