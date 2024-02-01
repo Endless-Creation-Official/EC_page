@@ -144,7 +144,8 @@ function Main() {
             name: "김예림",
             term: "27기",
             skills: ["Java", "Spring", "e-commerce"],
-            careers: []
+            careers: ["現 아이디어스"],
+            mark: "companyMark/아이디어스.png"
         },
         {
             name: "김성현",
