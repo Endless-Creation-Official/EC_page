@@ -431,6 +431,12 @@ function Main() {
             mark: "companyMark/hanwhasystem.png"
         },
         {
+            name: "김인우",
+            term: "2기",
+            careers: ["現 한국하니웰"],
+            mark: "companyMark/하니웰.png"
+        },
+        {
             name: "이봉석",
             term: "1기",
             careers: ["前 안철수연구소", "現 하제소프트 대표이사"],
