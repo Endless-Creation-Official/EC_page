@@ -10,7 +10,7 @@ function FormBox({ questionNumber, questionText }) {
             <h1 className={styles.question}>{`질문 ${questionNumber}`}</h1>
             <p>{questionText}</p>
         </div>
-      <textarea type="text"  className={styles.textbox}></textarea>
+      <textarea type="text" name={questionNumber} className={styles.textbox}></textarea>
     </div>
   );
 }
@@ -30,7 +30,7 @@ function Main() {
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form action="https://localhost:3000/create_process" method="post">
       <div className={styles.main}>
         <h1 className={styles.title}>34기 지원서 </h1>
         {formBoxes}
