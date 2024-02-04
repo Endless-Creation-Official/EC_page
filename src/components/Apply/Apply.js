@@ -26,7 +26,7 @@ function Main() {
     // for(let entry of formData.entries()){
     //   console.log(entry[0], entry[1]);
     // }
-    alert("아직 지원 기간이 아닙니다. \n서류 지원 기간: 2월20일 ~ 3월 1일");
+    alert("서류 제출 기간이 아닙니다.\n지원 기간 : 2월 15일 ~ 3월 1일");
   }
 
   return (
