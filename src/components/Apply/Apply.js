@@ -30,7 +30,7 @@ function Main() {
   }
 
   return (
-    <form action="https://localhost:3000/create_process" method="post">
+    <form action="https://localhost:3000/success" method="post">
       <div className={styles.main}>
         <h1 className={styles.title}>34기 지원서 </h1>
         {formBoxes}
