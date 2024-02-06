@@ -40,6 +40,7 @@ function Main() {
   // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
   const handleSubmit= async (event) => {
     event.preventDefault();
+
     //alert("아직 지원 기간이 아닙니다. \n서류 지원 기간: 2월20일 ~ 3월 1일");
     event.preventDefault();
 
@@ -51,6 +52,7 @@ function Main() {
     alert(`제출 완료되었습니다. \n${formData.get("name")}님 행운을 빌어요!`);
     console.log(formData);
     resetForm(formData);
+
   }
 
 
