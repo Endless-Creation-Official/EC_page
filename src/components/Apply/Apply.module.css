@@ -6,11 +6,9 @@
     display:flex;
     align-items: center;
     flex-direction: column;
-
     margin-top: 9rem;
     color:rgb(255, 255, 255);
-    background-color: rgb(0, 0, 0);
-    border-radius: 1rem
+    border-radius: 1rem;
 }
 
 .form{
@@ -24,11 +22,22 @@
     border: 5px solid black;
     border-radius: 1.5rem;
 }
+
+.privacy {
+    margin: 2%;
+    padding: 10px;
+    border-radius: 2rem;
+}
+
 .question{
     width:90%;
     align-items: center;
     margin-top:10px;
     font-size:x-large;
+}
+
+.question p{
+    font-size: 18px;
 }
 
 .textbox {
@@ -48,7 +57,6 @@
 }
 
 input::placeholder{
-    border: 20px solid red;
     border-radius: 10rem;
 }
 
@@ -64,11 +72,11 @@ input::placeholder{
 }
 
 .admitButton {
-    background-color: rgb(62, 217, 104);
+    background-color: rgb(44, 106, 60);
     position: relative;
     color:rgb(255, 255, 255);
     font-size:x-large;
-    border:5px solid rgb(255, 255, 255);
+    border:3px solid rgb(122, 121, 121);
     border-radius: 1rem;
     width:80%;
     height: 30%;

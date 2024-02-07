@@ -44,20 +44,20 @@ function Main() {
     <form onSubmit={handleSubmit} method="post">
       <div className={styles.main}>
         <h1 className={styles.title}>34기 지원서 </h1>
-        <label>
+        <h2>개인 정보</h2>
           이름
-          <input name="name" type="text"
+          <input className={styles.privacy} name="name" type="text" placeholder="이름을 입력해주세요"
             onChange={(e) => setName(e.target.value)} value={name}></input>
-        </label>
-        <label>
+          
           전화 번호
-          <input name="phoneNumber" type="text"
+          <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요"
             onChange={(e) => setPhoneNumber(e.target.value)} value={phonenumber}></input>
-        </label>
-        Email
-        <input name="email" type="text"
-          onChange={(e) => setEmail(e.target.value)} value={email}></input>
 
+          Email
+          <input className={styles.privacy} name="email" type="text" placeholder="이메일을 입력해주세요"
+            onChange={(e) => setEmail(e.target.value)} value={email}></input>
+
+        <h2>질문 목록</h2>
         <div className={styles.form}>
           <div className={styles.question}>
             <h1 className={styles.question}>{`질문 1`}</h1>
@@ -66,6 +66,7 @@ function Main() {
           <textarea type="text"
             name="q1"
             className={styles.textbox}
+            placeholder="내용을 입력해주세요"
             onChange={(e) => setQ1(e.target.value)} value={q1}>
           </textarea>
         </div>
@@ -77,6 +78,7 @@ function Main() {
           <textarea type="text"
             name="q2"
             className={styles.textbox}
+            placeholder="내용을 입력해주세요"
             onChange={(e) => setQ2(e.target.value)} value={q2}>
           </textarea>
         </div>
@@ -88,6 +90,7 @@ function Main() {
           <textarea type="text"
             name="q3"
             className={styles.textbox}
+            placeholder="내용을 입력해주세요"
             onChange={(e) => setQ3(e.target.value)} value={q3}>
           </textarea>
         </div>
