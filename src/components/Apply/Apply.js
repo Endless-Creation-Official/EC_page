@@ -1,5 +1,5 @@
 // Apply.js
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import styles from "./Apply.module.css";
 import { questions } from "./Question"
 
@@ -10,17 +10,29 @@ function Main() {
     const questionId = `Q${questionNumber}`;
     questionRefs[questionId] = useRef();
     const [count, setCount] = useState(0);
+    const [text, setText] = useState('');
 
     const handleTextChange = (e) => {
       // 연속된 스페이스를 하나로 처리하여 글자수 계산
       const text = e.target.value;
       const textWithoutExtraSpaces = text.replace(/\s\s+/g, ' ');
       const textLength = textWithoutExtraSpaces.trim().length; // trim()을 사용하여 문자열 양 끝의 공백 제거
-  
+      
       setCount(textLength);
-  };
-  
 
+      const newText = e.target.value;
+
+      setText(newText);
+      localStorage.setItem(questionId, newText);
+    };
+
+    useEffect(() => {
+      const savedText = localStorage.getItem(questionId);
+      if (savedText) {
+        setText(savedText);
+      }
+    }, [questionId]);
+  
     return(
       <div className={styles.form}>
         <div className={styles.question}>
@@ -28,7 +40,8 @@ function Main() {
             <p>{questionText}</p>
         </div>
       <textarea 
-        type="text" 
+        type="text"
+        value={text} 
         name={questionId}
         ref={questionRefs[questionId]}
         className={styles.textbox}
