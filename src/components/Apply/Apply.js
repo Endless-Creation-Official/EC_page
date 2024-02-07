@@ -37,19 +37,18 @@ function Main() {
       <div className={styles.form}>
         <div className={styles.question}>
             <h1 className={styles.question}>{`질문 ${questionNumber}`}</h1>
-            <p>{questionText}</p>
+            <p>{questionText} {count}/300</p>
         </div>
-      <textarea 
-        type="text"
-        value={text} 
-        name={questionId}
-        ref={questionRefs[questionId]}
-        className={styles.textbox}
-        onChange={handleTextChange}
-        maxLength="300"
-      />
-      <div className={styles.charCount}>{count}/300</div>
-    </div>
+          <textarea 
+            type="text"
+            value={text} 
+            name={questionId}
+            ref={questionRefs[questionId]}
+            className={styles.textbox}
+            onChange={handleTextChange}
+            maxLength="300"
+          />
+      </div>
     )
   }
 
