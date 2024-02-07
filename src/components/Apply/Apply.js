@@ -9,6 +9,17 @@ function Main() {
   function FormBox({questionNumber, questionText}) {
     const questionId = `Q${questionNumber}`;
     questionRefs[questionId] = useRef();
+    const [count, setCount] = useState(0);
+
+    const handleTextChange = (e) => {
+      // 연속된 스페이스를 하나로 처리하여 글자수 계산
+      const text = e.target.value;
+      const textWithoutExtraSpaces = text.replace(/\s\s+/g, ' ');
+      const textLength = textWithoutExtraSpaces.trim().length; // trim()을 사용하여 문자열 양 끝의 공백 제거
+  
+      setCount(textLength);
+  };
+  
 
     return(
       <div className={styles.form}>
@@ -16,11 +27,15 @@ function Main() {
             <h1 className={styles.question}>{`질문 ${questionNumber}`}</h1>
             <p>{questionText}</p>
         </div>
-      <textarea type="text" 
-      name={questionId}
-      ref={questionRefs[questionId]}
-      className={styles.textbox}>
-      </textarea>
+      <textarea 
+        type="text" 
+        name={questionId}
+        ref={questionRefs[questionId]}
+        className={styles.textbox}
+        onChange={handleTextChange}
+        maxLength="300"
+      />
+      <div className={styles.charCount}>{count}/300</div>
     </div>
     )
   }
@@ -62,14 +77,16 @@ function Main() {
         <h1 className={styles.title}>34기 지원서 </h1>
         <label>
           이름
-          <input name="name" type="text"></input>
+          <input name="name" type="text" required></input>
         </label>
         <label>
           전화 번호
-          <input name="phoneNumber" type="text"></input>
+          <input name="phoneNumber" type="text" required></input>
         </label>
-        Email
-        <input name="mail" type="text"></input>
+        <label>
+            Email
+          <input name="mail" type="text" required></input>
+        </label>
         {formBoxes}
       </div>
       <div className={styles.ButtonContainer}>

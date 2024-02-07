@@ -5,7 +5,7 @@ import Aboutus from './pages/aboutus';
 import Members from './pages/members';
 import Recruit from './pages/recruit';
 import Apply from './pages/apply';
-import Success from './pages/success';
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
