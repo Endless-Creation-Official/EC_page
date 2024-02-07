@@ -1,87 +1,44 @@
 // Apply.js
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState } from "react";
 import styles from "./Apply.module.css";
-import { questions } from "./Question"
+import axios from 'axios';
 
 function Main() {
-  const questionRefs = {};
-
-  function FormBox({questionNumber, questionText}) {
-    const questionId = `Q${questionNumber}`;
-    questionRefs[questionId] = useRef();
-    const [count, setCount] = useState(0);
-    const [text, setText] = useState('');
-
-    const handleTextChange = (e) => {
-      // 연속된 스페이스를 하나로 처리하여 글자수 계산
-      const text = e.target.value;
-      const textWithoutExtraSpaces = text.replace(/\s\s+/g, ' ');
-      const textLength = textWithoutExtraSpaces.trim().length; // trim()을 사용하여 문자열 양 끝의 공백 제거
-      
-      setCount(textLength);
-
-      const newText = e.target.value;
-
-      setText(newText);
-      localStorage.setItem(questionId, newText);
-    };
-
-    useEffect(() => {
-      const savedText = localStorage.getItem(questionId);
-      if (savedText) {
-        setText(savedText);
-      }
-    }, [questionId]);
-  
-    return(
-      <div className={styles.form}>
-        <div className={styles.question}>
-            <h1 className={styles.question}>{`질문 ${questionNumber}`}</h1>
-            <p>{questionText} {count}/300</p>
-        </div>
-          <textarea 
-            type="text"
-            value={text} 
-            name={questionId}
-            ref={questionRefs[questionId]}
-            className={styles.textbox}
-            onChange={handleTextChange}
-            maxLength="300"
-          />
-      </div>
-    )
-  }
-
-  const formBoxes = Object.entries(questions).map(([key, value]) => (
-    <FormBox key={key} questionNumber={key} questionText={value} />
-  ));
-  
-  //제출 버튼을 눌렀을 때 페이지를 초기화시키는 reset함수
-  function resetForm(formData) {
-    for(let entry of formData.entries()){
-      let fieldName = entry[0];
-      document.querySelector(`[name="${fieldName}"]`).value = "";
-    }
-  }
+  // form state
+  const [name, setName] = useState('');
+  const [phonenumber, setPhoneNumber] = useState('');
+  const [email, setEmail] = useState('');
+  const [q1, setQ1] = useState('');
+  const [q2, setQ2] = useState('');
+  const [q3, setQ3] = useState('');
 
   // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
-  const handleSubmit= async (event) => {
-    event.preventDefault();
-
-    //alert("아직 지원 기간이 아닙니다. \n서류 지원 기간: 2월20일 ~ 3월 1일");
-    event.preventDefault();
-
-    let formData = new FormData(event.target);
-    for(let entry of formData.entries()){
-      console.log(entry);
-      //formData들을 객체에 추가하고 메일로 전송하는 nodejs코드 구현하기
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    // console.log(name, phonenumber, email);
+    const data = {
+      Name: name,
+      Phonenumber: phonenumber,
+      Email: email,
+      Q1: q1,
+      Q2: q2,
+      Q3: q3
     }
-    alert(`제출 완료되었습니다. \n${formData.get("name")}님 행운을 빌어요!`);
-    console.log(formData);
-    resetForm(formData);
+    axios.post('https://sheet.best/api/sheets/512c44c2-ab42-4b00-ab88-e61913f83f5c', data).then((response) => {
+      console.log(response);
+      // clearing form fields
+      setName('');
+      setPhoneNumber('');
+      setEmail('');
+      setQ1('');
+      setQ2('');
+      setQ3('');
+    })
+    alert(`제출 완료되었습니다. \n${name}님, 행운을 빌어요!`);
 
+    // '/'로 이동
+    window.location.href = '/';
   }
-
 
   return (
     <form onSubmit={handleSubmit} method="post">
@@ -89,17 +46,51 @@ function Main() {
         <h1 className={styles.title}>34기 지원서 </h1>
         <label>
           이름
-          <input name="name" type="text" required></input>
+          <input name="name" type="text"
+            onChange={(e) => setName(e.target.value)} value={name}></input>
         </label>
         <label>
           전화 번호
-          <input name="phoneNumber" type="text" required></input>
+          <input name="phoneNumber" type="text"
+            onChange={(e) => setPhoneNumber(e.target.value)} value={phonenumber}></input>
         </label>
-        <label>
-            Email
-          <input name="mail" type="text" required></input>
-        </label>
-        {formBoxes}
+        Email
+        <input name="email" type="text"
+          onChange={(e) => setEmail(e.target.value)} value={email}></input>
+
+        <div className={styles.form}>
+          <div className={styles.question}>
+            <h1 className={styles.question}>{`질문 1`}</h1>
+            <p>간단한 자기소개와 지원동기를 작성해주세요!</p>
+          </div>
+          <textarea type="text"
+            name="q1"
+            className={styles.textbox}
+            onChange={(e) => setQ1(e.target.value)} value={q1}>
+          </textarea>
+        </div>
+        <div className={styles.form}>
+          <div className={styles.question}>
+            <h1 className={styles.question}>{`질문 2`}</h1>
+            <p>살면서 어떠한 문제를 해결한 경험이 있나요? 그 문제를 어떻게 해결했는지, 이를 통해 무엇을 배웠고 느꼈는지 구체적으로 설명해주세요! 사소한 경험이라도 괜찮습니다.</p>
+          </div>
+          <textarea type="text"
+            name="q2"
+            className={styles.textbox}
+            onChange={(e) => setQ2(e.target.value)} value={q2}>
+          </textarea>
+        </div>
+        <div className={styles.form}>
+          <div className={styles.question}>
+            <h1 className={styles.question}>{`질문 3`}</h1>
+            <p>만들고 싶거나 관심있는 웹서비스, 혹은 하고싶은 스터디를 작성해주세요!</p>
+          </div>
+          <textarea type="text"
+            name="q3"
+            className={styles.textbox}
+            onChange={(e) => setQ3(e.target.value)} value={q3}>
+          </textarea>
+        </div>
       </div>
       <div className={styles.ButtonContainer}>
         <button type="submit" className={styles.admitButton}>
