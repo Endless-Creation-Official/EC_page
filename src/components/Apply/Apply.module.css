@@ -38,16 +38,11 @@
     border: 0.5px solid rgb(107, 107, 107);
 }
 
-.question {
-    width: 90%;
-    align-items: center;
-    margin-top: 10px;
-    font-size: x-large;
-}
-
 .question p {
+    margin-top: 30px;
     font-size: 16px;
-    width: 90%;
+    width: 80%;
+    word-wrap: break-word;
 }
 
 .textbox {
@@ -57,10 +52,10 @@
     background-color: rgb(83, 83, 83);
     color: white;
     height: 15vh;
-    margin-bottom: 3rem;
     border: 1px solid rgb(107, 107, 107);
     border-radius: 1rem;
     padding: 2%;
+    margin-bottom: 5px;
     font-size: 15px;
     overflow-wrap: break-word;
     /* 단어가 박스 경계를 넘어갈 때 줄 바꿈 */
@@ -81,13 +76,14 @@ input::placeholder {
     background-color: rgb(98, 144, 119);
     color: rgb(22, 46, 26);
     border: none;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 0.9rem;
     width: 20%;
     height: 4vh;
     margin: 4% 0;
     align-items: center;
     justify-content: center;
+    font-family: 'SOYOMapleBoldTTF';
 }
 
 .admitButton:hover {
@@ -152,10 +148,10 @@ input::placeholder {
     }
 
     .admitButton {
-        font-size: 15px;
+        font-size: 12px;
         border-radius: 0.9rem;
-        width: 18%;
-        height: 4vh;
+        width: 20%;
+        height: 4.5vh;
         margin: 5% 0;
         align-items: center;
         justify-content: center;
