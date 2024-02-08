@@ -4,6 +4,13 @@ import styles from "./Apply.module.css";
 import axios from 'axios';
 
 function Main() {
+  // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
+  document.addEventListener('keydown', function(event) {
+    if (event.keyCode === 13) {
+      event.preventDefault();
+    };
+  }, true);
+
   // form state
   const [name, setName] = useState('');
   const [major, setMajor] = useState('');
@@ -81,7 +88,7 @@ function Main() {
         <h2>질문 목록</h2>
 
         <div className={styles.question}>
-          <p>1. 간단한 자기소개와 지원동기를 작성해주세요!</p>
+          <p>1. 간단한 자기소개와 지원동기를 작성해주세요! (공백 포함 300자 이내)</p>
         </div>
         <textarea type="text"
           name="q1"
@@ -91,7 +98,7 @@ function Main() {
         </textarea>
 
         <div className={styles.question}>
-          <p>2. 살면서 어떠한 문제를 해결한 경험이 있나요? 그 문제를 어떻게 해결했는지, 이를 통해 무엇을 배웠고 느꼈는지 구체적으로 설명해주세요! 사소한 경험이라도 괜찮습니다.</p>
+          <p>2. 살면서 어떠한 문제를 해결한 경험이 있나요? 그 문제를 어떻게 해결했는지, 이를 통해 무엇을 배웠고 느꼈는지 구체적으로 설명해주세요! 사소한 경험이라도 괜찮습니다. (공백 포함 300자 이내)</p>
         </div>
         <textarea type="text"
           name="q2"
@@ -101,7 +108,7 @@ function Main() {
         </textarea>
 
         <div className={styles.question}>
-          <p>3. 만들고 싶거나 관심있는 웹서비스, 혹은 하고싶은 스터디를 작성해주세요!</p>
+          <p>3. 만들고 싶거나 관심있는 웹서비스, 혹은 하고싶은 스터디를 작성해주세요! (공백 포함 300자 이내)</p>
         </div>
         <textarea type="text"
           name="q3"
