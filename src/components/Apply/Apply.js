@@ -1,5 +1,5 @@
 // Apply.js
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styles from "./Apply.module.css";
 import axios from 'axios';
 
@@ -38,7 +38,7 @@ function Main() {
 
     // '/'로 이동
     window.location.href = '/';
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit} method="post">
@@ -67,7 +67,9 @@ function Main() {
             name="q1"
             className={styles.textbox}
             placeholder="내용을 입력해주세요"
-            onChange={(e) => setQ1(e.target.value)} value={q1}>
+            onChange={(e) => setQ1(e.target.value)} value={q1}
+            maxLength="300"
+          >
           </textarea>
         </div>
         <div className={styles.form}>
@@ -79,7 +81,9 @@ function Main() {
             name="q2"
             className={styles.textbox}
             placeholder="내용을 입력해주세요"
-            onChange={(e) => setQ2(e.target.value)} value={q2}>
+            onChange={(e) => setQ2(e.target.value)} value={q2}
+            maxLength="300"
+          >
           </textarea>
         </div>
         <div className={styles.form}>
@@ -91,7 +95,9 @@ function Main() {
             name="q3"
             className={styles.textbox}
             placeholder="내용을 입력해주세요"
-            onChange={(e) => setQ3(e.target.value)} value={q3}>
+            onChange={(e) => setQ3(e.target.value)} value={q3}
+            maxLength="300"
+          >
           </textarea>
         </div>
       </div>
