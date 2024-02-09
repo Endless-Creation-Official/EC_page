@@ -74,13 +74,13 @@ li a {
 .contact b {
     position: absolute;
     right: 10%;
-    bottom: 35%;
+    bottom: 30%;
 }
 
 .contactImageContainer {
     position: absolute;
     right: 10%;
-    bottom: 10%;
+    bottom: 0;
     display: grid;
     width: 180px;
     grid-template-columns: repeat(4, 1fr);
