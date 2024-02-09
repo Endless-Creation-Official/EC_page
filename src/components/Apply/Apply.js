@@ -56,6 +56,31 @@ function Main() {
     window.location.href = '/';
   }
 
+  // 전화번호 입력시 '-' 자동 추가
+  const handlePhoneNumberChange = (e) => {
+    let inputPhoneNumber = e.target.value.replace(/[^0-9]/g, ''); // 숫자만 남기기
+  
+    // 입력된 전화번호가 11자리 이상이면 초과 부분은 잘라냅니다.
+    if (inputPhoneNumber.length > 11) {
+      inputPhoneNumber = inputPhoneNumber.substr(0, 11);
+    }
+  
+    let formattedPhoneNumber = '';
+    if (inputPhoneNumber.length >= 4) {
+      formattedPhoneNumber += inputPhoneNumber.substr(0, 3) + '-';
+      if (inputPhoneNumber.length >= 7) {
+        formattedPhoneNumber += inputPhoneNumber.substr(3, 4) + '-';
+        formattedPhoneNumber += inputPhoneNumber.substr(7);
+      } else {
+        formattedPhoneNumber += inputPhoneNumber.substr(3);
+      }
+    } else {
+      formattedPhoneNumber = inputPhoneNumber;
+    }
+  
+    setPhoneNumber(formattedPhoneNumber);
+  };
+
   return (
     <form onSubmit={handleSubmit} method="post">
       <div className={styles.main}>
@@ -78,8 +103,8 @@ function Main() {
           onChange={(e) => setBirth(e.target.value)} value={birth}></input>
 
         전화번호
-        <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요 ex) 010-1234-1234"
-          onChange={(e) => setPhoneNumber(e.target.value)} value={phonenumber}></input>
+        <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요"
+          onChange={handlePhoneNumberChange} value={phonenumber}></input>
 
         Email
         <input className={styles.privacy} name="email" type="text" placeholder="이메일을 입력해주세요"
@@ -94,6 +119,7 @@ function Main() {
           name="q1"
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
+          maxLength={300}
           onChange={(e) => setQ1(e.target.value)} value={q1}>
         </textarea>
 
@@ -104,6 +130,7 @@ function Main() {
           name="q2"
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
+          maxLength={300}
           onChange={(e) => setQ2(e.target.value)} value={q2}>
         </textarea>
 
@@ -114,6 +141,7 @@ function Main() {
           name="q3"
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
+          maxLength={300}
           onChange={(e) => setQ3(e.target.value)} value={q3}>
         </textarea>
 
