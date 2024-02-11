@@ -131,17 +131,17 @@ function Identity() {
 }
 
 const projects = [
-    { imageLink: "./projectimage/duting-app.png", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/duting-app.webp", mainLink:"https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "./projectimage/토이프로젝트.jpg", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "./projectimage/알고리즘스터디.jpg", mainLink: "알고리즘 스터디" },
-    { imageLink: "./projectimage/React스터디.jpg", mainLink: "리액트 스터디" },
-    { imageLink: "./projectimage/머신러닝스터디.jpg", mainLink: "머신러닝 스터디" },
-    { imageLink: "./projectimage/게임스터디.jpg", mainLink: "게임 스터디" },
+    { imageLink: "./projectimage/토이프로젝트.webp", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/알고리즘스터디.webp", mainLink: "알고리즘 스터디" },
+    { imageLink: "./projectimage/React스터디.webp", mainLink: "리액트 스터디" },
+    { imageLink: "./projectimage/머신러닝스터디.webp", mainLink: "머신러닝 스터디" },
+    { imageLink: "./projectimage/게임스터디.webp", mainLink: "게임 스터디" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
 
 ];
