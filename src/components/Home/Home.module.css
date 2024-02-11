@@ -19,7 +19,7 @@
     letter-spacing: 2px;
 
     /* 배경 이미지 설정 */
-    background-image: url(/public/backgroundimage.jpg);
+    background-image: url(/public/backgroundimage.webp);
     background-size: cover;
     background-position: 60%;
 }
