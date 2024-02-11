@@ -161,7 +161,7 @@ function ProjectSlide() {
     const randerSlides = () => (
         projects.map(element => (
             <div className={styles.projectContainer}>
-                <img src={element.imageLink} className={styles.imagesize} alt={element.mainLink}></img>
+                <img src={element.imageLink} loading="lazy" className={styles.imagesize} alt={element.mainLink}></img>
             </div>
         ))
     );

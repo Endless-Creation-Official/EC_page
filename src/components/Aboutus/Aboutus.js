@@ -76,7 +76,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/김경태1.jpg" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김경태1.jpg" loading="lazy" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김경태</b> / 부회장
@@ -89,7 +89,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/박진홍.jpeg" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/박진홍.jpeg" loading="lazy" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>박진홍</b> / 학술부장
@@ -154,7 +154,7 @@ function Slide(props) {
     const randerSlides = () => (
         slideImage.map(element => (
             <div className={styles.projectImageContainer}>
-                <img src={element.imageLink} className={styles.imagesize} alt={element.mainLink}></img>
+                <img src={element.imageLink} loading="lazy" className={styles.imagesize} alt={element.mainLink}></img>
             </div>
         ))
     );
