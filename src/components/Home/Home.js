@@ -5,39 +5,20 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Main() {
-    // loaded 상태를 관리하는 useState 훅
-    const [loaded, setLoaded] = useState(false);
+    const [backgroundLoaded, setBackgroundLoaded] = useState(false);
 
     useEffect(() => {
-        // 페이지가 로드될 때 실행되는 함수
-        const element1 = document.getElementById('element1');
-        const element2 = document.getElementById('element2');
-
-        // 로딩 완료 시 실행될 함수
-        const handleLoad = () => {
-            // element1과 element2가 모두 존재하는 경우 loaded 상태를 true로 설정
-            if (element1 && element2) {
-                setLoaded(true);
-            }
+        const backgroundImage = new Image();
+        backgroundImage.src = "/public/backgroundimage.webp";
+        backgroundImage.onload = () => {
+            setBackgroundLoaded(true);
         };
-
-        // element1과 element2가 이미 존재하는지 확인
-        if (element1 && element2) {
-            handleLoad(); // 이미 존재하는 경우 handleLoad 함수를 호출
-        } else {
-            // 존재하지 않는 경우 window의 load 이벤트를 기다리기
-            window.addEventListener('load', handleLoad);
-        }
-
-        // 컴포넌트가 unmount될 때 이벤트 리스너를 제거
-        return () => window.removeEventListener('load', handleLoad);
     }, []);
 
     return (
-        <div className={styles.container}>
-            {/* loaded 상태에 따라 요소를 나타내거나 숨김 */}
-            <div id="element1" className={`${styles.maintitle} ${loaded ? styles.show : styles.hide}`}>
-                <div id="element2" className={`${styles.title} ${loaded ? styles.show : styles.hide}`}>
+        <div className={`${styles.container} ${backgroundLoaded ? styles.backgroundLoaded : ''}`}>
+            <div className={styles.maintitle}>
+                <div className={styles.title}>
                     <h1>Endless Creation</h1>
                     <h2 className={styles.textbox}>34기 모집 예정!</h2>
                 </div>

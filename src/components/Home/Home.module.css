@@ -7,6 +7,10 @@
     margin: auto;
 }
 
+.backgroundLoaded .maintitle {
+    visibility: visible;
+}
+
 .maintitle {
     position: relative;
     width: 100%;
