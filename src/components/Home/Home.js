@@ -5,18 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Main() {
-    const [backgroundLoaded, setBackgroundLoaded] = useState(false);
-
-    useEffect(() => {
-        const backgroundImage = new Image();
-        backgroundImage.src = "/public/backgroundimage.webp";
-        backgroundImage.onload = () => {
-            setBackgroundLoaded(true);
-        };
-    }, []);
-
     return (
-        <div className={`${styles.container} ${backgroundLoaded ? styles.backgroundLoaded : ''}`}>
+        <div className={styles.container}>
             <div className={styles.maintitle}>
                 <div className={styles.title}>
                     <h1>Endless Creation</h1>
