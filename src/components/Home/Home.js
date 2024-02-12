@@ -1,16 +1,29 @@
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 function Main() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/Recruit');
+    }
     return (
         <div className={styles.container}>
             <div fetchpriority="high" className={styles.maintitle}>
                 <div className={styles.title}>
                     <h1>Endless Creation</h1>
-                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
+                    <h2 className={styles.textbox}>
+                        34기 모집 중!
+                        <div className={styles.scrolldown1} onClick={handleClick}>
+                            click!
+                        </div>
+                    </h2>
+                    <div className={styles.scrolldown2} onClick={handleClick}>
+                        click!
+                    </div>
                 </div>
             </div>
             <AboutEC></AboutEC>
@@ -132,7 +145,7 @@ function Identity() {
 }
 
 const projects = [
-    { imageLink: "./projectimage/duting-app.webp", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/duting-app.webp", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
@@ -210,7 +223,7 @@ function Process() {
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>2.15~3.1</td>
+                        <td>2.13~3.1</td>
                         <td>34기 서류 지원</td>
                     </tr>
                     <tr>
