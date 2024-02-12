@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.aboutContainer}>
                 <div className={styles.slider}>
-                    <img src="./networkingimage/정기세션타이틀.webp" className={styles.aboutusImage} alt="example"></img>
+                    <img fetchpriority="high" src="./networkingimage/정기세션타이틀.webp" className={styles.aboutusImage} alt="example"></img>
                 </div>
                 <div className={styles.about}>
                     <div className={styles.head}>
@@ -42,7 +42,7 @@ function Main() {
             <div className={styles.activity}>
                 <h1>활동</h1>
                 <div className={styles.slideBox}>
-                    <h2>Netwroking</h2>
+                    <h2>Networking</h2>
                     <Slide slideImage={networking}></Slide>
                 </div>
                 <div className={styles.slideBox}>
