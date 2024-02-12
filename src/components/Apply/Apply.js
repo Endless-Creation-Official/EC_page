@@ -103,7 +103,7 @@ function Main() {
           onChange={(e) => setBirth(e.target.value)} value={birth}></input>
 
         전화번호
-        <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요"
+        <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요( - 없이 입력)"
           onChange={handlePhoneNumberChange} value={phonenumber}></input>
 
         Email
