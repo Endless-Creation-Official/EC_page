@@ -1,0 +1,576 @@
+.container {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+.maintitle {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    /* 텍스트 색상을 흰색으로 설정 */
+    letter-spacing: 2px;
+
+    /* 배경 이미지 설정 */
+    background-image: url(/public/backgroundimage.webp);
+    background-size: cover;
+    background-position: 60%;
+}
+
+.maintitle::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* 어두운 배경색 */
+}
+
+
+.title {
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+
+
+.title h1 {
+    margin: 2% 0;
+    font-size: 70px;
+}
+
+.textbox {
+    font-size: 30px;
+    width: fit-content;
+}
+
+@media (max-width: 900px) {
+    .title {
+        width: 70%;
+    }
+
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .textbox {
+        font-size: 20px;
+    }
+}
+
+.aboutec {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutec h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin-top: 250px;
+}
+
+
+.aboutecContainer {
+    width: min(1200px, 90%);
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
+}
+
+.box {
+    display: flex;
+    font-size: 35px;
+    padding: 15px 0;
+    background-color: rgb(54, 54, 54);
+    /* 박스 배경색 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬 */
+    border-radius: 20px;
+    flex-direction: column;
+}
+
+.box span {
+    font-size: 25px;
+    color: rgb(195, 194, 194);
+    font-weight: bold;
+}
+
+
+@media (max-width: 900px) {
+    .aboutec h1 {
+        font-size: 30px;
+    }
+
+    .aboutecContainer {
+        width: 90%;
+        grid-gap: 5%;
+    }
+
+    .box {
+        font-size: 15px;
+    }
+
+    .box span {
+        font-size: 13px;
+    }
+}
+
+.identity {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.identity h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin-top: 250px;
+}
+
+.identityContainer {
+    width: 60%;
+    display: grid;
+    margin-top: 3rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10%;
+
+}
+
+#introducing-box {
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    width: inherit;
+    margin: 200px;
+}
+
+.boxidentity {
+    justify-self: center;
+    /* 수평 중앙 정렬 */
+    align-self: center;
+    display: grid;
+    width: 80%;
+    font-size: 35px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬로 수정 */
+    aspect-ratio: 1.2/1;
+    /* 너비와 높이의 비율을 1:1로 설정 */
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    background-color: rgb(43, 43, 43);
+    margin: 5% 0;
+    /* padding 대신 margin 사용 */
+}
+
+.identityImage {
+    width: 40%;
+}
+
+.identityTitle:nth-child(1) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.identityTitle:nth-child(2) {
+    position: relative;
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+    .identity h1 {
+        font-size: 30px;
+    }
+
+    .identityTitle {
+        font-size: 15px;
+    }
+
+    .identityContainer {
+        width: 75%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .boxidentity {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .identityTitle:nth-child(2) {
+        font-size: 17px;
+    }
+
+    .boxidentity:nth-child(3) {
+        position: relative;
+        left: 60%;
+        top: 0%;
+    }
+
+    .identityImage {
+        width: 80px;
+    }
+}
+
+.slidebox {
+    width: 100%;
+}
+
+.project {
+    width: min(1200px, 80%);
+}
+
+.project h1 {
+    text-align: center;
+    color: white;
+    font-size: 42px;
+    margin-top: 250px;
+}
+
+.projectContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    gap: 1%;
+}
+
+
+.imagesize {
+    width: 90%;
+    display: flex;
+    align-self: center;
+    margin: auto;
+    object-fit: cover;
+}
+
+
+
+@media (max-width: 900px) {
+    .project h1 {
+        font-size: 30px;
+    }
+    .slidebox {
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+    }
+
+    .boxproject {
+        position: relative;
+        width: 100%;
+        margin-left: 10px;
+    }
+}
+
+
+
+/* Dropdown */
+
+.dropdown {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.ddbutton {
+    font-size: 20px;
+    display: -webkit-inline-flex;
+
+    border-radius: 1rem;
+    padding: 10px 20px;
+    padding-top: 7px;
+    background-color: #ffffff;
+    cursor: pointer;
+    white-space: nowrap;
+    color: rgb(58, 58, 58);
+    background-color: rgb(167, 208, 171);
+    text-align: center;
+    justify-content: center;
+}
+
+.ddbutton:hover {
+    background-color: #ddeada;
+}
+
+@media (max-width: 900px) {
+    .ddbutton {
+        font-size: 12px;
+    }
+}
+
+.ddinput {
+    display: none;
+}
+
+.ddmenu {
+    position: absolute;
+    top: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    list-style-type: none;
+}
+
+@media (max-width: 900px) {
+    .ddmenu {
+        font-size: 12px;
+    }
+}
+
+.ddinput+.ddmenu {
+    display: none;
+}
+
+.ddinput:checked+.ddmenu {
+    display: block;
+}
+
+.ddmenu li {
+    padding: 10px 40px;
+    cursor: pointer;
+    white-space: nowrap;
+    color: black;
+}
+
+.ddmenu a {
+    text-decoration: none;
+    color: black;
+}
+
+.ddmenu li:hover {
+    background-color: #f6f6f6;
+}
+
+.ddmenu li a {
+    display: block;
+    margin: -10px -20px;
+    padding: 10px 20px;
+}
+
+.ddmenu li.divider {
+    padding: 0;
+    border-bottom: 1px solid #cccccc;
+}
+
+.process {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 250px;
+    color: white;
+}
+
+.process h1 {
+    /* 프로세스 제목 스타일 */
+    text-align: center;
+    /* 가운데 정렬 */
+    color: white;
+    font-size: 42px;
+}
+
+@media (max-width: 900px) {
+    .process h1 {
+        font-size: 30px;
+    }
+}
+
+
+.process ul {
+    /* 프로세스 단계 목록 스타일 초기화 */
+    padding: 0;
+    list-style: none;
+}
+
+.processtable {
+    width: 40%;
+    border-collapse: collapse;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.col1 {
+    width: 30%;
+}
+
+.col2 {
+    width: 70%;
+}
+
+@media (max-width: 900px) {
+    .containerfaq h1 {
+        font-size: 30px;
+    }
+
+    .processtable {
+        width: 77%;
+        font-size: 14px;
+    }
+}
+
+.processtable th,
+.processtable td {
+    padding: 10px;
+    text-align: left;
+}
+
+.processtable th {
+    background-color: #f2f2f2;
+}
+
+
+.processtable tr:nth-child(even) {
+    background-color: #272727;
+    /* Apply a different background color for even rows */
+}
+
+.containerfaq {
+    display: flex;
+    width: min(1200px, 90%);
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin: 70px 0;
+}
+
+.accordion {
+    width: 50%;
+    font-family: 'SOYOMapleBoldTTF';
+}
+
+@media (max-width: 600px) {
+    .accordion {
+        width: 80%;
+    }
+}
+
+.accordion .accordionitem {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion .accordionitem button[aria-expanded=true] {
+    border-bottom: 1px solid #03b5d2;
+}
+
+.accordion button {
+    display: flex;
+    text-align: left;
+    width: 100%;
+    color: #7288a2;
+    font-size: 1.15rem;
+    font-weight: 400;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.accordion button:hover,
+.accordion button:focus {
+    cursor: pointer;
+    color: #03b5d2;
+}
+
+.accordion button:hover::after,
+.accordion button:focus::after {
+    cursor: pointer;
+    color: #03b5d2;
+    border: 1px solid #03b5d2;
+}
+
+.accordion button .accordiontitle {
+    padding: 1em 1.5em 1em 0;
+    font-family: 'SOYOMapleBoldTTF';
+}
+
+
+
+.accordion button[aria-expanded=true] {
+    color: #03b5d2;
+}
+
+.accordion button[aria-expanded=true] .icon::after {
+    width: 0;
+}
+
+.accordion button[aria-expanded=true]+.accordioncontent {
+    opacity: 1;
+    max-height: 9em;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.accordion .accordioncontent {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+    color: white;
+}
+
+.accordion .accordioncontent p {
+    font-size: 1rem;
+    font-weight: 450;
+    margin: 1.2rem 0;
+}
+
+
+@media (max-width: 900px) {
+    .accordion {
+        width: 90%;
+    }
+
+    .accordion button {
+        font-size: 1rem;
+    }
+
+    .accordion .accordioncontent p {
+        font-size: 13px;
+        margin: 1em 0;
+    }
+}
+
+@media (max-width: 350px) {
+    .box {
+        font-size: 12px;
+    }
+
+    .box span {
+        font-size: 10px;
+    }
+
+    .projectContainer {
+        height: 20vh;
+    }
+}
