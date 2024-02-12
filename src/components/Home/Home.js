@@ -7,7 +7,7 @@ import "slick-carousel/slick/slick-theme.css";
 function Main() {
     return (
         <div className={styles.container}>
-            <div className={styles.maintitle}>
+            <div fetchpriority="high" className={styles.maintitle}>
                 <div className={styles.title}>
                     <h1>Endless Creation</h1>
                     <h2 className={styles.textbox}>34기 모집 예정!</h2>
