@@ -1,5 +1,5 @@
 // Apply.js
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import styles from "./Apply.module.css";
 import axios from 'axios';
 
@@ -10,6 +10,17 @@ function Main() {
       event.preventDefault();
     };
   }, true);
+
+  //useRef 선언
+  const Name0 = useRef();
+  const Major0 = useRef();
+  const Studentid0 = useRef();
+  const Birth0 = useRef();
+  const Phonenumber0 = useRef();
+  const Email0 = useRef();
+  const Q10 = useRef();
+  const Q20 = useRef();
+  const Q30 = useRef();
 
   // form state
   const [name, setName] = useState('');
@@ -25,17 +36,21 @@ function Main() {
   // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
   const handleSubmit = (e) => {
     e.preventDefault();
+
+
+
+
     // 바뀐 코드: formData객체를 이용함
     let formData =  new FormData();
-    formData.append('Name', name);
-    formData.append('Major', major);
-    formData.append('Studentid', studentid);
-    formData.append('Birth', birth);
-    formData.append('Phonenumber', phonenumber);
-    formData.append('Email', email);
-    formData.append('Q1', q1);
-    formData.append('Q2', q2);
-    formData.append('Q3', q3);
+    formData.append('Name', Name0.current.value);
+    formData.append('Major', Major0.current.value);
+    formData.append('Studentid', Studentid0.current.value);
+    formData.append('Birth', Birth0.current.value);
+    formData.append('Phonenumber', Phonenumber0.current.value);
+    formData.append('Email', Email0.current.value);
+    formData.append('Q1', Q10.current.value);
+    formData.append('Q2', Q20.current.value);
+    formData.append('Q3', Q30.current.value);
     
 
     //전의 코드: data
@@ -101,27 +116,33 @@ function Main() {
         <h2>개인 정보</h2>
         이름
         <input className={styles.privacy} name="name" type="text" placeholder="이름을 입력해주세요"
-          onChange={(e) => setName(e.target.value)} value={name}></input>
+          onChange={(e) => setName(e.target.value)} value={name}
+          ref={Name0}></input>
 
         소속학과
         <input className={styles.privacy} name="major" type="text" placeholder="소속학과를 입력해주세요"
-          onChange={(e) => setMajor(e.target.value)} value={major}></input>
+          onChange={(e) => setMajor(e.target.value)} value={major}
+          ref={Major0}></input>
 
         학번
         <input className={styles.privacy} name="studentid" type="text" placeholder="학번을 입력해주세요"
-          onChange={(e) => setStudentid(e.target.value)} value={studentid}></input>
+          onChange={(e) => setStudentid(e.target.value)} value={studentid}
+          ref={Studentid0}></input>
 
         생년월일
         <input className={styles.privacy} name="birth" type="text" placeholder="생년월일을 입력해주세요 ex) 2001-03-19"
-          onChange={(e) => setBirth(e.target.value)} value={birth}></input>
+          onChange={(e) => setBirth(e.target.value)} value={birth}
+          ref={Birth0}></input>
 
         전화번호
         <input className={styles.privacy} name="phoneNumber" type="text" placeholder="전화번호를 입력해주세요( - 없이 입력)"
-          onChange={handlePhoneNumberChange} value={phonenumber}></input>
+          onChange={handlePhoneNumberChange} value={phonenumber}
+          ref={Phonenumber0}></input>
 
         Email
         <input className={styles.privacy} name="email" type="text" placeholder="이메일을 입력해주세요"
-          onChange={(e) => setEmail(e.target.value)} value={email}></input>
+          onChange={(e) => setEmail(e.target.value)} value={email}
+          ref={Email0}></input>
 
         <h2>질문 목록</h2>
 
@@ -133,7 +154,8 @@ function Main() {
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
           maxLength={300}
-          onChange={(e) => setQ1(e.target.value)} value={q1}>
+          onChange={(e) => setQ1(e.target.value)} value={q1}
+          ref={Q10}>
         </textarea>
 
         <div className={styles.question}>
@@ -144,7 +166,8 @@ function Main() {
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
           maxLength={300}
-          onChange={(e) => setQ2(e.target.value)} value={q2}>
+          onChange={(e) => setQ2(e.target.value)} value={q2}
+            ref={Q20}>
         </textarea>
 
         <div className={styles.question}>
@@ -155,7 +178,8 @@ function Main() {
           className={styles.textbox}
           placeholder="내용을 입력해주세요"
           maxLength={300}
-          onChange={(e) => setQ3(e.target.value)} value={q3}>
+          onChange={(e) => setQ3(e.target.value)} value={q3}
+            ref={Q30}>
         </textarea>
 
         <button type="submit" className={styles.admitButton}>
