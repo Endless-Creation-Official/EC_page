@@ -25,19 +25,32 @@ function Main() {
   // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
   const handleSubmit = (e) => {
     e.preventDefault();
-    // console.log(name, phonenumber, email);
-    const data = {
-      Name: name,
-      Major: major,
-      Studentid: studentid,
-      Birth: birth,
-      Phonenumber: phonenumber,
-      Email: email,
-      Q1: q1,
-      Q2: q2,
-      Q3: q3
-    }
-    axios.post('https://sheet.best/api/sheets/512c44c2-ab42-4b00-ab88-e61913f83f5c', data).then((response) => {
+    // 바뀐 코드: formData객체를 이용함
+    let formData =  new FormData();
+    formData.append('Name', name);
+    formData.append('Major', major);
+    formData.append('Studentid', studentid);
+    formData.append('Birth', birth);
+    formData.append('Phonenumber', phonenumber);
+    formData.append('Email', email);
+    formData.append('Q1', q1);
+    formData.append('Q2', q2);
+    formData.append('Q3', q3);
+    
+
+    //전의 코드: data
+    // const data = {
+    //   Name: name,
+    //   Major: major,
+    //   Studentid: studentid,
+    //   Birth: birth,
+    //   Phonenumber: phonenumber,
+    //   Email: email,
+    //   Q1: q1,
+    //   Q2: q2,
+    //   Q3: q3
+    // }
+    axios.post('https://sheet.best/api/sheets/512c44c2-ab42-4b00-ab88-e61913f83f5c', formData).then((response) => {
       console.log(response);
       // clearing form fields
       setName('');
