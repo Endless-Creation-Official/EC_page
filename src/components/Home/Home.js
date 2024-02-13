@@ -18,11 +18,11 @@ function Main() {
                     <h2 className={styles.textbox}>
                         34기 모집 중!
                         <div className={styles.scrolldown1} onClick={handleClick}>
-                            click!
+                            지원하기!
                         </div>
                     </h2>
                     <div className={styles.scrolldown2} onClick={handleClick}>
-                        click!
+                        지원하기!
                     </div>
                 </div>
             </div>
