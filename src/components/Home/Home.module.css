@@ -89,7 +89,7 @@
     display: flex;
     width: fit-content;
     height: fit-content;
-    padding: 6px;
+    padding: 8px;
     font-size: 20px;
     animation: bounce 2s infinite;
     border-radius: 10px;
@@ -101,7 +101,7 @@
 .scrolldown2 {
     display: none;
     width: fit-content;
-    padding: 5px;
+    padding: 7px;
     font-size: 15px;
     animation: bounce 2s infinite;
     border-radius: 10px;
