@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.firstContainer}>
                 <h1>EC와 함께하고 싶다면?</h1>
-                <button className={styles.button} onClick={()=>{alert("서류 제출 기간이 아닙니다.\n지원 기간 : 2월 13일 ~ 3월 1일")}}/*onClick={handleClick}*/>지원하러 가기</button>
+                <button className={styles.button} /*onClick={()=>{alert("서류 제출 기간이 아닙니다.\n지원 기간 : 2월 13일 ~ 3월 1일")}}*/ onClick={handleClick}>지원하러 가기</button>
             </div>
             <FAQ></FAQ>
         </div>
