@@ -556,41 +556,6 @@ function Main() {
             description: "성장하는 즐거움!"
         },
         {
-            name: "김정효",
-            term: "32기",
-            skills: ["Game", "Unity"],
-            image: "members_photo/김정효.jpg",
-            description: "둥글둥글한 성격이에요!"
-        },
-        {
-            name: "김현중",
-            term: "32기",
-            skills: ["Game"],
-            image: "/profile.jpg",
-            description: "왠만하면 금방 친해지는 스타일입니다!"
-        },
-        {
-            name: "이동준",
-            term: "32기",
-            skills: ["Spring"],
-            image: "members_photo/이동준.jpg",
-            description: "성장하는 것에 관심이 많습니다!"
-        },
-        {
-            name: "이현화",
-            term: "32기",
-            skills: ["Mobile", "IOS"],
-            image: "members_photo/이현화.jpg",
-            description: "반갑습니당! 동아리 활동 열심히 할게요~~"
-        },
-        {
-            name: "정지원",
-            term: "32기",
-            skills: ["Back-end", "Spring", "Java"],
-            image: "/profile.jpg",
-            description: "EC 화이팅!"
-        },
-        {
             name: "박진홍",
             term: "33기",
             skills: ["React"],
