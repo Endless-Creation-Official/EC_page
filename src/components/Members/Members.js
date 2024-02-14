@@ -465,13 +465,6 @@ function Main() {
             description: "매순간 최선을 다하는 사람이 되고 싶습니다!"
         },
         {
-            name: "조재영",
-            term: "28기",
-            skills: ["Spring", "IOS"],
-            image: "members_photo/조재영.png",
-            description: "이름은 조재영이고, 99년생 입니다.."
-        },
-        {
             name: "김현종",
             term: "29기",
             skills: ["Game"],
