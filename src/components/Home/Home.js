@@ -125,7 +125,7 @@ function Identity() {
                     <div className={styles.identityTitle}>
                         <img src="/Growth.png" className={styles.identityImage} alt="Growth"></img>
                     </div>
-                    <div className={styles.identityTitle}>growth</div>
+                    <div className={styles.identityTitle}>Growth</div>
                 </div>
                 <div className={styles.boxidentity}>
                     <div className={styles.identityTitle}>
