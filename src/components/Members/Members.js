@@ -105,8 +105,8 @@ function Main() {
             name: "오정진",
             term: "28기",
             skills: ["React", "Next.js"],
-            careers: ["現 YAPP 임원진"],
-            mark: "companyMark/yapp.webp"
+            careers: ["現 YAPP 임원진", "現 현대오토에버 인턴"],
+            mark: "companyMark/현대오토에버.webp"
         },
         {
             name: "조인혁",
@@ -458,18 +458,18 @@ function Main() {
 
     const members = [
         {
+            name: "문정호",
+            term: "27기",
+            skills: ["IOS", "Android"],
+            image: "/profile.jpg",
+            description: "같이 열심히 해요"
+        },
+        {
             name: "유환욱",
             term: "28기",
             skills: ["Front-end", "Web", "React"],
             image: "/profile.jpg",
             description: "매순간 최선을 다하는 사람이 되고 싶습니다!"
-        },
-        {
-            name: "조재영",
-            term: "28기",
-            skills: ["Spring", "IOS"],
-            image: "members_photo/조재영.png",
-            description: "이름은 조재영이고, 99년생 입니다.."
         },
         {
             name: "김현종",
@@ -561,41 +561,6 @@ function Main() {
             skills: ["Web", "Back-end", "ML", "AI"],
             image: "members_photo/김경태1.jpg",
             description: "성장하는 즐거움!"
-        },
-        {
-            name: "김정효",
-            term: "32기",
-            skills: ["Game", "Unity"],
-            image: "members_photo/김정효.jpg",
-            description: "둥글둥글한 성격이에요!"
-        },
-        {
-            name: "김현중",
-            term: "32기",
-            skills: ["Game"],
-            image: "/profile.jpg",
-            description: "왠만하면 금방 친해지는 스타일입니다!"
-        },
-        {
-            name: "이동준",
-            term: "32기",
-            skills: ["Spring"],
-            image: "members_photo/이동준.jpg",
-            description: "성장하는 것에 관심이 많습니다!"
-        },
-        {
-            name: "이현화",
-            term: "32기",
-            skills: ["Mobile", "IOS"],
-            image: "members_photo/이현화.jpg",
-            description: "반갑습니당! 동아리 활동 열심히 할게요~~"
-        },
-        {
-            name: "정지원",
-            term: "32기",
-            skills: ["Back-end", "Spring", "Java"],
-            image: "/profile.jpg",
-            description: "EC 화이팅!"
         },
         {
             name: "박진홍",
