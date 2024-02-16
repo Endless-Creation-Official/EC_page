@@ -235,11 +235,11 @@ function Process() {
                         <td>2차 면접(대면)</td>
                     </tr>
                     <tr>
-                        <td>3.8</td>
+                        <td>3.7</td>
                         <td>최종 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>3.11</td>
+                        <td>3.8</td>
                         <td>개강총회</td>
                     </tr>
                 </tbody>

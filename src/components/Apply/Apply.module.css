@@ -79,7 +79,7 @@ input::placeholder {
     font-size: 16px;
     border-radius: 0.9rem;
     width: 20%;
-    height: 4vh;
+    height: 50px;
     margin: 4% 0;
     align-items: center;
     justify-content: center;
@@ -151,8 +151,9 @@ input::placeholder {
         font-size: 12px;
         border-radius: 0.9rem;
         width: 20%;
-        height: 4.5vh;
+        height: 30px;
         margin: 5% 0;
+        white-space: nowrap;
         align-items: center;
         justify-content: center;
     }

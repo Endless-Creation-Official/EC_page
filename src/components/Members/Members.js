@@ -105,8 +105,8 @@ function Main() {
             name: "오정진",
             term: "28기",
             skills: ["React", "Next.js"],
-            careers: ["現 YAPP 임원진"],
-            mark: "companyMark/yapp.webp"
+            careers: ["現 YAPP 임원진", "現 현대오토에버 인턴"],
+            mark: "companyMark/현대오토에버.webp"
         },
         {
             name: "조인혁",
@@ -457,6 +457,13 @@ function Main() {
     ];
 
     const members = [
+        {
+            name: "문정호",
+            term: "27기",
+            skills: ["IOS", "Android"],
+            image: "/profile.jpg",
+            description: "같이 열심히 해요"
+        },
         {
             name: "유환욱",
             term: "28기",
