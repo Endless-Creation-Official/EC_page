@@ -62,7 +62,7 @@ function Main() {
   return (
     <form onSubmit={handleSubmit} method="post">
       <div className={styles.main}>
-        <h1 className={styles.title}>EC 34기 지원서 </h1>
+        <div className={styles.title}>EC 34기 지원서 </div>
         <h2>개인 정보</h2>
         이름
         <input className={styles.privacy} name="name" type="text" placeholder="이름을 입력해주세요"
@@ -90,10 +90,13 @@ function Main() {
 
         <div className={styles.questionlist}>질문 목록</div>
 
-        <QuestionInput
-          question="1. 간단한 자기소개와 지원동기를 작성해주세요! (공백 포함 300자 이내)"
-          value={q1}
-          setValue={setQ1}
+        <div className={styles.question}>
+          <p>1. 간단한 자기소개와 지원동기를 작성해주세요! (공백 포함 300자 이내)</p>
+        </div>
+        <textarea type="text"
+          name="q1"
+          className={styles.textbox}
+          placeholder="내용을 입력해주세요"
           maxLength={300}
           ref={Q10}>
         </textarea>
