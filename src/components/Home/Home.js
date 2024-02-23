@@ -24,6 +24,22 @@ function Main() {
                     <div className={styles.scrolldown2} onClick={handleClick}>
                         지원하기!
                     </div>
+                    <div className={styles.eventBox}>
+                        <h1>신입생 새터 이벤트!</h1>
+                        <h3>EC의 핵심 가치 세가지는?</h3>
+                        <p>홈페이지에서 EC의 핵심 가치 세 가지를 찾아서 아래의 번호로 문자를 보내주세요!(힌트: 홈페이지를 잘 탐색해 보세요)</p>
+                        <p>정답 예시: 피자, 치킨, 햄버거</p>
+                        <p>📞010 - 9540 - 6570 📞</p>
+                        <p>🎁 상품 🎁</p>
+                        <p>1등 ⌨️기계식 키보드</p>
+                        <p>2등 🖱️게이밍 마우스</p>
+                        <p>3등 💳올리브영 상품권</p>
+                        <p>4, 5등 🔋보조 배터리</p>
+                        <p>10등 ☕스타벅스 상품권</p>
+                        <p>15등 🧋공차 상품권기계식 키보드</p>
+                        <p>20등 ⌨️기계식 키보드</p>
+                        
+                    </div>
                 </div>
             </div>
             <AboutEC></AboutEC>
