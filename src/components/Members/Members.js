@@ -59,10 +59,10 @@ function GraduatesCard({ name = "", term = "", skills = [], mark = null, image =
             <div>
                 {showAllCareers
                     ? careers.map((career, index) => (
-                          <div key={index} className={styles.careers}>
-                              {career}
-                          </div>
-                      ))
+                        <div key={index} className={styles.careers}>
+                            {career}
+                        </div>
+                    ))
                     : (
                         <div className={styles.careers}>
                             {careers[careers.length - 1]}
@@ -467,7 +467,7 @@ function Main() {
         {
             name: "유환욱",
             term: "28기",
-            skills: ["Front-end", "Web", "React"],
+            skills: ["Front-end", "React"],
             image: "/profile.jpg",
             description: "매순간 최선을 다하는 사람이 되고 싶습니다!"
         },
@@ -565,7 +565,7 @@ function Main() {
         {
             name: "김경태",
             term: "32기",
-            skills: ["Web", "Back-end", "ML", "AI"],
+            skills: ["Web", "Back-end", "AI"],
             image: "members_photo/김경태1.jpg",
             description: "성장하는 즐거움!"
         },
@@ -588,40 +588,63 @@ function Main() {
     const graduatesSectionRef = useRef(null);
 
     const handleClick = () => {
-      // EC graduates 섹션의 top 위치를 계산
-      const topOffset = graduatesSectionRef.current.offsetTop- 8 * parseFloat(getComputedStyle(document.documentElement).fontSize);
-  
-      // 스크롤 이동 애니메이션
-      window.scrollTo({
-        top: topOffset,
-        behavior: 'smooth', // 부드러운 애니메이션 효과
-      });
+        // EC graduates 섹션의 top 위치를 계산
+        const topOffset = graduatesSectionRef.current.offsetTop - 8 * parseFloat(getComputedStyle(document.documentElement).fontSize);
+
+        // 스크롤 이동 애니메이션
+        window.scrollTo({
+            top: topOffset,
+            behavior: 'smooth', // 부드러운 애니메이션 효과
+        });
     };
 
     return (
         <div className={styles.container}>
-          <div className={styles.membertitle}>
-            <h1>EC members</h1>
-          </div>
-          <div className={styles.scrolldown} onClick={handleClick}>
-            click me!
-          </div>
-          <section className={styles.membercontents}>
-            {members.map((member, index) => (
-              <MemberCard key={index} {...member} />
-            ))}
-          </section>
-          <div className={styles.membertitle}>
-            <h1>EC graduates</h1>
-          </div>
-          <h2>※ 2024년 2월 기준</h2>
-          <section ref={graduatesSectionRef} className={styles.graduatescontents}>
-            {graduates.map((member, index) => (
-              <GraduatesCard key={index} {...member} />
-            ))}
-          </section>
+            <div className={styles.membertitle}>
+                <h1>EC members</h1>
+            </div>
+            <div className={styles.scrolldown} onClick={handleClick}>
+                click me!
+            </div>
+            <section className={styles.membercontents}>
+                {members.map((member, index) => (
+                    <MemberCard key={index} {...member} />
+                ))}
+            </section>
+            <div className={styles.membertitle}>
+                <h1>EC graduates</h1>
+            </div>
+            <h2>※ 2024년 2월 기준</h2>
+            <section ref={graduatesSectionRef} className={styles.graduatescontents}>
+                {graduates.map((member, index) => (
+                    <GraduatesCard key={index} {...member} />
+                ))}
+            </section>
+            <div className={styles.identity}>
+                <h1>EC의 핵심 가치!</h1>
+                <div className={styles.identityContainer}>
+                    <div className={styles.boxidentity}>
+                        <div className={styles.identityTitle}>
+                            <img src="/Growth.png" className={styles.identityImage} alt="Growth"></img>
+                        </div>
+                        <div className={styles.identityTitle}>Growth</div>
+                    </div>
+                    <div className={styles.boxidentity}>
+                        <div className={styles.identityTitle}>
+                            <img src="/Sharing.png" className={styles.identityImage} alt="Sharing"></img>
+                        </div>
+                        <div className={styles.identityTitle}>Sharing</div>
+                    </div>
+                    <div className={styles.boxidentity}>
+                        <div className={styles.identityTitle}>
+                            <img src="/Cooperation.png" className={styles.identityImage} alt="Cooperation"></img>
+                        </div>
+                        <div className={styles.identityTitle}>Cooperation</div>
+                    </div>
+                </div>
+            </div>
         </div>
-      );
+    );
 }
 
 export default Main;
