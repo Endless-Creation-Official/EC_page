@@ -102,11 +102,16 @@
     display: none;
     width: fit-content;
     padding: 7px;
-    font-size: 15px;
+    font-size: 13px;
     animation: bounce 2s infinite;
     border-radius: 10px;
     background-color: #68cb8e;
     margin-top: 3px;
+}
+
+
+.eventBox {
+    display: none;
 }
 
 @media (max-width: 900px) {
@@ -118,15 +123,22 @@
         display: flex;
     }
 
+    .eventBox {
+        display: block;
+        font-size: 12px;
+    }
+
     .title {
         width: 70%;
     }
 
     .title h1 {
+        display: none;
         font-size: 30px;
     }
 
     .textbox {
+        display: none;
         font-size: 20px;
     }
 }
