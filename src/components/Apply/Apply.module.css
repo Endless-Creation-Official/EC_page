@@ -129,6 +129,10 @@ input::placeholder {
         width: 100%;
     }
 
+    .eventBox {
+        display: none;
+    }
+
     .main {
         font-size: 14px;
     }

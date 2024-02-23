@@ -493,6 +493,13 @@ function Main() {
             description: "모두들 파이팅! 감사합니다~"
         },
         {
+            name: "홍윤기",
+            term: "29기",
+            skills: ["Java", "Back-end"],
+            image: "members_photo/홍윤기.webp",
+            description: "이제 시작하는 단계이지만, 잘 부탁드립니다!"
+        },
+        {
             name: "김상현",
             term: "30기",
             skills: ["IOS"],
@@ -530,7 +537,7 @@ function Main() {
         {
             name: "문효재",
             term: "31기",
-            skills: ["Android"],
+            skills: ["Spring"],
             image: "/profile.jpg",
             description: "새로운 사람들과 친해지는 것을 좋아합니다!"
         },

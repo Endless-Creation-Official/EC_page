@@ -14,16 +14,13 @@ function Main() {
         <div className={styles.container}>
             <div fetchpriority="high" className={styles.maintitle}>
                 <div className={styles.title}>
-                    {/* <h1>Endless Creation</h1>
+                    <h1>Endless Creation</h1>
                     <h2 className={styles.textbox}>
                         34기 모집 중!
                         <div className={styles.scrolldown1} onClick={handleClick}>
                             지원하기!
                         </div>
                     </h2>
-                    <div className={styles.scrolldown2} onClick={handleClick}>
-                        지원하기!
-                    </div> */}
                     <div className={styles.scrolldown2} onClick={handleClick}>
                         지금 바로 EC 지원하기!
                     </div>
