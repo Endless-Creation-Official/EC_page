@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.aboutContainer}>
                 <div className={styles.slider}>
-                    <img src="./networkingimage/정기세션타이틀.jpg" className={styles.aboutusImage} alt="example"></img>
+                    <img fetchpriority="high" src="./networkingimage/정기세션타이틀.webp" className={styles.aboutusImage} alt="example"></img>
                 </div>
                 <div className={styles.about}>
                     <div className={styles.head}>
@@ -42,7 +42,7 @@ function Main() {
             <div className={styles.activity}>
                 <h1>활동</h1>
                 <div className={styles.slideBox}>
-                    <h2>Netwroking</h2>
+                    <h2>Networking</h2>
                     <Slide slideImage={networking}></Slide>
                 </div>
                 <div className={styles.slideBox}>
@@ -63,7 +63,7 @@ function Operator() {
             </div>
             <section className={styles.operators}>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/강영훈.png" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/강영훈.jpg" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>강영훈</b> / 회장
@@ -76,7 +76,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/김경태1.jpg" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김경태1.jpg" loading="lazy" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김경태</b> / 부회장
@@ -89,7 +89,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/박진홍.jpeg" className={styles.profilePhoto} alt="YH"></img>
+                    <img src="members_photo/박진홍.jpeg" loading="lazy" className={styles.profilePhoto} alt="YH"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>박진홍</b> / 학술부장
@@ -102,7 +102,7 @@ function Operator() {
                     </div>
                 </div>
                 <div className={styles.operatorcard}>
-                    <img src="members_photo/김병호.jpeg" className={styles.profilePhoto} alt="KT"></img>
+                    <img src="members_photo/김병호.jpg" className={styles.profilePhoto} alt="KT"></img>
                     <div className={styles.centent}>
                         <div className={styles.name}>
                             <b>김병호</b> / 홍보부장
@@ -120,22 +120,22 @@ function Operator() {
 }
 
 const networking = [
-    { imageLink: "./networkingimage/정기세션1.jpg", mainLink: "선배특강2" },
-    { imageLink: "./networkingimage/정기세션2.jpg", mainLink: "선배특강2" },
-    { imageLink: "./networkingimage/정기세션3.jpg", mainLink: "선배특강2" },
-    { imageLink: "./networkingimage/선배특강.jpg", mainLink: "선배특강2" },
-    { imageLink: "./networkingimage/세미나네트워킹.jpg", mainLink: "선배특강2" },
-    { imageLink: "./networkingimage/정기세션단체사진.jpg", mainLink: "선배특강2" }
+    { imageLink: "./networkingimage/정기세션1.webp", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션2.webp", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션3.webp", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/선배특강.webp", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/세미나네트워킹.webp", mainLink: "선배특강2" },
+    { imageLink: "./networkingimage/정기세션단체사진.webp", mainLink: "선배특강2" }
 ];
 const cooperation = [
-    { imageLink: "./cooperationimage/세미나회식.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/하계MT단체1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/하계MT단체2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/하계MT단체3.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/하계MT단체4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/한강1.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/한강2.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" },
-    { imageLink: "./cooperationimage/한강4.jpg", mainLink: "하계MT 가평역에서찍은 단체사진" }
+    { imageLink: "./cooperationimage/세미나회식.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체1.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체2.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체3.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/하계MT단체4.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강1.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강2.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+    { imageLink: "./cooperationimage/한강4.webp", mainLink: "하계MT 가평역에서찍은 단체사진" }
 ];
 function Slide(props) {
     const { slideImage } = props;
@@ -154,7 +154,7 @@ function Slide(props) {
     const randerSlides = () => (
         slideImage.map(element => (
             <div className={styles.projectImageContainer}>
-                <img src={element.imageLink} className={styles.imagesize} alt={element.mainLink}></img>
+                <img src={element.imageLink} loading="lazy" className={styles.imagesize} alt={element.mainLink}></img>
             </div>
         ))
     );

@@ -1,15 +1,49 @@
 import styles from "./Home.module.css";
+import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect, useRef } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+
 function Main() {
+    const navigate = useNavigate();
+    const handleClick = () => {
+        navigate('/Recruit');
+    }
     return (
         <div className={styles.container}>
-            <div className={styles.maintitle}>
+            <div fetchpriority="high" className={styles.maintitle}>
                 <div className={styles.title}>
-                    <h1>Endless Creation</h1>
-                    <h2 className={styles.textbox}>34기 모집 예정!</h2>
+                    {/* <h1>Endless Creation</h1>
+                    <h2 className={styles.textbox}>
+                        34기 모집 중!
+                        <div className={styles.scrolldown1} onClick={handleClick}>
+                            지원하기!
+                        </div>
+                    </h2>
+                    <div className={styles.scrolldown2} onClick={handleClick}>
+                        지원하기!
+                    </div> */}
+                    <div className={styles.scrolldown2} onClick={handleClick}>
+                        지금 바로 EC 지원하기!
+                    </div>
+                    <div className={styles.eventBox}>
+                        <h1>신입생 새터 이벤트!</h1>
+                        <h3>EC의 핵심 가치 세가지는?</h3>
+                        <p>홈페이지에서 EC의 핵심 가치 세 가지를 찾아서 아래의 번호로 문자를 보내주세요!(힌트: 홈페이지를 잘 탐색해 보세요)</p>
+                        <p>정답 예시: 피자, 치킨, 햄버거</p>
+                        <p>📞010 - 9540 - 6570 📞</p>
+                        <p>대상: 새터에 참석한 신입생들</p>
+                        <p>🎁 상품 🎁</p>
+                        <p>1등 ⌨️기계식 키보드</p>
+                        <p>2등 🖱️게이밍 마우스</p>
+                        <p>3등 💳올리브영 상품권</p>
+                        <p>4, 5등 🔋보조 배터리</p>
+                        <p>10등 ☕스타벅스 상품권</p>
+                        <p>15등 🧋공차 상품권</p>
+                        <p>20등 ⌨️기계식 키보드</p>
+                        
+                    </div>
                 </div>
             </div>
             <AboutEC></AboutEC>
@@ -25,7 +59,7 @@ function AboutEC(props) {
     const [memberCount, setMemberCount] = useState(0);
     const [projectCount, setProjectCount] = useState(0);
     const [establishmentYear, setEstablishmentYear] = useState(2024);
-    const endingMemberCount = 37;
+    const endingMemberCount = 32;
     const endingProjectCount = 84;
     const startingEstablishmentYear = 1991;
 
@@ -111,7 +145,7 @@ function Identity() {
                     <div className={styles.identityTitle}>
                         <img src="/Growth.png" className={styles.identityImage} alt="Growth"></img>
                     </div>
-                    <div className={styles.identityTitle}>growth</div>
+                    <div className={styles.identityTitle}>Growth</div>
                 </div>
                 <div className={styles.boxidentity}>
                     <div className={styles.identityTitle}>
@@ -131,17 +165,17 @@ function Identity() {
 }
 
 const projects = [
-    { imageLink: "./projectimage/duting-app.png", mainLink:"https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/duting-app.webp", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146597330-b4cafe41-c5c8-406f-a28f-3080024d11d1.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/33178048/186322211-26ec4031-cf03-4e75-8fe9-d9c5c2674858.png", mainLink: "https://github.com/Endless-Creation-32nd/refill-front" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128898118-1ada994a-e8b0-480f-b93a-c682f2ae6baa.gif", mainLink: "https://github.com/woori-hippy/hippy_front" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/146601381-9eac6210-0f45-46b2-bbfe-d8ebc2355f11.png", mainLink: "https://github.com/gom-3/dutying-web" },
     { imageLink: "https://user-images.githubusercontent.com/28949165/128905429-1cdcc41c-e570-4819-a112-608936563d79.png", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "./projectimage/토이프로젝트.jpg", mainLink: "https://github.com/gom-3/dutying-web" },
-    { imageLink: "./projectimage/알고리즘스터디.jpg", mainLink: "알고리즘 스터디" },
-    { imageLink: "./projectimage/React스터디.jpg", mainLink: "리액트 스터디" },
-    { imageLink: "./projectimage/머신러닝스터디.jpg", mainLink: "머신러닝 스터디" },
-    { imageLink: "./projectimage/게임스터디.jpg", mainLink: "게임 스터디" },
+    { imageLink: "./projectimage/토이프로젝트.webp", mainLink: "https://github.com/gom-3/dutying-web" },
+    { imageLink: "./projectimage/알고리즘스터디.webp", mainLink: "알고리즘 스터디" },
+    { imageLink: "./projectimage/React스터디.webp", mainLink: "리액트 스터디" },
+    { imageLink: "./projectimage/머신러닝스터디.webp", mainLink: "머신러닝 스터디" },
+    { imageLink: "./projectimage/게임스터디.webp", mainLink: "게임 스터디" },
     { imageLink: "https://user-images.githubusercontent.com/24623403/152966700-aa767bc2-9e36-41c3-aa09-e5e3a87640e9.png", mainLink: "https://github.com/gom-3/dutying-web" }
 
 ];
@@ -161,7 +195,7 @@ function ProjectSlide() {
     const randerSlides = () => (
         projects.map(element => (
             <div className={styles.projectContainer}>
-                <img src={element.imageLink} className={styles.imagesize} alt={element.mainLink}></img>
+                <img src={element.imageLink} loading="lazy" className={styles.imagesize} alt={element.mainLink}></img>
             </div>
         ))
     );
@@ -209,7 +243,7 @@ function Process() {
                 </colgroup>
                 <tbody>
                     <tr>
-                        <td>2.15~3.1</td>
+                        <td>2.13~3.1</td>
                         <td>34기 서류 지원</td>
                     </tr>
                     <tr>
@@ -217,15 +251,15 @@ function Process() {
                         <td>1차 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>3.4~3.7</td>
+                        <td>3.4~3.6</td>
                         <td>2차 면접(대면)</td>
                     </tr>
                     <tr>
-                        <td>3.9</td>
+                        <td>3.7</td>
                         <td>최종 합격 발표</td>
                     </tr>
                     <tr>
-                        <td>3.11</td>
+                        <td>3.8</td>
                         <td>개강총회</td>
                     </tr>
                 </tbody>
