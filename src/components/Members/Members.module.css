@@ -28,16 +28,23 @@
 
 /* CSS keyframes로 애니메이션 정의 */
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateY(0);
     }
+
     40% {
-      transform: translateY(-8px);
+        transform: translateY(-8px);
     }
+
     60% {
-      transform: translateY(-4px);
+        transform: translateY(-4px);
     }
-  }
+}
 
 .scrolldown {
     display: none;
@@ -199,7 +206,7 @@
     flex-direction: column;
     position: absolute;
     right: 3%;
-    
+
 }
 
 .hamburger div {
@@ -270,5 +277,63 @@
     .graduatesprofilephoto {
         width: 30px;
         height: 30px;
+    }
+}
+
+
+.identity {
+    display: none;
+}
+
+
+.boxidentity {
+    justify-self: center;
+    /* 수평 중앙 정렬 */
+    align-self: center;
+    display: flex;
+    width: 80%;
+    font-size: 35px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬로 수정 */
+    border-radius: 20px;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    padding: 10px;
+}
+
+
+@media (max-width: 900px) {
+    .identity {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+
+    .identity h1 {
+        animation: bounce 1.5s infinite;
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .identityTitle {
+        font-size: 10px;
+    }
+
+    .identityContainer {
+        display: grid;
+        width: 95%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 5%;
+    }
+
+    .identityImage {
+        width: 44px;
     }
 }

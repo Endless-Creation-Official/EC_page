@@ -14,7 +14,7 @@ function Main() {
         <div className={styles.container}>
             <div fetchpriority="high" className={styles.maintitle}>
                 <div className={styles.title}>
-                    {/* <h1>Endless Creation</h1>
+                    <h1>Endless Creation</h1>
                     <h2 className={styles.textbox}>
                         34기 모집 중!
                         <div className={styles.scrolldown1} onClick={handleClick}>
@@ -22,15 +22,13 @@ function Main() {
                         </div>
                     </h2>
                     <div className={styles.scrolldown2} onClick={handleClick}>
-                        지원하기!
-                    </div> */}
-                    <div className={styles.scrolldown2} onClick={handleClick}>
                         지금 바로 EC 지원하기!
                     </div>
                     <div className={styles.eventBox}>
                         <h1>신입생 새터 이벤트!</h1>
                         <h3>EC의 핵심 가치 세가지는?</h3>
-                        <p>홈페이지에서 EC의 핵심 가치 세 가지를 찾아서 아래의 번호로 문자를 보내주세요!(힌트: 홈페이지를 잘 탐색해 보세요)</p>
+                        <p>홈페이지에서 EC의 핵심 가치 세 가지를 찾아서 아래의 번호로 문자를 보내주세요!</p>
+                        <p>(힌트: members 페이지로 가보세요!)</p>
                         <p>정답 예시: 피자, 치킨, 햄버거</p>
                         <p>📞010 - 9540 - 6570 📞</p>
                         <p>대상: 새터에 참석한 신입생들</p>
@@ -42,12 +40,12 @@ function Main() {
                         <p>10등 ☕스타벅스 상품권</p>
                         <p>15등 🧋공차 상품권</p>
                         <p>20등 ⌨️기계식 키보드</p>
-                        
+
                     </div>
                 </div>
             </div>
             <AboutEC></AboutEC>
-            <Identity></Identity>
+            {/*<Identity></Identity>*/}
             <Project></Project>
             <Process></Process>
             <FAQ></FAQ>
