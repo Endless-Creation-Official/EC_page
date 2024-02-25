@@ -88,7 +88,7 @@ function Main() {
         <input className={styles.privacy} name="email" type="text" placeholder="이메일을 입력해주세요"
           ref={Email0}></input>
 
-        <div className={styles.questionlist}>질문 목록</div>
+        <h2>질문 목록</h2>
 
         <div className={styles.question}>
           <p>1. 간단한 자기소개와 지원동기를 작성해주세요! (공백 포함 300자 이내)</p>
