@@ -102,7 +102,7 @@
     display: none;
     width: fit-content;
     padding: 7px;
-    font-size: 13px;
+    font-size: 14px;
     animation: bounce 2s infinite;
     border-radius: 10px;
     background-color: #68cb8e;
@@ -133,12 +133,10 @@
     }
 
     .title h1 {
-        display: none;
         font-size: 30px;
     }
 
     .textbox {
-        display: none;
         font-size: 20px;
     }
 }
@@ -244,6 +242,7 @@
     align-self: center;
     display: grid;
     width: 80%;
+    max-width: 180px;
     font-size: 35px;
     /* 간격 설정 */
     justify-content: center;
@@ -255,12 +254,36 @@
     border-radius: 20px;
     grid-template-columns: 1fr;
     background-color: rgb(43, 43, 43);
-    margin: 5% 0;
-    /* padding 대신 margin 사용 */
+    padding: 10px;
+}
+
+.phoneidentity {
+    justify-self: center;
+    /* 수평 중앙 정렬 */
+    align-self: center;
+    display: none;
+    width: 120px;
+    font-size: 35px;
+    /* 간격 설정 */
+    justify-content: center;
+    /* 수평 중앙 정렬 */
+    align-items: center;
+    /* 수직 중앙 정렬로 수정 */
+    aspect-ratio: 1.2/1;
+    /* 너비와 높이의 비율을 1:1로 설정 */
+    border-radius: 20px;
+    grid-template-columns: 1fr;
+    background-color: rgb(43, 43, 43);
+    margin-top: 8%;
+    padding: 10px;
 }
 
 .identityImage {
     width: 40%;
+}
+
+.identityTitle {
+    font-size: 20px;
 }
 
 .identityTitle:nth-child(1) {
@@ -271,14 +294,17 @@
 }
 
 .identityTitle:nth-child(2) {
-    position: relative;
-    margin: auto;
-    font-size: 20px;
-    color: white;
-    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
 }
 
+
 @media (max-width: 900px) {
+    .phoneidentity {
+        display: grid;
+    }
     .identity h1 {
         font-size: 30px;
     }
@@ -288,12 +314,12 @@
     }
 
     .identityContainer {
-        width: 75%;
+        width: 85%;
         grid-template-columns: 1fr 1fr;
     }
 
     .boxidentity {
-        width: 100%;
+        width: 120px;
         max-width: 200px;
     }
 
@@ -302,16 +328,29 @@
     }
 
     .boxidentity:nth-child(3) {
+        display: none;
         position: relative;
         left: 60%;
         top: 0%;
     }
 
     .identityImage {
-        width: 80px;
+        width: 60px;
     }
 }
 
+@media (max-width: 380px) {
+    .boxidentity {
+        width: 70%;
+        max-width: 200px;
+    }
+    .phoneidentity {
+        width: 30%
+    }
+    .identityTitle:nth-child(2) {
+        font-size: 13px;
+    }
+}
 .slidebox {
     width: 100%;
 }

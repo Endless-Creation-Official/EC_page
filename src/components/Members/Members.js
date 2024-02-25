@@ -620,29 +620,6 @@ function Main() {
                     <GraduatesCard key={index} {...member} />
                 ))}
             </section>
-            <div className={styles.identity}>
-                <h1>EC의 핵심 가치!</h1>
-                <div className={styles.identityContainer}>
-                    <div className={styles.boxidentity}>
-                        <div className={styles.identityTitle}>
-                            <img src="/Growth.png" className={styles.identityImage} alt="Growth"></img>
-                        </div>
-                        <div className={styles.identityTitle}>Growth</div>
-                    </div>
-                    <div className={styles.boxidentity}>
-                        <div className={styles.identityTitle}>
-                            <img src="/Sharing.png" className={styles.identityImage} alt="Sharing"></img>
-                        </div>
-                        <div className={styles.identityTitle}>Sharing</div>
-                    </div>
-                    <div className={styles.boxidentity}>
-                        <div className={styles.identityTitle}>
-                            <img src="/Cooperation.png" className={styles.identityImage} alt="Cooperation"></img>
-                        </div>
-                        <div className={styles.identityTitle}>Cooperation</div>
-                    </div>
-                </div>
-            </div>
         </div>
     );
 }
