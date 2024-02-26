@@ -2,6 +2,7 @@
 import React, { useRef } from "react";
 import styles from "./Apply.module.css";
 import axios from 'axios';
+import QuestionInput from "./QuestionInput";
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
