@@ -111,7 +111,7 @@
     }
     
     .sidebar.open {
-        right: -5%;
+        right: -2%;
     }
     
 
@@ -133,5 +133,11 @@
 
     100% {
         transform: scale(1) rotateZ(360deg);
+    }
+}
+
+@media (max-width: 600px) {
+    .sidebar.open {
+        right: -5%;
     }
 }
