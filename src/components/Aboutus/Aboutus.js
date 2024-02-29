@@ -59,38 +59,6 @@ function Introdution() {
     )
 }
 
-
-const memberData = [
-    {
-        photo: "members_photo/강영훈.jpg",
-        alt: "YH",
-        name: "강영훈",
-        position: "회장",
-        introduction: "열심히 하는 중",
-    },
-    {
-        photo: "members_photo/김경태1.jpg",
-        alt: "KT",
-        name: "김경태",
-        position: "부회장",
-        introduction: "함께 성장해요! 질문은 언제나 환영입니다",
-    },
-    {
-        photo: "members_photo/박진홍.jpeg",
-        alt: "YH",
-        name: "박진홍",
-        position: "학술부장",
-        introduction: "EC의 자랑이 되어주세요!",
-    },
-    {
-        photo: "members_photo/김병호.jpg",
-        alt: "KT",
-        name: "김병호",
-        position: "홍보부장",
-        introduction: "해치지 않아요~",
-    },
-];
-
 const networking = [
     { imageLink: "./networkingimage/정기세션1.webp", mainLink: "선배특강2" },
     { imageLink: "./networkingimage/정기세션2.webp", mainLink: "선배특강2" },
