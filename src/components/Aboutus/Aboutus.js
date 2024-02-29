@@ -5,12 +5,30 @@ import styles from "./Aboutus.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-
+import Operator from "../Aboutus/OperationMember.js"
 
 function Main() {
     return (
         <div className={styles.container}>
-            <div className={styles.aboutContainer}>
+            <Introdution />
+            <Operator />
+            <div className={styles.activity}>
+                <h1>활동</h1>
+                <div className={styles.slideBox}>
+                    <h2>Networking</h2>
+                    <Slide slideImage={networking} />
+                </div>
+                <div className={styles.slideBox}>
+                    <h2>Cooperation</h2>
+                    <Slide slideImage={cooperation} />
+                </div>
+            </div>
+        </div>
+    )
+}
+function Introdution() {
+    return (
+        <div className={styles.aboutContainer}>
                 <div className={styles.slider}>
                     <img fetchpriority="high" src="./networkingimage/정기세션타이틀.webp" className={styles.aboutusImage} alt="example"></img>
                 </div>
@@ -36,88 +54,42 @@ function Main() {
                         함께 성장하고, 함께 꿈을 향해 나아가는 우리 동아리에서 당신의 열정과 노력이 빛날 자리가 여러분을 기다리고 있습니다.
                         함께하는 즐거움과 성장하는 성취감을 느끼고 싶다면, EC에 참여해보세요!
                     </p>
-                </div>
-            </div>
-            <Operator></Operator>
-            <div className={styles.activity}>
-                <h1>활동</h1>
-                <div className={styles.slideBox}>
-                    <h2>Networking</h2>
-                    <Slide slideImage={networking}></Slide>
-                </div>
-                <div className={styles.slideBox}>
-                    <h2>Cooperation</h2>
-                    <Slide slideImage={cooperation}></Slide>
-                </div>
             </div>
         </div>
     )
 }
 
-function Operator() {
-    return (
-        <div className={styles.operatorContainer}>
-            <div className={styles.operator}>
-                <h2>EC 34th</h2>
-                <h1>운영진</h1>
-            </div>
-            <section className={styles.operators}>
-                <div className={styles.operatorcard}>
-                    <img src="members_photo/강영훈.jpg" className={styles.profilePhoto} alt="YH"></img>
-                    <div className={styles.centent}>
-                        <div className={styles.name}>
-                            <b>강영훈</b> / 회장
-                        </div>
-                        <div className={styles.introduction}>
-                            <p>
-                                열심히 하는 중
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.operatorcard}>
-                    <img src="members_photo/김경태1.jpg" loading="lazy" className={styles.profilePhoto} alt="KT"></img>
-                    <div className={styles.centent}>
-                        <div className={styles.name}>
-                            <b>김경태</b> / 부회장
-                        </div>
-                        <div className={styles.introduction}>
-                            <p>
-                                함께 성장해요! 질문은 언제나 환영입니다
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.operatorcard}>
-                    <img src="members_photo/박진홍.jpeg" loading="lazy" className={styles.profilePhoto} alt="YH"></img>
-                    <div className={styles.centent}>
-                        <div className={styles.name}>
-                            <b>박진홍</b> / 학술부장
-                        </div>
-                        <div className={styles.introduction}>
-                            <p>
-                                EC의 자랑이 되어주세요!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div className={styles.operatorcard}>
-                    <img src="members_photo/김병호.jpg" className={styles.profilePhoto} alt="KT"></img>
-                    <div className={styles.centent}>
-                        <div className={styles.name}>
-                            <b>김병호</b> / 홍보부장
-                        </div>
-                        <div className={styles.introduction}>
-                            <p>
-                                해치지않아요~
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-    )
-}
+
+const memberData = [
+    {
+        photo: "members_photo/강영훈.jpg",
+        alt: "YH",
+        name: "강영훈",
+        position: "회장",
+        introduction: "열심히 하는 중",
+    },
+    {
+        photo: "members_photo/김경태1.jpg",
+        alt: "KT",
+        name: "김경태",
+        position: "부회장",
+        introduction: "함께 성장해요! 질문은 언제나 환영입니다",
+    },
+    {
+        photo: "members_photo/박진홍.jpeg",
+        alt: "YH",
+        name: "박진홍",
+        position: "학술부장",
+        introduction: "EC의 자랑이 되어주세요!",
+    },
+    {
+        photo: "members_photo/김병호.jpg",
+        alt: "KT",
+        name: "김병호",
+        position: "홍보부장",
+        introduction: "해치지 않아요~",
+    },
+];
 
 const networking = [
     { imageLink: "./networkingimage/정기세션1.webp", mainLink: "선배특강2" },
@@ -137,6 +109,7 @@ const cooperation = [
     { imageLink: "./cooperationimage/한강2.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
     { imageLink: "./cooperationimage/한강4.webp", mainLink: "하계MT 가평역에서찍은 단체사진" }
 ];
+
 function Slide(props) {
     const { slideImage } = props;
     const settings = {
@@ -160,12 +133,12 @@ function Slide(props) {
     );
 
     return (
-        <div className={styles.slideContainer}>
-            <Slider {...settings}> {randerSlides()}</Slider>
+        <div className={styles.slideBox}>
+            <div className={styles.slideContainer}>
+                <Slider {...settings}> {randerSlides()} </Slider>
+            </div>
         </div>
     )
 }
-
-
 
 export default Main;

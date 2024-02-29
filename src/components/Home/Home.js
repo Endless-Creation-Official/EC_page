@@ -44,11 +44,11 @@ function Main() {
                     </div>
                 </div>
             </div>
-            <AboutEC></AboutEC>
-            {/*<Identity></Identity>*/}
-            <Project></Project>
-            <Process></Process>
-            <FAQ></FAQ>
+            <AboutEC />
+            <Identity />
+            <Project />
+            <Process />
+            <FAQ />
         </div>
     );
 }

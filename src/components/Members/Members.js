@@ -74,10 +74,7 @@ function GraduatesCard({ name = "", term = "", skills = [], mark = null, image =
     );
 }
 
-
-
-
-
+/* 나중에 데이터베이스 만들어서 저장 */
 
 function Main() {
     const graduates = [

@@ -2,7 +2,6 @@
 import React, { useRef } from "react";
 import styles from "./Apply.module.css";
 import axios from 'axios';
-import QuestionInput from "./QuestionInput";
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
@@ -66,62 +65,73 @@ function Main() {
         <h2>개인 정보</h2>
         이름
         <input className={styles.privacy} name="name" type="text" placeholder="이름을 입력해주세요"
-          ref={Name0}></input>
+          ref={Name0} />
 
         소속학과
         <input className={styles.privacy} name="major" type="text" placeholder="소속학과를 입력해주세요"
-          ref={Major0}></input>
+          ref={Major0} />
 
         학번
         <input className={styles.privacy} name="studentid" type="text" placeholder="학번을 입력해주세요"
-          ref={Studentid0}></input>
+          ref={Studentid0} />
 
         생년월일
         <input className={styles.privacy} name="birth" type="text" placeholder="생년월일을 입력해주세요 ex) 2001-03-19"
-          ref={Birth0}></input>
+          ref={Birth0} />
 
         전화번호
         <input className={styles.privacy} name="phonenumber" type="text" placeholder="전화번호를 입력해주세요 ex) 010-2511-5633"
-          ref={Phonenumber0}></input>
+          ref={Phonenumber0} />
 
         Email
         <input className={styles.privacy} name="email" type="text" placeholder="이메일을 입력해주세요"
-          ref={Email0}></input>
+          ref={Email0} />
 
         <h2>질문 목록</h2>
 
         <div className={styles.question}>
           <p>1. 간단한 자기소개와 지원동기를 작성해주세요! (공백 포함 300자 이내)</p>
         </div>
-        <textarea type="text"
-          name="q1"
-          className={styles.textbox}
-          placeholder="내용을 입력해주세요"
-          maxLength={300}
-          ref={Q10}>
-        </textarea>
+        <div>
+          <textarea
+            type="text"
+            name="q1"
+            className={styles.textbox}
+            placeholder="내용을 입력해주세요"
+            maxLength={300}
+            ref={Q10}
+          />
+        </div>
 
         <div className={styles.question}>
-          <p>2. 살면서 어떠한 문제를 해결한 경험이 있나요? 그 문제를 어떻게 해결했는지, 이를 통해 무엇을 배웠고 느꼈는지 구체적으로 설명해주세요! 사소한 경험이라도 괜찮습니다. (공백 포함 300자 이내)</p>
+          <p>2. 살면서 어떠한 문제를 해결한 경험이 있나요? 그 문제를 어떻게 해결했는지, 
+            이를 통해 무엇을 배웠고 느꼈는지 구체적으로 설명해주세요! 
+            사소한 경험이라도 괜찮습니다. (공백 포함 300자 이내)
+          </p>
         </div>
-        <textarea type="text"
-          name="q2"
-          className={styles.textbox}
-          placeholder="내용을 입력해주세요"
-          maxLength={300}
-          ref={Q20}>
-        </textarea>
-
+        <div>
+          <textarea 
+            type="text"
+            name="q2"
+            className={styles.textbox}
+            placeholder="내용을 입력해주세요"
+            maxLength={300}
+            ref={Q20}
+          />
+        </div>
         <div className={styles.question}>
           <p>3. 만들고 싶거나 관심있는 웹서비스, 혹은 하고싶은 스터디를 작성해주세요! (공백 포함 300자 이내)</p>
         </div>
-        <textarea type="text"
-          name="q3"
-          className={styles.textbox}
-          placeholder="내용을 입력해주세요"
-          maxLength={300}
-          ref={Q30}>
-        </textarea>
+        <div>
+          <textarea
+            type="text"
+            name="q3"
+            className={styles.textbox}
+            placeholder="내용을 입력해주세요"
+            maxLength={300}
+            ref={Q30}
+          />
+        </div>
 
         <button type="submit" className={styles.admitButton}>
           제출하기
