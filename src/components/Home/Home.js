@@ -26,19 +26,11 @@ function Main() {
                     </div>
                 </div>
             </div>
-<<<<<<< HEAD
-            <AboutEC />
-            <Identity />
-            <Project />
-            <Process />
-            <FAQ />
-=======
             <AboutEC></AboutEC>
             <Identity></Identity>
             <Project></Project>
             <Process></Process>
             <FAQ></FAQ>
->>>>>>> main
         </div>
     );
 }
