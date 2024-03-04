@@ -182,7 +182,7 @@
     /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
 }
 
-.centent {
+.content {
     display: flex;
     flex-direction: column;
     gap: 10px;
