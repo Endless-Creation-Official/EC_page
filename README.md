@@ -1,6 +1,6 @@
 # 서울과학기술대학교 학술동아리 Endless Creation 소개 페이지 제작
 
-**URL : https://endless-creation.netlify.app**
+URL: **https://endless-creation.netlify.app**
 ## 개발 동기
 외부에 학술 동아리 홍보를 하고 신입생을 모집하기 위해 제작하게 되었습니다. 페이지를 통해 효과적으로 홍보가 되었으며 신입생을 성공적으로 모집할 수 있었습니다.
 
