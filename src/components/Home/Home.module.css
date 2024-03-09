@@ -224,7 +224,7 @@
     display: grid;
     margin-top: 3rem;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10%;
+    grid-gap: 5%;
 
 }
 
