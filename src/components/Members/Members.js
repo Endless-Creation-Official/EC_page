@@ -94,7 +94,7 @@ function Main() {
         {
             name: "조재영",
             term: "28기",
-            skills: ["Sprint", "Java", "Back-end"],
+            skills: ["Spring", "Java", "Back-end"],
             careers: ["現 카카오뱅크"],
             mark: "companyMark/kakaobank.webp"
         },
