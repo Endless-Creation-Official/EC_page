@@ -82,7 +82,8 @@ function Main() {
             name: "오예진",
             term: "29기",
             skills: ["React"],
-            careers: ["前 카카오엔터프라이즈 인턴", "前 네이버 클라우드 인턴", "現 AWS Cloud Club 1st Captain"]
+            careers: ["前 AWS Cloud Club", "前 카카오엔터프라이즈 인턴", "前 네이버 클라우드 인턴", "現 카카오엔터프라이즈"],
+            mark: "companyMark/kakaoenterprise2.webp"
         },
         {
             name: "황인서",
