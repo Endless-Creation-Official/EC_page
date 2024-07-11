@@ -1,5 +1,5 @@
 // Apply.js
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import styles from "./Apply.module.css";
 import axios from 'axios';
 
@@ -10,6 +10,18 @@ function Main() {
       event.preventDefault();
     };
   }, true);
+
+  const [isCheck, setIsCheck] = useState(false);
+  const [buttonText, setButtonText] = useState('체크박스에 체크');
+
+  const toggleIsCheck = (e) => {
+    setIsCheck(e.target.checked);
+    if (e.target.checked) {
+      setButtonText('제출하기');
+    } else {
+      setButtonText('체크박스에 체크'); 
+    }
+  };
 
   //useRef 선언
   const Name0 = useRef();
@@ -23,11 +35,11 @@ function Main() {
   const Q30 = useRef();
 
   // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // 바뀐 코드: formData객체를 이용함
-    let formData = new FormData();
+    const formData = new FormData();
     formData.append('Name', Name0.current.value);
     formData.append('Major', Major0.current.value);
     formData.append('Studentid', Studentid0.current.value);
@@ -132,10 +144,17 @@ function Main() {
             ref={Q30}
           />
         </div>
-
-        <button type="submit" className={styles.admitButton}>
-          제출하기
-        </button>
+        <div>
+          <input type="checkbox" onChange={toggleIsCheck}/>
+          모든 내용을 확인 후 제출하기
+        </div>
+        <button 
+            type="submit" 
+            className={styles.admitButton} 
+            disabled={!isCheck}
+          >
+            {buttonText}
+          </button>
       </div>
     </form>
   );
