@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.firstContainer}>
                 <h1>EC와 함께하고 싶다면?</h1>
-                <button className={styles.button} disabled /* onClick={handleClick} */>지원하러 가기</button>
+                <button className={styles.button} disabled onClick={handleClick}>지원하러 가기</button>
             </div>
             <FAQ></FAQ>
         </div>
