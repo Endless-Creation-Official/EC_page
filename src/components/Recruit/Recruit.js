@@ -12,7 +12,7 @@ function Main() {
         <div className={styles.container}>
             <div className={styles.firstContainer}>
                 <h1>EC와 함께하고 싶다면?</h1>
-                <button className={styles.button} onClick={()=>{alert("서류 제출 기간이 아닙니다:)\n2학기 추가모집에서 봐요!\n(간절하다면 회장에게 연락해보세요!)\n회장 강영훈 : 010-9540-6570")}} /* onClick={handleClick} */>지원하러 가기</button>
+                <button className={styles.button} disabled /* onClick={handleClick} */>지원하러 가기</button>
             </div>
             <FAQ></FAQ>
         </div>
