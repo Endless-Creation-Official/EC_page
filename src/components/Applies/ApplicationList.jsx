@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Applies() {
     const [applications, setApplications] = useState([]);
     useEffect(() => {
-        axios.get('/api/applications')
+        axios.get('/api/applies')
             .then(response => setApplications(response.data))
             .catch(error => console.error('Fetch 할 data 없음', error));
     }, []);

@@ -50,7 +50,7 @@ function Main() {
     formData.append('Q2', Q20.current.value);
     formData.append('Q3', Q30.current.value);
 
-    axios.post('https://sheet.best/api/sheets/512c44c2-ab42-4b00-ab88-e61913f83f5c', formData).then((response) => {
+    axios.post('/api/applyForm', formData).then((response) => {
       console.log(response);
       // clearing form fields
       Name0.current.value = '';

@@ -7,7 +7,7 @@ export default function ApplicationDetail() {
     const { id } = useParams();
     const [application, setApplication] = useState(null);
     useEffect(() => {
-        axios.get(`/api/applications/${id}`)
+        axios.get(`/api/applies/${id}`)
             .then(response => setApplication(response.data))
             .catch(error => console.log('Fetch 할 data 없음', error));
     }, [id]);
