@@ -5,8 +5,10 @@ import Aboutus from './pages/aboutus';
 import Members from './pages/members';
 import Recruit from './pages/recruit';
 import Apply from './pages/apply';
+import Applies from './pages/applicationList';
 
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import ApplicationDetail from './components/Applies/ApplicationDetail';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path='/Members' element={<Members />}></Route>
         <Route path='/Recruit' element={<Recruit />}></Route>
         <Route path="/apply" element={<Apply />}></Route>
+        <Route path="/applies" element={<Applies />}></Route>
+        <Route path="/applies/:id" element={<ApplicationDetail />}></Route>
       </Routes>
     </Router>
   );
