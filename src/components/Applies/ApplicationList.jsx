@@ -27,7 +27,7 @@ export default function Applies() {
                 {applications ? applications.map(application => (
                     <li key={application.id}>
                         <Link to={`/applies/${application.id}`}>
-                            {application.name} {application.email}
+                            {application.name} {application.email} {application.state}
                         </Link>
                     </li>
                 )) : <div>Loading...</div>}
