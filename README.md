@@ -10,7 +10,7 @@ Endless Creation이 지향하는 핵심 가치, 활동 내용들, 멤버 소개,
 ## 기술
 * React
 * React slide slick 라이브러리
-* moudule css
+* module css
 * axios를 통한 비동기 통신
 * 미디어쿼리
 
