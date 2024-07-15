@@ -1,6 +1,6 @@
 /* .container의 스타일 */
 .container {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgb(26, 66, 14) 61%, rgb(62, 100, 50) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgb(26, 66, 14) 61%, rgb(62, 100, 50) 100%);
     display: flex;
     margin: auto;
     text-align: center;
@@ -49,11 +49,16 @@
     /* 원하는 너비 값 설정 */
     height: 60px;
     /* 원하는 높이 값 설정 */
-    font-family : 'SOYOMapleBoldTTF';
+    font-family: 'SOYOMapleBoldTTF';
     display: flex;
     align-items: center;
     justify-content: center;
     padding-top: 6px;
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
 }
 
 @media (max-width: 900px) {
@@ -83,7 +88,7 @@
 
 .accordion {
     width: 50%;
-    font-family : 'SOYOMapleBoldTTF';
+    font-family: 'SOYOMapleBoldTTF';
 }
 
 
@@ -122,7 +127,7 @@
 
 .accordion button .accordiontitle {
     padding: 1em 1.5em 1em 0;
-    font-family : 'SOYOMapleBoldTTF';
+    font-family: 'SOYOMapleBoldTTF';
 }
 
 
@@ -163,9 +168,11 @@
     .accordion {
         width: 90%;
     }
+
     .accordion button {
         font-size: 1rem;
     }
+
     .accordion .accordioncontent p {
         font-size: 14px;
         margin: 1rem 0;
