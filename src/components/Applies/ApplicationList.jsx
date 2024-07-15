@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import { Link } from "react-router-dom";
+import styles from "../Applies/ApplicationList.module.css";
 
 export default function Applies() {
     const [applications, setApplications] = useState([]);
@@ -20,16 +21,16 @@ export default function Applies() {
     }, []); // Empty dependency array ensures this runs once on mount
 
     return (
-        <div>
+        <div className={styles.container}>
             <h1>지원서</h1>
             <ul>
-                {applications.map(application => (
+                {applications ? applications.map(application => (
                     <li key={application.id}>
                         <Link to={`/applies/${application.id}`}>
-                            {application.name} {application.email}
+                            {application.name} {application.email} {application.state}
                         </Link>
                     </li>
-                ))}
+                )) : <div>Loading...</div>}
             </ul>
         </div>
     );

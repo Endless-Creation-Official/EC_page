@@ -8,7 +8,7 @@ function Main() {
   document.addEventListener('keydown', function(event) {
     if (event.keyCode === 13) {
       event.preventDefault();
-    };
+    }
   }, true);
 
   const [isCheck, setIsCheck] = useState(false);

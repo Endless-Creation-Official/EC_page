@@ -20,6 +20,15 @@ export default function ApplicationDetail() {
         fetchApplication();
     }, [id]);
 
+    const resultUpdate = async (isAccepted) => {
+        try {
+            const response = await axios.put(`/api/applies/${id}`, { isAccepted }, { withCredentials: true });
+            setApplication({ ...application, isAccepted });
+        } catch (error) {
+            console.log('Update error', error);
+        }
+    };
+
     if (!application) return <div>Loading...</div>;
 
     return (
@@ -33,6 +42,12 @@ export default function ApplicationDetail() {
             <p>{application.question1}</p>
             <p>{application.question2}</p>
             <p>{application.question3}</p>
+            <form>
+                <div>
+                    <button type='button' onClick={() => resultUpdate('pass')}>Pass</button>
+                    <button type='button' onClick={() => resultUpdate('fail')}>Fail</button>
+                </div>
+            </form>
         </div>
     );
 }
