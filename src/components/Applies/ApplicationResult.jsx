@@ -1,9 +1,10 @@
 import { useRef, useState } from 'react';
 import axios from 'axios';
+import styles from './ApplicationResult.module.css';
 
 export default function ApplicationResult() {
   return (
-    <div>
+    <div className={styles.container}>
       <h1>지원 결과 확인</h1>
       <CheckAcceptance />
     </div>
@@ -20,7 +21,7 @@ function CheckAcceptance() {
     e.preventDefault();
     const phoneNumber = phoneNumberRef.current.value;
     axios
-      .post('api/showResult', { phoneNumber: phoneNumber })
+      .post('api/showResult', { phoneNumber })
       .then((response) => {
         setAcceptance(response.data.state);
         setIsSubmitted(true);
@@ -35,19 +36,26 @@ function CheckAcceptance() {
 
   return (
     <div>
-      <h1>결과 확인하기</h1>
       <form onSubmit={handleSubmit}>
-        <div>
-          <label>이름</label>
-          <input type='text' placeholder='홍길동' />
-          <label>전화번호</label>
-          <input
-            type='text'
-            placeholder='ex) 010-2511-5633'
-            ref={phoneNumberRef}
-          />
+        <div className={styles.search}>
+          <div className={styles.formGroup}>
+            <div className={styles.formInputGroup}>
+              <div className={styles.formInput}>
+                <label>이름</label>
+                <input type='text' placeholder='홍길동' />
+              </div>
+              <div className={styles.formInput}>
+                <label>전화번호</label>
+                <input
+                  type='text'
+                  placeholder='ex) 010-2511-5633'
+                  ref={phoneNumberRef}
+                />
+              </div>
+            </div>
+            <button type='submit'>조회</button>
+          </div>
         </div>
-        <button type='submit'>조회</button>
       </form>
       {isSubmitted &&
         (acceptance !== null ? (
