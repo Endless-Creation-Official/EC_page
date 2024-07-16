@@ -13,7 +13,9 @@ function Main() {
           </button>
         </Link>
         <Link to='/applies/result'>
-          <button className={styles.button}>지원결과 확인하러 가기</button>
+          <button className={styles.buttonResult}>
+            지원결과 확인하러 가기
+          </button>
         </Link>
       </div>
       <FAQ />
