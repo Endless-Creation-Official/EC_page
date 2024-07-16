@@ -73,3 +73,8 @@
     rgb(72, 115, 60) 100%
   ); /* Darker green gradient for hover effect */
 }
+
+.formNameInput {
+  padding-left: 15px;
+  padding-right: 15px;
+}
