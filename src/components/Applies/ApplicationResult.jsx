@@ -41,7 +41,7 @@ function CheckAcceptance() {
           <div className={styles.formGroup}>
             <div className={styles.formInputGroup}>
               <div className={styles.formInput}>
-                <label>이름</label>
+                <label className={styles.formNameInput}>이름</label>
                 <input type='text' placeholder='홍길동' />
               </div>
               <div className={styles.formInput}>
