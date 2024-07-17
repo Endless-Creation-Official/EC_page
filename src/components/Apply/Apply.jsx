@@ -60,7 +60,7 @@ function Main() {
     const jsonData = JSON.stringify(formData);
 
     axios
-      .post('43.202.40.240:8080/api/applyForm', jsonData, {
+      .post('${PROXY}/applyForm', jsonData, {
         headers: {
           'Content-Type': 'application/json',
         },
