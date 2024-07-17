@@ -2,6 +2,8 @@ import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
 
+const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
   document.addEventListener(
@@ -58,7 +60,7 @@ function Main() {
     const jsonData = JSON.stringify(formData);
 
     axios
-      .post('/api/applyForm', jsonData, {
+      .post('${PROXY}/api/applyForm', jsonData, {
         headers: {
           'Content-Type': 'application/json',
         },
