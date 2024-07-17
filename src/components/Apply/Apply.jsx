@@ -60,7 +60,7 @@ function Main() {
     const jsonData = JSON.stringify(formData);
 
     axios
-      .post('api/applyForm', jsonData, {
+      .post('/api/applyForm', jsonData, {
         headers: {
           'Content-Type': 'application/json',
         },
