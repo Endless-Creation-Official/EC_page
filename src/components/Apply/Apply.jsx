@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
 
-const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
+const PROXY = window.location.hostname === 'localhost' ? '' : '/api';
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
