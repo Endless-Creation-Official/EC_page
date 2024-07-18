@@ -86,7 +86,7 @@ function Main() {
     alert(`제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`);
 
     // '/'로 이동
-    window.location.href = '/';
+    //window.location.href = '/';
   };
 
   return (
