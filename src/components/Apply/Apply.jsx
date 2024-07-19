@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
 import {submitApplication} from '../../api/apiClient';
