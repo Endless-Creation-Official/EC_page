@@ -1,8 +1,8 @@
 import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
+import {submitApplication} from '../../api/apiClient';
 
-const PROXY = window.location.hostname === 'localhost' ? '' : '/proxy';
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
@@ -57,18 +57,13 @@ function Main() {
     };
 
     // JSON.stringify를 사용하여 formData를 JSON 문자열로 변환
-    const jsonData = JSON.stringify(formData);
-
+    //const jsonData = JSON.stringify(formData);
+    submitApplication(formData)
+    .
     axios
-      .post('/api/applyForm', jsonData, {
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        withCredentials: true,
-      })
       .then((response) => {
         console.log(response);
-        // clearing form fields
+        // 지원서 필드 초기화
         Name0.current.value = '';
         Major0.current.value = '';
         Studentid0.current.value = '';
@@ -80,7 +75,7 @@ function Main() {
         Q30.current.value = '';
       })
       .catch((error) => {
-        console.error('Error during form submission', error);
+        console.error('제출 중 오류가 발생했습니다.', error);
       });
 
     alert(`제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`);
