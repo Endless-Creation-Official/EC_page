@@ -58,7 +58,6 @@ function Main() {
 
     // JSON.stringify를 사용하여 formData를 JSON 문자열로 변환
     //const jsonData = JSON.stringify(formData);
-    //json.stringfy를 사용하는 경우와 하지 않는 경우 공부하기
     submitApplication(formData)
     .then((response) => {
         console.log(response);
