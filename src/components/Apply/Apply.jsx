@@ -1,8 +1,6 @@
-import axios from 'axios';
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
-import {submitApplication} from '../../api/apiClient';
-
+import { submitApplication } from '../../api/apiClient';
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
@@ -21,11 +19,7 @@ function Main() {
 
   const toggleIsCheck = (e) => {
     setIsCheck(e.target.checked);
-    if (e.target.checked) {
-      setButtonText('제출하기');
-    } else {
-      setButtonText('체크박스에 체크');
-    }
+    setButtonText(e.target.checked ? '제출하기' : '체크박스에 체크');
   };
 
   // useRef 선언
@@ -39,8 +33,8 @@ function Main() {
   const Q20 = useRef();
   const Q30 = useRef();
 
-  // 이벤트 핸들러 함수: 제출 버튼 onClick시 실행하는 콜백함수
-  const handleSubmit = async (e) => {
+  // 이벤트 핸들러 함수: 제출 버튼 onClick 시 실행하는 콜백 함수
+  const handleSubmit = (e) => {
     e.preventDefault();
 
     // JSON 객체 생성
@@ -56,11 +50,7 @@ function Main() {
       question3: Q30.current.value,
     };
 
-    // JSON.stringify를 사용하여 formData를 JSON 문자열로 변환
-    //const jsonData = JSON.stringify(formData);
     submitApplication(formData)
-    .
-    axios
       .then((response) => {
         console.log(response);
         // 지원서 필드 초기화
@@ -73,15 +63,11 @@ function Main() {
         Q10.current.value = '';
         Q20.current.value = '';
         Q30.current.value = '';
+        alert(`제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`);
       })
       .catch((error) => {
         console.error('제출 중 오류가 발생했습니다.', error);
       });
-
-    alert(`제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`);
-
-    // '/'로 이동
-    //window.location.href = '/';
   };
 
   return (
