@@ -1,7 +1,11 @@
 import axios from 'axios';
 
+const host = window.location.hostname === "localhost" 
+  ? ''
+  : '';
+
 const apiClient = axios.create({
-    baseURL: '/api',
+    baseURL: host,
     headers: {
         'Content-Type': 'application/json',
     },
@@ -10,5 +14,5 @@ const apiClient = axios.create({
 
 // POST 함수
 export const submitApplication = (formData) => {
-    return apiClient.post('/applyForm', formData);
+    return apiClient.post('/api/applyForm', formData);
 };
