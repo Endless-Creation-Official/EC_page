@@ -1,4 +1,2 @@
-/api/* http://3.35.131.52:8080/:splat 200
+/api/* https://endless-creation.com/api/:splat 200
 /* /index.html 200
-
-
