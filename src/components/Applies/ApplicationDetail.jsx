@@ -22,16 +22,20 @@ export default function ApplicationDetail() {
     fetchApplication();
   }, [id]);
 
-  const resultUpdate = async (isAccepted) => {
+  const updateState = async (newState) => {
     try {
-      await axios.put(
-        `/api/applies/${id}`,
-        { isAccepted },
-        { withCredentials: true }
-      );
-      setApplication({ ...application, isAccepted });
+      const response = await axios.patch(`/api/apply/${id}/update`, {
+        state: newState
+      }, {
+        withCredentials: true,
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      });
+      setApplication({ ...application, state: newState }); // Assuming the state is a direct field
+      console.log('Update successful:', response.data);
     } catch (error) {
-      console.log('Update error', error);
+      console.error('Update error', error);
     }
   };
 
@@ -50,10 +54,10 @@ export default function ApplicationDetail() {
       <p>{application.question3}</p>
       <form>
         <div>
-          <button type='button' onClick={() => resultUpdate('pass')}>
+          <button type='button' onClick={() => updateState('pass')}>
             Pass
           </button>
-          <button type='button' onClick={() => resultUpdate('fail')}>
+          <button type='button' onClick={() => updateState('fail')}>
             Fail
           </button>
         </div>
