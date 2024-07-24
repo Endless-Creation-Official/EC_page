@@ -57,5 +57,5 @@
     "eslint-plugin-react-refresh": "^0.4.8",
     "prettier": "^3.3.3"
   },
-  "proxy": "http://43.202.40.240:8080"
+  "proxy": "http://3.35.131.52:8080"
 }
