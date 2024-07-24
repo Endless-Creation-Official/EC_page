@@ -57,7 +57,7 @@ function Main() {
     // JSON.stringify를 사용하여 formData를 JSON 문자열로 변환
     //const jsonData = JSON.stringify(formData);
     submitApplication(formData)
-      .then((response) => {
+      .then(() => {
         //console.log(response);
         // 지원서 필드 초기화
         Name0.current.value = '';
