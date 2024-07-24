@@ -20,7 +20,23 @@ export const fetchApplications = () => {
 };
 
 export const showResult = (phoneNumber) => {
-    return apiClient.post('/showResult', null, {params: {phoneNumber}});
-}
+    const url = new URL('/api/showResult', window.location.origin);
+    url.searchParams.append('phoneNumber', phoneNumber);
+
+    return fetch(url, {
+        method: 'POST',
+        credentials: 'include' // Ensures cookies or authentication headers are sent with the request
+        // No Content-Type header needed since there is no body data
+    })
+    .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        return response.json(); // Assuming the server sends back JSON
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+};
 
 export default apiClient;
