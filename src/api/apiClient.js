@@ -19,4 +19,8 @@ export const fetchApplications = () => {
     return apiClient.get('/applies');
 };
 
+export const showResult = (phoneNumber) => {
+    return apiClient.post('/showResult', {phoneNumber});
+}
+
 export default apiClient;
