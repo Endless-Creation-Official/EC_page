@@ -20,11 +20,13 @@ function CheckAcceptance() {
   const handleSubmit = (e) => {
     e.preventDefault();
     const phoneNumber = phoneNumberRef.current.value;
+
     showResult(phoneNumber)
       .then((response) => {
         setAcceptance(response.data.state);
         setIsSubmitted(true);
         setError('');
+        console.log(acceptance);
       })
       .catch(() => {
         setAcceptance(null);

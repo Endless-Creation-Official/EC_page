@@ -20,7 +20,7 @@ export const fetchApplications = () => {
 };
 
 export const showResult = (phoneNumber) => {
-    return apiClient.post('/showResult', {phoneNumber});
+    return apiClient.post('/showResult', null, {params: {phoneNumber}});
 }
 
 export default apiClient;
