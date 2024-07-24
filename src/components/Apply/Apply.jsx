@@ -1,6 +1,6 @@
 import React, { useRef, useState } from 'react';
 import styles from './Apply.module.css';
-import {submitApplication} from '../../api/apiClient';
+import { submitApplication } from '../../api/apiClient';
 
 function Main() {
   // 작성하다가 enter키를 누르면 자동으로 제출되는 문제가 있어서 붙여넣은 코드
@@ -57,8 +57,8 @@ function Main() {
     // JSON.stringify를 사용하여 formData를 JSON 문자열로 변환
     //const jsonData = JSON.stringify(formData);
     submitApplication(formData)
-    .then((response) => {
-        console.log(response);
+      .then((response) => {
+        //console.log(response);
         // 지원서 필드 초기화
         Name0.current.value = '';
         Major0.current.value = '';
