@@ -8,9 +8,8 @@
     rgb(62, 100, 50) 100%
   );
   position: relative;
-  width: min(1250px, 77%);
-  margin: auto;
-  margin-top: 8rem;
+  margin-top: 6rem;
+  height: 100%;
 }
 
 .aboutContainer {
@@ -114,13 +113,15 @@
   .hiddenP {
     display: none;
   }
+  .container {
+    margin-top: 5rem;
+  }
 }
 
-/* 900px 미만일 때의 스타일 */
+/* 900px~1200px 미만일 때의 스타일 */
 @media (max-width: 1200px) {
   .container {
     width: 100%;
-    margin-top: 5.2rem;
     position: relative;
   }
 
@@ -272,7 +273,7 @@
   position: relative;
   align-self: center;
   text-align: center;
-  margin: 20% auto;
+  margin: 20% auto 0%;
 }
 
 .activity h1 {
@@ -281,7 +282,7 @@
 
 .slideBox {
   width: 100%;
-  margin: 10% 0;
+  margin: 10% 0 0%;
 }
 
 .imagesize {
