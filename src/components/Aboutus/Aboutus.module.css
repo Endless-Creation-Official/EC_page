@@ -1,346 +1,349 @@
 /* Aboutus */
 
 .container {
-    position: relative;
-    width: min(1250px, 77%);
-    margin: auto;
-    margin-top: 8rem;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(26, 66, 14) 61%,
+    rgb(62, 100, 50) 100%
+  );
+  position: relative;
+  margin-top: 6rem;
+  height: 100%;
 }
 
 .aboutContainer {
-    position: relative;
-    width: 100%;
-    height: calc(var(--vh, 1vh) * 90);
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: calc(var(--vh, 1vh) * 90);
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
-.aboutusImage{
-    position: relative;
-    width:500px;
-    height:416.66667px;
+.aboutusImage {
+  position: relative;
+  width: 500px;
+  height: 416.66667px;
 }
 
 .slider {
-    position: absolute;
-    width: 40%;
-    top: 50%;
-    transform: translateY(-50%);
-    align-items: center;
-    /* 수직 가운데 정렬 */
+  position: absolute;
+  width: 40%;
+  top: 50%;
+  transform: translateY(-50%);
+  align-items: center;
+  /* 수직 가운데 정렬 */
 }
 
 .about {
-    width: 50%;
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-right: auto;
+  width: 50%;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: auto;
 }
 
 .head h2 {
-    color: white;
-    font-size: 35px;
-    padding: 0;
-    margin: 0;
+  color: white;
+  font-size: 35px;
+  padding: 0;
+  margin: 0;
 }
 
 .head h1 {
-    color: #51de74;
-    padding: 0;
-    margin: 0;
+  color: #51de74;
+  padding: 0;
+  margin: 0;
 }
 
 .about p {
-    color: white;
-    font-size: 18px;
-    margin: 10px 0;
-    word-break: keep-all;
-    line-height: 1.5;
+  color: white;
+  font-size: 18px;
+  margin: 10px 0;
+  word-break: keep-all;
+  line-height: 1.5;
 }
 
 .operatorContainer {
-    position: relative;
-    width: min(1400px, 100%);
-    margin: 120px auto;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: min(1400px, 100%);
+  margin: 120px auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .operator {
-    width: 100%;
-    padding: 40px 0;
-    text-align: center;
+  width: 100%;
+  padding: 40px 0;
+  text-align: center;
 }
 
 .operator h2 {
-    font-size: 30px;
-    margin: 0;
-    color: white;
+  font-size: 30px;
+  margin: 0;
+  color: white;
 }
 
 .operator h1 {
-    font-size: 50px;
-    margin: 0;
-    color: #51de74;
+  font-size: 50px;
+  margin: 0;
+  color: #51de74;
 }
 
 .operators {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    max-width: 100%;
-    /* 추가: 최대 너비를 100%로 설정하여 화면 크기에 따라 조절됨 */
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 30px;
+  position: relative;
+  width: 100%;
+  margin: auto;
+  max-width: 100%;
+  /* 추가: 최대 너비를 100%로 설정하여 화면 크기에 따라 조절됨 */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
 }
 
 /* 1300px 미만일 때의 스타일 */
 @media (max-width: 1300px) {
-    .aboutusImage {
-        width: 120%;
-    }
+  .aboutusImage {
+    width: 120%;
+  }
 }
 
 @media (max-width: 900px) {
-    .hiddenP {
-        display: none;
-    }
+  .hiddenP {
+    display: none;
+  }
+  .container {
+    margin-top: 5rem;
+  }
 }
 
-/* 900px 미만일 때의 스타일 */
+/* 900px~1200px 미만일 때의 스타일 */
 @media (max-width: 1200px) {
-    .container {
-        width: 100%;
-        margin-top: 5.2rem;
-        position: relative;
-    }
+  .container {
+    width: 100%;
+    position: relative;
+  }
 
-    .aboutContainer {
-        width: 90%
-    }
+  .aboutContainer {
+    width: 90%;
+  }
 
-    .about {
-        width: 100%;
-        position: relative;
-        right: 0;
-        top: 8%;
-        transform: none;
-        text-align: center;
-    }
+  .about {
+    width: 100%;
+    position: relative;
+    right: 0;
+    top: 8%;
+    transform: none;
+    text-align: center;
+  }
 
-    .head {
-        margin-bottom: 50px;
-    }
+  .head {
+    margin-bottom: 50px;
+  }
 
-    .head h2 {
-        font-size: 25px;
-    }
+  .head h2 {
+    font-size: 25px;
+  }
 
-    .head h1 {
-        font-size: 35px;
-    }
+  .head h1 {
+    font-size: 35px;
+  }
 
-    .about p {
-        font-size: 16px;
-        line-height: 2.5;
-    }
-    .slider {
-        display: none;
-    }
+  .about p {
+    font-size: 16px;
+    line-height: 2.5;
+  }
+  .slider {
+    display: none;
+  }
 
-    .operator h2 {
-        font-size: 25px;
-    }
+  .operator h2 {
+    font-size: 25px;
+  }
 
-    .operator h1 {
-        font-size: 35px;
-    }
+  .operator h1 {
+    font-size: 35px;
+  }
 
-    .introduction p {
-        font-size: 12px;
-    }
+  .introduction p {
+    font-size: 12px;
+  }
 
-    .operators {
-        grid-template-columns: 1fr;
-        /* 한 열로 변경 */
-    }
+  .operators {
+    grid-template-columns: 1fr;
+    /* 한 열로 변경 */
+  }
 
-    .operatorContainer {
-        width: 90%;
-        margin-bottom: 20px;
-    }
+  .operatorContainer {
+    width: 90%;
+    margin-bottom: 20px;
+  }
 }
 
 .operatorcard {
-    display: grid;
-    gap: 20px;
-    margin: auto;
-    grid-template-columns: 1fr 3fr;
-    /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
+  display: grid;
+  gap: 20px;
+  margin: auto;
+  grid-template-columns: 1fr 3fr;
+  /* 첫 번째 칸은 1/4, 두 번째 칸은 1/2, 세 번째 칸은 1/4의 너비를 갖게 됨 */
 }
 
 .content {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .name {
-    color: white;
-    font-size: 25px;
+  color: white;
+  font-size: 25px;
 }
 
 .introduction {
-    height: 90px;
-    width: 1fr;
-    border-radius: 30px;
-    background-color: #364139;
-    display: flex;
-    align-items: center;
-    text-align: left;
+  height: 90px;
+  width: 1fr;
+  border-radius: 30px;
+  background-color: #364139;
+  display: flex;
+  align-items: center;
+  text-align: left;
 }
 
 .introduction p {
-    margin: 0;
-    padding: 5% 5%;
-    font-size: 20px;
-    word-wrap: break-word;
+  margin: 0;
+  padding: 5% 5%;
+  font-size: 20px;
+  word-wrap: break-word;
 }
 
 .profilePhoto {
-    object-fit: cover;
-    /* object-fit을 사용하여 강제로 원형으로 자름 */
-    width: 100%;
-    aspect-ratio: 1 / 1;
-    /* 가로 세로 비율을 1:1로 설정 */
-    display: flex;
-    align-self: center;
-    border-radius: 50%;
+  object-fit: cover;
+  /* object-fit을 사용하여 강제로 원형으로 자름 */
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  /* 가로 세로 비율을 1:1로 설정 */
+  display: flex;
+  align-self: center;
+  border-radius: 50%;
 }
 
 .projectContainer {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    width: 100%;
-    gap: 1%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 100%;
+  gap: 1%;
 }
 
 .boxproject img {
-    max-width: 100%;
-    max-height: auto;
+  max-width: 100%;
+  max-height: auto;
 }
 
 @media (max-width: 900px) {
-    .name {
-        font-size: 18px;
-    }
+  .name {
+    font-size: 18px;
+  }
 
-    .introduction p {
-        font-size: 16px;
-    }
+  .introduction p {
+    font-size: 16px;
+  }
 }
-
 
 @media (max-width: 350px) {
-    .aboutContainer {
-        height: calc(var(--vh, 1vh) * 120);
-    }
+  .aboutContainer {
+    height: calc(var(--vh, 1vh) * 120);
+  }
 
-    .slidebox {
-        width: 100%;
-    }
-    
-    .imagesize {
-        width:95%;
-        height: 130px;
-        display: flex;
-        align-self: center;
-        margin: auto;
-    }
-}
-
-
-
-
-.activity {
-    width: min(1200px, 80%);
-    position: relative;
-    align-self: center;
-    text-align: center;
-    margin: 20% auto;
-}
-
-.activity h1 {
-    font-size: 45px;
-}
-
-.slideBox {
+  .slidebox {
     width: 100%;
-    margin: 10% 0;
-}
+  }
 
-.imagesize {
-    height: 400px;
-    width: auto;
+  .imagesize {
+    width: 95%;
+    height: 130px;
     display: flex;
     align-self: center;
     margin: auto;
+  }
+}
+
+.activity {
+  width: min(1200px, 80%);
+  position: relative;
+  align-self: center;
+  text-align: center;
+  margin: 20% auto 0%;
+}
+
+.activity h1 {
+  font-size: 45px;
+}
+
+.slideBox {
+  width: 100%;
+  margin: 10% 0 0%;
+}
+
+.imagesize {
+  height: 400px;
+  width: auto;
+  display: flex;
+  align-self: center;
+  margin: auto;
 }
 
 @media (max-width: 900px) {
-    .imageContainer{
-        margin-left:2px;
-        margin-right: 2px;
-        align-items: center;
-    }
-    .imagesize {
-        height: 400px;
-        width: auto;
-    }
+  .imageContainer {
+    margin-left: 2px;
+    margin-right: 2px;
+    align-items: center;
+  }
+  .imagesize {
+    height: 400px;
+    width: auto;
+  }
 
-    .activity h1 {
-        font-size: 28px;
-    }
+  .activity h1 {
+    font-size: 28px;
+  }
 
-    .slideBox {
-        font-size: 11px;
-    }
+  .slideBox {
+    font-size: 11px;
+  }
 }
 
 @media (max-width: 800px) {
-    .imagesize {
-        height: 300px;
-        width: auto;
-    }
+  .imagesize {
+    height: 300px;
+    width: auto;
+  }
 }
 
 @media (max-width: 700px) {
-    .imagesize {
-        height: 200px;
-        width: auto;
-    }
+  .imagesize {
+    height: 200px;
+    width: auto;
+  }
 }
 
 @media (max-width: 550px) {
-    .imagesize {
-        height: 150px;
-        width: auto;
-    }
+  .imagesize {
+    height: 150px;
+    width: auto;
+  }
 }
 
 @media (max-width: 420px) {
-    .imagesize {
-        height: 120px;
-        width: auto;
-    }
+  .imagesize {
+    height: 120px;
+    width: auto;
+  }
 }
 
 @media (max-width: 350px) {
-    .imagesize {
-        height: 100px;
-        width: auto;
-    }
+  .imagesize {
+    height: 100px;
+    width: auto;
+  }
 }

@@ -1,0 +1,81 @@
+.container {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgb(26, 66, 14) 61%,
+    rgb(62, 100, 50) 100%
+  );
+  display: flex;
+  margin: auto;
+  text-align: center;
+  color: white;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  gap: 1rem;
+}
+
+.container h1 {
+  font-size: 70px;
+  color: rgb(43, 255, 135);
+  padding-top: 50px;
+}
+
+@media (max-width: 900px) {
+  .container h1 {
+    font-size: 35px;
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.formInputGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formInput {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  padding: 10px;
+}
+
+.formGroup button {
+  align-self: flex-start; /* Align button to the start of the form */
+  padding: 30px 20px;
+  font-size: 16px;
+  color: #000; /* White text color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
+}
+
+.formGroup button:hover {
+  background: linear-gradient(
+    90deg,
+    rgb(34, 85, 18) 0%,
+    rgb(72, 115, 60) 100%
+  ); /* Darker green gradient for hover effect */
+}
+
+.formNameInput {
+  padding-left: 15px;
+  padding-right: 15px;
+}

@@ -1,9 +1,9 @@
 import React from 'react';
+import Main from '../components/Aboutus/Aboutus';
 import Header from '../components/Header/Header';
 import Footer from '../components/Footer/Footer';
-import Main from '../components/Applies/ApplicationList';
 
-export default function ApplicationList() {
+function Aboutus() {
   return (
     <div>
       <Header />
@@ -12,3 +12,5 @@ export default function ApplicationList() {
     </div>
   );
 }
+
+export default Aboutus;
