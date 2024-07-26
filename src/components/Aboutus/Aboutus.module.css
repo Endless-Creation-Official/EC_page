@@ -20,10 +20,10 @@
   display: flex;
   flex-direction: column;
 }
+
 .aboutusImage {
   position: relative;
-  width: 500px;
-  height: 416.66667px;
+  width: 100%;
 }
 
 .slider {
@@ -32,7 +32,7 @@
   top: 50%;
   transform: translateY(-50%);
   align-items: center;
-  /* 수직 가운데 정렬 */
+  margin-left: 20px;
 }
 
 .about {
@@ -100,13 +100,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 30px;
-}
-
-/* 1300px 미만일 때의 스타일 */
-@media (max-width: 1300px) {
-  .aboutusImage {
-    width: 120%;
-  }
 }
 
 @media (max-width: 900px) {
@@ -283,6 +276,7 @@
 .slideBox {
   width: 100%;
   margin: 10% 0 0%;
+  padding-bottom: 25px;
 }
 
 .imagesize {
