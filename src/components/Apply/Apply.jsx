@@ -73,7 +73,7 @@ function Main() {
       major: Major0.current.value,
       studentId: Studentid0.current.value,
       birth: Birth0.current.value,
-      phonenumber: Phonenumber0.current.value,
+      phoneNumber: Phonenumber0.current.value,
       email: Email0.current.value,
       question1: Q10.current.value,
       question2: Q20.current.value,
