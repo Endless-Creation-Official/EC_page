@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect } from 'react';
 import styles from './Apply.module.css';
 import { submitApplication } from '../../api/apiClient';
 
@@ -12,20 +12,6 @@ function Main() {
     },
     true
   );
-
-  const [isCheck, setIsCheck] = useState(false);
-  const [buttonText, setButtonText] = useState('체크박스에 체크');
-  const [errors, setErrors] = useState({});
-
-  const toggleIsCheck = (e) => {
-    setIsCheck(e.target.checked);
-    if (e.target.checked) {
-      setButtonText('제출하기');
-    } else {
-      setButtonText('체크박스에 체크');
-    }
-  };
-
   const Name0 = useRef();
   const Major0 = useRef();
   const Studentid0 = useRef();
@@ -35,6 +21,42 @@ function Main() {
   const Q10 = useRef();
   const Q20 = useRef();
   const Q30 = useRef();
+
+  const [isCheck, setIsCheck] = useState(false);
+  const [buttonText, setButtonText] = useState('체크박스에 체크');
+  const [errors, setErrors] = useState({});
+  const [isFormValid, setIsFormValid] = useState(false);
+  const formValue = {
+    name: Name0.current.value,
+    major: Major0.current.value,
+    studentid: Studentid0.current.value,
+    birth: Birth0.current.value,
+    phonenumber: Phonenumber0.current.value,
+    email: Email0.current.value,
+    q1: Q10.current.value,
+    q2: Q20.current.value,
+    q3: Q30.current.value,
+  };
+
+  useEffect(() => {
+    const allFieldsFilled = Object.values(formValue).every(
+      (value) => typeof value === 'string' && value.trim() !== ''
+    );
+    const noErrors = Object.values(errors).every((error) => !error);
+    console.log(allFieldsFilled);
+    console.log(noErrors);
+    console.log(formValue);
+    setIsFormValid(allFieldsFilled && noErrors && isCheck);
+  }, [formValue, errors, isCheck]);
+
+  const toggleIsCheck = (e) => {
+    setIsCheck(e.target.checked);
+    if (e.target.checked) {
+      setButtonText('제출하기');
+    } else {
+      setButtonText('체크박스에 체크');
+    }
+  };
 
   const validateEmail = (email) => {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
@@ -253,7 +275,7 @@ function Main() {
           <button
             type='submit'
             className={styles.admitButton}
-            disabled={!isCheck}
+            disabled={!isFormValid}
           >
             {buttonText}
           </button>
