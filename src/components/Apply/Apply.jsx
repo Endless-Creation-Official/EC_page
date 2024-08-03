@@ -116,6 +116,13 @@ function Main() {
       return;
     }
 
+    if (!isFormValid) {
+      alert(
+        '유효하지 않은 지원서입니다. 지원서에 빠진 부분이 없는지 확인해주세요'
+      );
+      return;
+    }
+
     setErrors({});
 
     submitApplication(formData)
@@ -275,7 +282,7 @@ function Main() {
           <button
             type='submit'
             className={styles.admitButton}
-            disabled={!isFormValid}
+            //disabled={!isFormValid}
           >
             {buttonText}
           </button>
