@@ -12,15 +12,15 @@ function Main() {
     },
     true
   );
-  const Name0 = useRef();
-  const Major0 = useRef();
-  const Studentid0 = useRef();
-  const Birth0 = useRef();
-  const Phonenumber0 = useRef();
-  const Email0 = useRef();
-  const Q10 = useRef();
-  const Q20 = useRef();
-  const Q30 = useRef();
+  const Name0 = useRef('');
+  const Major0 = useRef('');
+  const Studentid0 = useRef('');
+  const Birth0 = useRef('');
+  const Phonenumber0 = useRef('');
+  const Email0 = useRef('');
+  const Q10 = useRef('');
+  const Q20 = useRef('');
+  const Q30 = useRef('');
 
   const [isCheck, setIsCheck] = useState(false);
   const [buttonText, setButtonText] = useState('체크박스에 체크');
@@ -29,13 +29,13 @@ function Main() {
   const formValue = {
     name: Name0.current.value,
     major: Major0.current.value,
-    studentid: Studentid0.current.value,
+    studentId: Studentid0.current.value,
     birth: Birth0.current.value,
-    phonenumber: Phonenumber0.current.value,
+    phoneNumber: Phonenumber0.current.value,
     email: Email0.current.value,
-    q1: Q10.current.value,
-    q2: Q20.current.value,
-    q3: Q30.current.value,
+    question1: Q10.current.value,
+    question2: Q20.current.value,
+    question3: Q30.current.value,
   };
 
   useEffect(() => {
@@ -43,9 +43,9 @@ function Main() {
       (value) => typeof value === 'string' && value.trim() !== ''
     );
     const noErrors = Object.values(errors).every((error) => !error);
-    console.log(allFieldsFilled);
+    /*console.log(allFieldsFilled);
     console.log(noErrors);
-    console.log(formValue);
+    console.log(formValue);*/
     setIsFormValid(allFieldsFilled && noErrors && isCheck);
   }, [formValue, errors, isCheck]);
 
