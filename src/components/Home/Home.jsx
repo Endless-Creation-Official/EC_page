@@ -3,8 +3,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import { Link } from 'react-router-dom';
 
 function Main() {
+  const handleClick = () => {};
   return (
     <div className={styles.container}>
       <div fetchPriority='high' className={styles.maintitle}>
@@ -12,17 +14,21 @@ function Main() {
           <h1>Endless Creation</h1>
           <h2 className={styles.textbox}>
             34기 활동 중!
-            {/*
+            {
+              <Link to='/apply'>
                 <div className={styles.scrolldown1} onClick={handleClick}>
-                    지원하기!
+                  지원하기!
                 </div>
-            */}
+              </Link>
+            }
           </h2>
-          {/*
-            <div className={styles.scrolldown2} onClick={handleClick}>
+          {
+            <Link to='/apply'>
+              <div className={styles.scrolldown2} onClick={handleClick}>
                 지원하기!
-            </div>
-            */}
+              </div>
+            </Link>
+          }
         </div>
       </div>
       <AboutEC />
