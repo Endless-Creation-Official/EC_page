@@ -3,6 +3,10 @@ import { Link } from 'react-router-dom';
 import styles from './Recruit.module.css';
 
 function Main() {
+  const onClick = (e) => {
+    e.preventDefault();
+    alert('조회 가능 기간이 아닙니다.');
+  };
   return (
     <div className={styles.container}>
       <div className={styles.firstContainer}>
@@ -11,7 +15,7 @@ function Main() {
           <button className={styles.button}>지원하러 가기</button>
         </Link>
         <Link to='/applies/result'>
-          <button className={styles.buttonResult}>
+          <button className={styles.buttonResult} onClick={onClick}>
             지원결과 확인하러 가기
           </button>
         </Link>

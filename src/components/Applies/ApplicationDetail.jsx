@@ -24,14 +24,18 @@ export default function ApplicationDetail() {
 
   const updateState = async (newState) => {
     try {
-      const response = await axios.patch(`/api/apply/${id}/update`, {
-        state: newState
-      }, {
-        withCredentials: true,
-        headers: {
-          'Content-Type': 'application/json'
+      const response = await axios.patch(
+        `/api/apply/${id}/update`,
+        {
+          state: newState,
+        },
+        {
+          withCredentials: true,
+          headers: {
+            'Content-Type': 'application/json',
+          },
         }
-      });
+      );
       setApplication({ ...application, state: newState }); // Assuming the state is a direct field
       console.log('Update successful:', response.data);
     } catch (error) {
