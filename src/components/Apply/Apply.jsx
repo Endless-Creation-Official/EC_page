@@ -1,17 +1,24 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styles from './Apply.module.css';
 import { submitApplication } from '../../api/apiClient';
+import { useNavigate } from 'react-router-dom';
 
 function Main() {
-  document.addEventListener(
-    'keydown',
-    function (event) {
+  const navigate = useNavigate();
+
+  // Disable form submission on Enter key press
+  useEffect(() => {
+    const handleKeyDown = (event) => {
       if (event.keyCode === 13) {
         event.preventDefault();
       }
-    },
-    true
-  );
+    };
+    document.addEventListener('keydown', handleKeyDown, true);
+    return () => {
+      document.removeEventListener('keydown', handleKeyDown, true);
+    };
+  }, []);
+
   const Name0 = useRef('');
   const Major0 = useRef('');
   const Studentid0 = useRef('');
@@ -25,7 +32,9 @@ function Main() {
   const [isCheck, setIsCheck] = useState(false);
   const [buttonText, setButtonText] = useState('체크박스에 체크');
   const [errors, setErrors] = useState({});
+  const [formErrors, setFormErrors] = useState({});
   const [isFormValid, setIsFormValid] = useState(false);
+
   const formValue = {
     name: Name0.current.value,
     major: Major0.current.value,
@@ -43,19 +52,12 @@ function Main() {
       (value) => typeof value === 'string' && value.trim() !== ''
     );
     const noErrors = Object.values(errors).every((error) => !error);
-    /*console.log(allFieldsFilled);
-    console.log(noErrors);
-    console.log(formValue);*/
     setIsFormValid(allFieldsFilled && noErrors && isCheck);
   }, [formValue, errors, isCheck]);
 
   const toggleIsCheck = (e) => {
     setIsCheck(e.target.checked);
-    if (e.target.checked) {
-      setButtonText('제출하기');
-    } else {
-      setButtonText('체크박스에 체크');
-    }
+    setButtonText(e.target.checked ? '제출하기' : '체크박스에 체크');
   };
 
   const validateEmail = (email) => {
@@ -90,43 +92,50 @@ function Main() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const formData = {
-      name: Name0.current.value,
-      major: Major0.current.value,
-      studentId: Studentid0.current.value,
-      birth: Birth0.current.value,
-      phoneNumber: Phonenumber0.current.value,
-      email: Email0.current.value,
-      question1: Q10.current.value,
-      question2: Q20.current.value,
-      question3: Q30.current.value,
-    };
-
-    const validationErrors = Object.keys(formData).reduce((acc, key) => {
-      if (key === 'email' || key === 'phonenumber' || key === 'studentid') {
-        validateField(key, formData[key]);
-      }
-      return {
-        ...acc,
-        [key]: errors[key],
-      };
-    }, {});
-
-    if (Object.values(validationErrors).some((error) => error)) {
+    // Check if the checkbox is checked
+    if (!isCheck) {
+      alert('체크박스를 선택해주세요.');
       return;
     }
 
+    // Validate fields before submitting
+    let newErrors = {};
+    Object.keys(formValue).forEach((key) => {
+      if (key === 'email' || key === 'phoneNumber' || key === 'studentId') {
+        validateField(key, formValue[key]);
+      }
+    });
+
+    // Check for empty fields
+    const emptyFields = Object.keys(formValue).filter(
+      (key) => !formValue[key].trim()
+    );
+
+    if (emptyFields.length > 0) {
+      alert('모든 필드를 입력해주세요.');
+      return;
+    }
+
+    // Check for validation errors
+    newErrors = { ...errors };
+    const hasErrors = Object.values(newErrors).some((error) => error);
+    if (hasErrors) {
+      alert('유효하지 않은 입력이 있습니다. 오류를 확인해주세요.');
+      return;
+    }
+
+    // Check if the form is valid
     if (!isFormValid) {
       alert(
         '유효하지 않은 지원서입니다. 지원서에 빠진 부분이 없는지 확인해주세요'
       );
       return;
     }
-
     setErrors({});
 
-    submitApplication(formData)
+    submitApplication(formValue)
       .then(() => {
+        // Clear form values
         Name0.current.value = '';
         Major0.current.value = '';
         Studentid0.current.value = '';
@@ -136,14 +145,23 @@ function Main() {
         Q10.current.value = '';
         Q20.current.value = '';
         Q30.current.value = '';
+        alert(
+          `제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`
+        );
+        navigate('/');
       })
       .catch((error) => {
+        if (
+          error.response.status === 409 ||
+          error.message.includes('Phone number already exists in the database')
+        ) {
+          alert('이미 제출된 전화 번호 입니다.');
+        } else {
+          alert('제출 중 오류가 발생했습니다. 다시 시도해 주세요.');
+        }
         console.error('제출 중 오류가 발생했습니다.', error);
       });
-
-    alert(`제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`);
   };
-
   return (
     <form onSubmit={handleSubmit} method='post'>
       <div className={styles.main}>
@@ -277,7 +295,9 @@ function Main() {
         <div className={styles.beforeSubmit}>
           <div>
             <input type='checkbox' onChange={toggleIsCheck} />
-            <label htmlFor='confirm'>모든 내용을 확인 후 제출하기</label>
+            <label htmlFor='confirm'>
+              지원서는 한번만 제출 가능하며 모든 내용을 신중히 확인 였습니다.
+            </label>
           </div>
           <button
             type='submit'
