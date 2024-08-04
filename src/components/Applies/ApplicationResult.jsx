@@ -50,7 +50,7 @@ export default function ApplicationResult() {
                 <label>전화번호</label>
                 <input
                   type='text'
-                  placeholder='ex) 010-2511-5633'
+                  placeholder='ex) 010-1234-5678'
                   ref={phoneNumberRef}
                 />
               </div>
