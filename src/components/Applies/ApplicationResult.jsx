@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 import styles from './ApplicationResult.module.css';
 import { FaExclamationTriangle } from 'react-icons/fa';
-import { Card } from 'react-bootstrap';
+import { Button, Card } from 'react-bootstrap';
 
 export default function ApplicationResult() {
   const phoneNumberRef = useRef();
@@ -33,6 +33,12 @@ export default function ApplicationResult() {
           resultRef.current.scrollIntoView({ behavior: 'smooth' });
         }
       });
+  };
+
+  const onClick = () => {
+    window.open(
+      'https://docs.google.com/spreadsheets/d/1vGip9DSguArvslQ3Mz74o1RzyLHJAzwQVZXlhFUnSoY/edit?usp=drive_link'
+    );
   };
 
   return (
@@ -67,7 +73,11 @@ export default function ApplicationResult() {
                 <Card.Title>
                   <h2>합격을 축하합니다!</h2>
                 </Card.Title>
-                <Card.Text>추가 인터뷰를 안내하는 글</Card.Text>
+                <Card.Text>
+                  지원해주셔서 감사합니다. 아래 버튼을 누르고 2차 인터뷰에
+                  참석해주세요.
+                  <Button onClick={onClick}>면접 일정 확인하기</Button>
+                </Card.Text>
               </Card.Body>
             </Card>
           ) : acceptance === 'fail' ? (
@@ -82,6 +92,8 @@ export default function ApplicationResult() {
           ) : (
             <Card style={{ margin: '3rem' }}>
               <FaExclamationTriangle size='3em' />
+              <Card.Text>면접 일정 확인하기</Card.Text>
+              <Button onClick={onClick}>면접 일정 확인하기</Button>
               <h5>{error}</h5>
             </Card>
           )}
