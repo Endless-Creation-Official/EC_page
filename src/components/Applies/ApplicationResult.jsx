@@ -92,8 +92,6 @@ export default function ApplicationResult() {
           ) : (
             <Card style={{ margin: '3rem' }}>
               <FaExclamationTriangle size='3em' />
-              <Card.Text>면접 일정 확인하기</Card.Text>
-              <Button onClick={onClick}>면접 일정 확인하기</Button>
               <h5>{error}</h5>
             </Card>
           )}
