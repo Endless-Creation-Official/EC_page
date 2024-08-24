@@ -3,19 +3,21 @@ import { Link } from 'react-router-dom';
 import styles from './Recruit.module.css';
 
 function Main() {
-  const onClick = (e) => {
+  const onClickOverTime = (e) => {
     e.preventDefault();
-    alert('조회 가능 기간이 아닙니다.');
+    alert('지원 기간이 아닙니다.');
   };
   return (
     <div className={styles.container}>
       <div className={styles.firstContainer}>
         <h1>EC와 함께하고 싶다면?</h1>
         <Link to='/apply'>
-          <button className={styles.button}>지원하러 가기</button>
+          <button className={styles.button} onClick={onClickOverTime}>
+            지원하러 가기
+          </button>
         </Link>
         <Link to='/applies/result'>
-          <button className={styles.buttonResult} onClick={onClick}>
+          <button className={styles.buttonResult}>
             지원결과 확인하러 가기
           </button>
         </Link>
