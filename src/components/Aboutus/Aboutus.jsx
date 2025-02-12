@@ -70,49 +70,31 @@ function Introdution() {
 }
 
 const networking = [
-  { imageLink: './networkingimage/정기세션1.webp', mainLink: '선배특강2' },
-  { imageLink: './networkingimage/정기세션2.webp', mainLink: '선배특강2' },
-  { imageLink: './networkingimage/정기세션3.webp', mainLink: '선배특강2' },
-  { imageLink: './networkingimage/선배특강.webp', mainLink: '선배특강2' },
-  { imageLink: './networkingimage/세미나네트워킹.webp', mainLink: '선배특강2' },
-  {
-    imageLink: './networkingimage/정기세션단체사진.webp',
-    mainLink: '선배특강2',
-  },
+  { imageLink: "./networkingimage/정기세션2025_1.webp", mainLink: "정기세션2025_1" },
+  { imageLink: "./networkingimage/백엔드스터디.webp", mainLink: "백엔드스터디" },
+  { imageLink: "./networkingimage/EC다락톤.webp", mainLink: "EC다락톤" },
+  { imageLink: "./networkingimage/양희찬선배세미나.webp", mainLink: "양희찬선배세미나" },
+  { imageLink: "./networkingimage/정기세션2025_2.webp", mainLink: "정기세션2025_2" },
+  { imageLink: "./networkingimage/정기세션2025_3.webp", mainLink: "정기세션2025_3" },
+  { imageLink: "./networkingimage/정기세션1.webp", mainLink: "선배특강2" },
+  { imageLink: "./networkingimage/정기세션2.webp", mainLink: "선배특강2" },
+  { imageLink: "./networkingimage/정기세션3.webp", mainLink: "선배특강2" },
+  { imageLink: "./networkingimage/선배특강.webp", mainLink: "선배특강2" },
+  { imageLink: "./networkingimage/세미나네트워킹.webp", mainLink: "선배특강2" },
+  { imageLink: "./networkingimage/정기세션단체사진.webp", mainLink: "선배특강2" }
 ];
 const cooperation = [
-  {
-    imageLink: './cooperationimage/세미나회식.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/하계MT단체1.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/하계MT단체2.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/하계MT단체3.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/하계MT단체4.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/한강1.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/한강2.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
-  {
-    imageLink: './cooperationimage/한강4.webp',
-    mainLink: '하계MT 가평역에서찍은 단체사진',
-  },
+  { imageLink: "./cooperationimage/세미나회식.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/한강나들이.webp", mainLink: "한강나들이" },
+  { imageLink: "./cooperationimage/번개저녁.webp", mainLink: "번개저녁" },
+  { imageLink: "./cooperationimage/졸업식.webp", mainLink: "졸업식" },
+  { imageLink: "./cooperationimage/하계MT단체1.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/하계MT단체2.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/하계MT단체3.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/하계MT단체4.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/한강1.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/한강2.webp", mainLink: "하계MT 가평역에서찍은 단체사진" },
+  { imageLink: "./cooperationimage/한강4.webp", mainLink: "하계MT 가평역에서찍은 단체사진" }
 ];
 
 function Slide(props) {

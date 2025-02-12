@@ -117,12 +117,12 @@ function Main() {
       mark: 'companyMark/kakaobank.webp',
     },
     {
-      name: '오정진',
-      term: '28기',
-      skills: ['React', 'Next.js'],
-      careers: ['現 YAPP 임원진', '現 현대오토에버 인턴'],
-      mark: 'companyMark/현대오토에버.webp',
-    },
+      name: "오정진",
+      term: "28기",
+      skills: ["React", "Next.js"],
+      careers: ["前 YAPP 임원진", "前 현대오토에버 인턴", "現 앨리스"],
+      mark: "companyMark/elice.webp"
+  },
     {
       name: '조인혁',
       term: '27기',
