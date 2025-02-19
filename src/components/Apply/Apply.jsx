@@ -169,8 +169,6 @@ function Main() {
         error.message.includes('Phone number already exists in the database')
       ) {
         alert('이미 제출된 전화 번호 입니다.');
-      } else {
-        alert('제출 중 오류가 발생했습니다. 다시 시도해 주세요.');
       }
       console.error('제출 중 오류가 발생했습니다.', error);
     }
