@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import styles from './Apply.module.css';
-import { submitApplication } from '../../api/apiClient';
+import { submitApplication, checkValidPhoneNumber } from '../../api/apiClient';
 import { useNavigate } from 'react-router-dom';
 
 function Main() {
@@ -133,34 +133,47 @@ function Main() {
     }
     setErrors({});
 
-    submitApplication(formValue)
-      .then(() => {
-        // Clear form values
-        Name0.current.value = '';
-        Major0.current.value = '';
-        Studentid0.current.value = '';
-        Birth0.current.value = '';
-        Phonenumber0.current.value = '';
-        Email0.current.value = '';
-        Q10.current.value = '';
-        Q20.current.value = '';
-        Q30.current.value = '';
-        alert(
-          `제출 완료되었습니다. \n${Name0.current.value}님, 행운을 빌어요!`
-        );
-        navigate('/');
-      })
-      .catch((error) => {
-        if (
-          error.response.status === 409 ||
-          error.message.includes('Phone number already exists in the database')
-        ) {
-          alert('이미 제출된 전화 번호 입니다.');
-        } else {
-          alert('제출 중 오류가 발생했습니다. 다시 시도해 주세요.');
-        }
-        console.error('제출 중 오류가 발생했습니다.', error);
-      });
+    try {
+      // Check phone number first
+      const phoneResponse = await checkValidPhoneNumber(
+        Phonenumber0.current.value
+      );
+      if (phoneResponse.status === 200) {
+        alert('이미 제출된 전화번호 입니다.');
+        return;
+      } else if (phoneResponse.status === 404) {
+        submitApplication(formValue);
+      } else {
+        throw new Error('Invalid phone number check response');
+      }
+
+      // Clear form values
+      Name0.current.value = '';
+      Major0.current.value = '';
+      Studentid0.current.value = '';
+      Birth0.current.value = '';
+      Phonenumber0.current.value = '';
+      Email0.current.value = '';
+      Q10.current.value = '';
+      Q20.current.value = '';
+      Q30.current.value = '';
+
+      alert(`제출 완료되었습니다. \n${formValue.name}님, 행운을 빌어요!`);
+      navigate('/');
+    } catch (error) {
+      if (error.response?.status === 404) {
+        return;
+      }
+      if (
+        error.response?.status === 409 ||
+        error.message.includes('Phone number already exists in the database')
+      ) {
+        alert('이미 제출된 전화 번호 입니다.');
+      } else {
+        alert('제출 중 오류가 발생했습니다. 다시 시도해 주세요.');
+      }
+      console.error('제출 중 오류가 발생했습니다.', error);
+    }
   };
   return (
     <form onSubmit={handleSubmit} method='post'>
