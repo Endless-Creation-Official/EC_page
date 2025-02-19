@@ -3,10 +3,6 @@ import { Link } from 'react-router-dom';
 import styles from './Recruit.module.css';
 
 function Main() {
-  const onClickOverTime = (e) => {
-    e.preventDefault();
-    alert('지원 기간이 아닙니다.');
-  };
   return (
     <div className={styles.container}>
       <div className={styles.firstContainer}>
@@ -16,7 +12,7 @@ function Main() {
             지원하러 가기
           </button>
         </Link>
-        <Link to='/applies/result'>
+        <Link to='/applies'>
           <button className={styles.buttonResult}>
             지원결과 확인하러 가기
           </button>
