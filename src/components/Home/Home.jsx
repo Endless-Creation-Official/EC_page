@@ -13,7 +13,7 @@ function Main() {
         <div className={styles.title}>
           <h1>Endless Creation</h1>
           <h2 className={styles.textbox}>
-            34기 활동 중!
+            35기 활동 중!
             {
               <Link to='/apply'>
                 <div className={styles.scrolldown1} onClick={handleClick}>
@@ -411,7 +411,7 @@ const faqData = [
   {
     question: 'EC만의 장점이 있나요?',
     answer:
-      'Endless Creation은 34년째 전통을 이어가고 있는 컴퓨터공학과에서 가장 오랜 역사를 자랑하는 동아리로, 그만큼 선배들이 쌓아놓은 자료들과 소통 창구가 잘 구성되어있습니다. 오랜 기간 동안 쌓인 노하우와 경험을 통해, 회원들이 보다 풍부한 학문적인 환경에서 성장할 수 있도록 최선을 다하고 있습니다.',
+      'Endless Creation은 35년째 전통을 이어가고 있는 컴퓨터공학과에서 가장 오랜 역사를 자랑하는 동아리로, 그만큼 선배들이 쌓아놓은 자료들과 소통 창구가 잘 구성되어있습니다. 오랜 기간 동안 쌓인 노하우와 경험을 통해, 회원들이 보다 풍부한 학문적인 환경에서 성장할 수 있도록 최선을 다하고 있습니다.',
   },
   {
     question: '정기 세션과 세미나에서는 어떤 것들을 하나요?',

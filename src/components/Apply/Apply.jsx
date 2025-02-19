@@ -178,7 +178,7 @@ function Main() {
   return (
     <form onSubmit={handleSubmit} method='post'>
       <div className={styles.main}>
-        <div className={styles.title}>EC 34기 지원서 </div>
+        <div className={styles.title}>EC 35기 지원서 </div>
         <h2>개인 정보</h2>
         이름
         <div className={styles.inputWrapper}>
