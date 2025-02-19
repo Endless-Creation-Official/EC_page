@@ -11,7 +11,7 @@ const apiClient = axios.create({
 
 // POST 함수
 export const submitApplication = (formData) => {
-    return apiClient.post('/applyForm', formData);
+    return apiClient.post('/apply', formData);
 };
 
 
