@@ -5,7 +5,7 @@ function Operator({ members }) {
   return (
     <div className={styles.operatorContainer}>
       <div className={styles.operator}>
-        <h2>EC 34th</h2>
+        <h2>EC 35th</h2>
         <h1>운영진</h1>
       </div>
       <section className={styles.operators}>
