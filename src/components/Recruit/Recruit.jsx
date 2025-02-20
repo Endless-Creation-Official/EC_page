@@ -12,7 +12,7 @@ function Main() {
       <div className={styles.firstContainer}>
         <h1>EC와 함께하고 싶다면?</h1>
         <Link to='/apply'>
-          <button className={styles.button} onClick={onClickOverTime}>
+          <button className={styles.button}>
             지원하러 가기
           </button>
         </Link>
