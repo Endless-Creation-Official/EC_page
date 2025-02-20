@@ -52,7 +52,7 @@ const memberData = [
     introduction: '다들 파이팅!',
   },
     {
-    photo: 'profile.jpg',
+    photo: 'members_photo/곽용진.jpg',
     alt: 'YJ',
     name: '곽용진',
     position: '학술부장',
