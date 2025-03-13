@@ -26,7 +26,7 @@ function Main() {
           <button className={styles.buttonResult}>
             지원결과 확인하러 가기
           </button>
-        </Link>
+        </Link> */}
       </div>
       <FAQ />
     </div>
@@ -86,7 +86,7 @@ const faqData = [
   {
     question: '컴퓨터공학과 학생만 지원할 수 있나요?',
     answer:
-      '이번 35기 모집에서는 컴퓨터공학과 복수전공, 부전공, 융합전공 학생까지만 지원을 받고 있습니다.',
+      '아닙니다! 서울과학기술대학교 재학생 및 휴학생 모두 지원 가능합니다!',
   },
 ];
 
