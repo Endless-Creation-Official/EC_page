@@ -6,8 +6,9 @@ import Members from './pages/members';
 import Recruit from './pages/recruit';
 import Apply from './pages/apply';
 import ApplicationResult from './pages/applicationResult';
-
+import { Navigate } from 'react-router-dom';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { APPLICATION_CONFIG } from './constants/Application';
 
 function App() {
   return (
@@ -17,7 +18,12 @@ function App() {
         <Route path='/Aboutus' element={<Aboutus />}></Route>
         <Route path='/Members' element={<Members />}></Route>
         <Route path='/Recruit' element={<Recruit />}></Route>
-        <Route path="/apply" element={<Apply />}></Route>
+        <Route 
+          path="/apply" 
+          element={
+            APPLICATION_CONFIG.isOpen ? <Apply /> : <Navigate to="/recruit" replace />
+          }
+        />
         <Route path="/applies" element={<ApplicationResult />}></Route>
       </Routes>
     </Router>

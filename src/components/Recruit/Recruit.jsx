@@ -1,17 +1,27 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import styles from './Recruit.module.css';
+import { APPLICATION_CONFIG } from '../../constants/Application';
 
 function Main() {
+  const applicationClosed = (e) => {
+    e.preventDefault(); // 이벤트 기본 동작 방지
+    alert(APPLICATION_CONFIG.message.closed);
+  };
+
   return (
     <div className={styles.container}>
       <div className={styles.firstContainer}>
         <h1>EC와 함께하고 싶다면?</h1>
-        <Link to='/apply'>
-          <button className={styles.button}>
+        {APPLICATION_CONFIG.isOpen ? (
+          <Link to='/apply'>
+            <button className={styles.button}>지원하러 가기</button>
+          </Link>
+        ) : (
+          <button className={styles.button} onClick={applicationClosed}>
             지원하러 가기
           </button>
-        </Link>
+        )}
         <Link to='/applies'>
           <button className={styles.buttonResult}>
             지원결과 확인하러 가기
