@@ -13,7 +13,7 @@ function Main() {
         <div className={styles.title}>
           <h1>Endless Creation</h1>
           <h2 className={styles.textbox}>
-            35기 활동 중!
+            35기 모집 중!
             {
               <Link to='/apply'>
                 <div className={styles.scrolldown1} onClick={handleClick}>
@@ -327,11 +327,11 @@ function Process() {
         </colgroup>
         <tbody>
           <tr>
-            <td> ~ 3.9</td>
+            <td> ~ 3.8</td>
             <td>35기 서류 지원</td>
           </tr>
           <tr>
-            <td>3.10</td>
+            <td>3.9</td>
             <td>1차 합격 발표</td>
           </tr>
           <tr>

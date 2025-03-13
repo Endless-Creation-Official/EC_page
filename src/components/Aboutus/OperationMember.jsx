@@ -5,7 +5,7 @@ function Operator({ members }) {
   return (
     <div className={styles.operatorContainer}>
       <div className={styles.operator}>
-        <h2>EC 34th</h2>
+        <h2>EC 35th</h2>
         <h1>운영진</h1>
       </div>
       <section className={styles.operators}>
@@ -38,24 +38,31 @@ function Operator({ members }) {
 
 const memberData = [
   {
-    photo: 'members_photo/강영훈.jpg',
-    alt: 'YH',
-    name: '강영훈',
-    position: '회장',
-    introduction: '열심히 하는 중',
-  },
-  {
     photo: 'members_photo/김경태1.jpg',
     alt: 'KT',
     name: '김경태',
-    position: '부회장',
+    position: '회장',
     introduction: '함께 성장해요! 질문은 언제나 환영입니다',
+  },
+  {
+    photo: 'members_photo/최강.jpg',
+    alt: 'G',
+    name: '최강',
+    position: '부회장',
+    introduction: '다들 파이팅!',
+  },
+    {
+    photo: 'members_photo/곽용진.jpg',
+    alt: 'YJ',
+    name: '곽용진',
+    position: '학술부장',
+    introduction: '같이 잘해봅시다!',
   },
   {
     photo: 'members_photo/박진홍.jpeg',
     alt: 'YH',
     name: '박진홍',
-    position: '학술부장',
+    position: '재무부장',
     introduction: 'EC의 자랑이 되어주세요!',
   },
   {
