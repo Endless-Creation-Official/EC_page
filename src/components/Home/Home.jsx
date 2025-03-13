@@ -4,6 +4,7 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { Link } from 'react-router-dom';
+import { APPLICATION_CONFIG } from '../../constants/Application';
 
 function Main() {
   const handleClick = () => {};
@@ -12,23 +13,32 @@ function Main() {
       <div fetchPriority='high' className={styles.maintitle}>
         <div className={styles.title}>
           <h1>Endless Creation</h1>
-          <h2 className={styles.textbox}>
-            35기 모집 중!
-            {
+          {APPLICATION_CONFIG.isOpen ? (
+            <>
+              <h2 className={styles.textbox}>
+                35기 활동 중!
+                <Link to='/apply'>
+                  <div className={styles.scrolldown1} onClick={handleClick}>
+                    지원하기!
+                  </div>
+                </Link>
+              </h2>
               <Link to='/apply'>
+                <div className={styles.scrolldown2} onClick={handleClick}>
+                  지원하기!
+                </div>
+              </Link>
+            </>
+          ) : (
+            <h2 className={styles.textbox}>
+              35기 활동 중!
+              <Link to='Recruit'>
                 <div className={styles.scrolldown1} onClick={handleClick}>
                   지원하기!
                 </div>
               </Link>
-            }
-          </h2>
-          {
-            <Link to='/apply'>
-              <div className={styles.scrolldown2} onClick={handleClick}>
-                지원하기!
-              </div>
-            </Link>
-          }
+            </h2>
+          )}
         </div>
       </div>
       <AboutEC />
