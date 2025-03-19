@@ -218,6 +218,13 @@ function Main() {
       mark: 'companyMark/신한카드.webp',
     },
     {
+      name: '유가희',
+      term: '26기',
+      skills: ['Back-end'],
+      careers: ['現 스마일게이트', '現 네이버웹툰'],
+      mark: 'companyMark/webtoon.webp',
+    },
+    {
       name: '박주환',
       term: '26기',
       skills: ['FinTech'],
@@ -312,7 +319,7 @@ function Main() {
       name: '송제민',
       term: '23기',
       skills: ['Android'],
-      careers: ['前 카카오 인턴', '現 신한카드'],
+      careers: ['前 SSAFY', '前 카카오 인턴', '現 신한카드'],
       mark: 'companyMark/신한카드.webp',
     },
     {
