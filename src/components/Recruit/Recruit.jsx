@@ -22,7 +22,7 @@ function Main() {
             지원하러 가기
           </button>
         )}
-        <Link to='/applies'>
+        {/* <Link to='/applies'>
           <button className={styles.buttonResult}>
             지원결과 확인하러 가기
           </button>
