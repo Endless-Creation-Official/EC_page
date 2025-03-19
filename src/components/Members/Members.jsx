@@ -221,7 +221,7 @@ function Main() {
       name: '유가희',
       term: '26기',
       skills: ['Back-end'],
-      careers: ['現 스마일게이트', '現 네이버웹툰'],
+      careers: ['前 스마일게이트', '現 네이버웹툰'],
       mark: 'companyMark/webtoon.webp',
     },
     {
