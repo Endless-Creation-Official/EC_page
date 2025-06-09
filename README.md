@@ -1,6 +1,6 @@
-# 서울과학기술대학교 학술동아리 Endless Creation 소개 페이지 제작
-
-배포한 페이지 링크: **https://endless-creation.netlify.app**
+# 한성과학고등학교 ESC 동아리 프로젝트
+ **해당 레포지토리는 [EC_34th](https://github.com/Endless-Creation-Official/EC_page) 의 [EC_Page](https://github.com/Endless-Creation-Official/EC_page)를 포크했음을 알립니다.**
+ 
 ## 개발 동기
 외부에 학술 동아리 홍보를 하고 신입생을 모집하기 위해 제작하게 되었습니다. 페이지를 통해 효과적으로 홍보가 되었으며 신입생을 성공적으로 모집할 수 있었습니다.
 
